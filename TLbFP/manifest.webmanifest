@@ -1,0 +1,12 @@
+{
+  "name": "The Learning but Fun Project",
+  "short_name": "The Learning but Fun Project",
+  "id": "com.example.tlbfp",
+  "description": "a project that aspires to make learning fun",
+  "orientation": "landscape",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "black",
+  "categories": ["games", "entertainment"],
+  "icons": []
+}
