@@ -10,4 +10,4 @@ Linked is the [website](https://learn4thegame.github.io) for our project.
 
 <h2>Feedback</h2>
 
-Feedback would be appreciated, so if you would like to give your suggestions or report any bugs create a new issue in the [Issues](/issues) tab.
+Feedback would be appreciated, so if you would like to give your suggestions or report any bugs create a new issue in the [Issues](../../issues) tab.
