@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__ThreeDimensionsPlatforming__ExitPointerLock !== "undefi
 gdjs.evtsExt__ThreeDimensionsPlatforming__ExitPointerLock = {};
 
 
-gdjs.evtsExt__ThreeDimensionsPlatforming__ExitPointerLock.userFunc0xd29250 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ThreeDimensionsPlatforming__ExitPointerLock.userFunc0xe7fb80 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 document.exitPointerLock();
 };
@@ -17,7 +17,7 @@ gdjs.evtsExt__ThreeDimensionsPlatforming__ExitPointerLock.eventsList0 = function
 {
 
 
-gdjs.evtsExt__ThreeDimensionsPlatforming__ExitPointerLock.userFunc0xd29250(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ThreeDimensionsPlatforming__ExitPointerLock.userFunc0xe7fb80(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

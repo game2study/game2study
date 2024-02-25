@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__ThreeDimensionsPlatforming__MouseMovementX !== "undefin
 gdjs.evtsExt__ThreeDimensionsPlatforming__MouseMovementX = {};
 
 
-gdjs.evtsExt__ThreeDimensionsPlatforming__MouseMovementX.userFunc0xd27908 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ThreeDimensionsPlatforming__MouseMovementX.userFunc0xb8d268 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext.returnValue = gdjs._MousePointerLockExtension.movement.x || 0;
 };
@@ -17,7 +17,7 @@ gdjs.evtsExt__ThreeDimensionsPlatforming__MouseMovementX.eventsList0 = function(
 {
 
 
-gdjs.evtsExt__ThreeDimensionsPlatforming__MouseMovementX.userFunc0xd27908(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ThreeDimensionsPlatforming__MouseMovementX.userFunc0xb8d268(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
