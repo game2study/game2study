@@ -18,6 +18,7 @@ gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter = class FPSC
     
     this._behaviorData.Sprinting = false;
     this._behaviorData.CanSprint = true;
+    this._behaviorData.KeySimulate = "";
   }
 
   // Hot-reload:
@@ -27,6 +28,8 @@ gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter = class FPSC
       this._behaviorData.Sprinting = newBehaviorData.Sprinting;
     if (oldBehaviorData.CanSprint !== newBehaviorData.CanSprint)
       this._behaviorData.CanSprint = newBehaviorData.CanSprint;
+    if (oldBehaviorData.KeySimulate !== newBehaviorData.KeySimulate)
+      this._behaviorData.KeySimulate = newBehaviorData.KeySimulate;
 
     return true;
   }
@@ -50,6 +53,12 @@ gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter = class FPSC
   }
   _toggleCanSprint() {
     this._setCanSprint(!this._getCanSprint());
+  }
+  _getKeySimulate() {
+    return this._behaviorData.KeySimulate !== undefined ? this._behaviorData.KeySimulate : "";
+  }
+  _setKeySimulate(newValue) {
+    this._behaviorData.KeySimulate = newValue;
   }
 }
 
@@ -78,7 +87,80 @@ gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.getSharedDat
 }
 
 // Methods:
+gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.doStepPreEventsContext = {};
+
+
+gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.doStepPreEventsContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+
+};
+
+gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.doStepPreEvents = function(parentEventsFunctionContext) {
+this._onceTriggers.startNewFrame();
+var that = this;
+var runtimeScene = this._runtimeScene;
+var thisObjectList = [this.owner];
+var Object = Hashtable.newFrom({Object: thisObjectList});
+var Behavior = this.name;
+var eventsFunctionContext = {
+  _objectsMap: {
+"Object": Object
+},
+  _objectArraysMap: {
+"Object": thisObjectList
+},
+  _behaviorNamesMap: {
+"Behavior": Behavior
+},
+  getObjects: function(objectName) {
+    return eventsFunctionContext._objectArraysMap[objectName] || [];
+  },
+  getObjectsLists: function(objectName) {
+    return eventsFunctionContext._objectsMap[objectName] || null;
+  },
+  getBehaviorName: function(behaviorName) {
+    return eventsFunctionContext._behaviorNamesMap[behaviorName] || behaviorName;
+  },
+  createObject: function(objectName) {
+    const objectsList = eventsFunctionContext._objectsMap[objectName];
+    if (objectsList) {
+      const object = parentEventsFunctionContext ?
+        parentEventsFunctionContext.createObject(objectsList.firstKey()) :
+        runtimeScene.createObject(objectsList.firstKey());
+      if (object) {
+        objectsList.get(objectsList.firstKey()).push(object);
+        eventsFunctionContext._objectArraysMap[objectName].push(object);
+      }
+      return object;    }
+    return null;
+  },
+  getInstancesCountOnScene: function(objectName) {
+    const objectsList = eventsFunctionContext._objectsMap[objectName];
+    let count = 0;
+    if (objectsList) {
+      for(const objectName in objectsList.items)
+        count += parentEventsFunctionContext ?
+parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
+        runtimeScene.getInstancesCountOnScene(objectName);
+    }
+    return count;
+  },
+  getLayer: function(layerName) {
+    return runtimeScene.getLayer(layerName);
+  },
+  getArgument: function(argName) {
+    return "";
+  },
+  getOnceTriggers: function() { return that._onceTriggers; }
+};
+
+
+gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.doStepPreEventsContext.eventsList0(runtimeScene, eventsFunctionContext);
+
+return;
+}
 gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext = {};
+gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4_1final = [];
+
 gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects1= [];
 gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects2= [];
 gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects3= [];
@@ -232,29 +314,65 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ThreeDi
 
 {
 
+gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4.length = 0;
+
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "w");
-if (isConditionTrue_0) {
+{gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4_1final.length = 0;
+let isConditionTrue_1 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = !(gdjs.evtTools.input.isKeyPressed(runtimeScene, "s"));
+{
+{let isConditionTrue_2 = false;
+isConditionTrue_2 = false;
+isConditionTrue_2 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "w");
+if (isConditionTrue_2) {
+isConditionTrue_2 = false;
+isConditionTrue_2 = !(gdjs.evtTools.input.isKeyPressed(runtimeScene, "a"));
+if (isConditionTrue_2) {
+isConditionTrue_2 = false;
+isConditionTrue_2 = !(gdjs.evtTools.input.isKeyPressed(runtimeScene, "s"));
+if (isConditionTrue_2) {
+isConditionTrue_2 = false;
+isConditionTrue_2 = !(gdjs.evtTools.input.isKeyPressed(runtimeScene, "d"));
+if (isConditionTrue_2) {
+isConditionTrue_2 = false;
+{isConditionTrue_2 = !(typeof eventsFunctionContext !== 'undefined' ? !!eventsFunctionContext.getArgument("MobileTrueOrFalse") : false);
+}
+}
+}
+}
+}
+isConditionTrue_1 = isConditionTrue_2;
+}
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects5);
+for (var i = 0, k = 0, l = gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects5.length;i<l;++i) {
+    if ( gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects5[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getKeySimulate() == "w" ) {
+        isConditionTrue_1 = true;
+        gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects5[k] = gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects5[i];
+        ++k;
+    }
+}
+gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects5.length = k;
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+    for (let j = 0, jLen = gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects5.length; j < jLen ; ++j) {
+        if ( gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4_1final.indexOf(gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects5[j]) === -1 )
+            gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4_1final.push(gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects5[j]);
+    }
+}
+}
+{
+gdjs.copyArray(gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4_1final, gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4);
+}
+}
 if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-isConditionTrue_0 = !(gdjs.evtTools.input.isKeyPressed(runtimeScene, "a"));
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-isConditionTrue_0 = !(gdjs.evtTools.input.isKeyPressed(runtimeScene, "d"));
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-{isConditionTrue_0 = !(typeof eventsFunctionContext !== 'undefined' ? !!eventsFunctionContext.getArgument("MobileTrueOrFalse") : false);
-}
-}
-}
-}
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4);
+/* Reuse gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4 */
 {for(var i = 0, len = gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4.length ;i < len;++i) {
     gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4[i].addPolarForce((gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4[i].getAngle()), (typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("Speed")) || 0 : 0), 0);
 }
@@ -265,29 +383,65 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ThreeDi
 
 {
 
+gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4.length = 0;
+
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "a");
-if (isConditionTrue_0) {
+{gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4_1final.length = 0;
+let isConditionTrue_1 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = !(gdjs.evtTools.input.isKeyPressed(runtimeScene, "s"));
+{
+{let isConditionTrue_2 = false;
+isConditionTrue_2 = false;
+isConditionTrue_2 = !(gdjs.evtTools.input.isKeyPressed(runtimeScene, "w"));
+if (isConditionTrue_2) {
+isConditionTrue_2 = false;
+isConditionTrue_2 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "a");
+if (isConditionTrue_2) {
+isConditionTrue_2 = false;
+isConditionTrue_2 = !(gdjs.evtTools.input.isKeyPressed(runtimeScene, "s"));
+if (isConditionTrue_2) {
+isConditionTrue_2 = false;
+isConditionTrue_2 = !(gdjs.evtTools.input.isKeyPressed(runtimeScene, "d"));
+if (isConditionTrue_2) {
+isConditionTrue_2 = false;
+{isConditionTrue_2 = !(typeof eventsFunctionContext !== 'undefined' ? !!eventsFunctionContext.getArgument("MobileTrueOrFalse") : false);
+}
+}
+}
+}
+}
+isConditionTrue_1 = isConditionTrue_2;
+}
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects5);
+for (var i = 0, k = 0, l = gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects5.length;i<l;++i) {
+    if ( gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects5[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getKeySimulate() == "a" ) {
+        isConditionTrue_1 = true;
+        gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects5[k] = gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects5[i];
+        ++k;
+    }
+}
+gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects5.length = k;
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+    for (let j = 0, jLen = gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects5.length; j < jLen ; ++j) {
+        if ( gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4_1final.indexOf(gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects5[j]) === -1 )
+            gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4_1final.push(gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects5[j]);
+    }
+}
+}
+{
+gdjs.copyArray(gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4_1final, gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4);
+}
+}
 if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-isConditionTrue_0 = !(gdjs.evtTools.input.isKeyPressed(runtimeScene, "d"));
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-isConditionTrue_0 = !(gdjs.evtTools.input.isKeyPressed(runtimeScene, "w"));
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-{isConditionTrue_0 = !(typeof eventsFunctionContext !== 'undefined' ? !!eventsFunctionContext.getArgument("MobileTrueOrFalse") : false);
-}
-}
-}
-}
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4);
+/* Reuse gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4 */
 {for(var i = 0, len = gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4.length ;i < len;++i) {
     gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4[i].addPolarForce((gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4[i].getAngle()) - 90, (typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("Speed")) || 0 : 0), 0);
 }
@@ -298,29 +452,65 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ThreeDi
 
 {
 
+gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4.length = 0;
+
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "s");
-if (isConditionTrue_0) {
+{gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4_1final.length = 0;
+let isConditionTrue_1 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = !(gdjs.evtTools.input.isKeyPressed(runtimeScene, "d"));
+{
+{let isConditionTrue_2 = false;
+isConditionTrue_2 = false;
+isConditionTrue_2 = !(gdjs.evtTools.input.isKeyPressed(runtimeScene, "w"));
+if (isConditionTrue_2) {
+isConditionTrue_2 = false;
+isConditionTrue_2 = !(gdjs.evtTools.input.isKeyPressed(runtimeScene, "a"));
+if (isConditionTrue_2) {
+isConditionTrue_2 = false;
+isConditionTrue_2 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "s");
+if (isConditionTrue_2) {
+isConditionTrue_2 = false;
+isConditionTrue_2 = !(gdjs.evtTools.input.isKeyPressed(runtimeScene, "d"));
+if (isConditionTrue_2) {
+isConditionTrue_2 = false;
+{isConditionTrue_2 = !(typeof eventsFunctionContext !== 'undefined' ? !!eventsFunctionContext.getArgument("MobileTrueOrFalse") : false);
+}
+}
+}
+}
+}
+isConditionTrue_1 = isConditionTrue_2;
+}
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects5);
+for (var i = 0, k = 0, l = gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects5.length;i<l;++i) {
+    if ( gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects5[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getKeySimulate() == "s" ) {
+        isConditionTrue_1 = true;
+        gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects5[k] = gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects5[i];
+        ++k;
+    }
+}
+gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects5.length = k;
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+    for (let j = 0, jLen = gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects5.length; j < jLen ; ++j) {
+        if ( gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4_1final.indexOf(gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects5[j]) === -1 )
+            gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4_1final.push(gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects5[j]);
+    }
+}
+}
+{
+gdjs.copyArray(gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4_1final, gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4);
+}
+}
 if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-isConditionTrue_0 = !(gdjs.evtTools.input.isKeyPressed(runtimeScene, "w"));
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-isConditionTrue_0 = !(gdjs.evtTools.input.isKeyPressed(runtimeScene, "a"));
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-{isConditionTrue_0 = !(typeof eventsFunctionContext !== 'undefined' ? !!eventsFunctionContext.getArgument("MobileTrueOrFalse") : false);
-}
-}
-}
-}
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4);
+/* Reuse gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4 */
 {for(var i = 0, len = gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4.length ;i < len;++i) {
     gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4[i].addPolarForce((gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4[i].getAngle()) + 180, (typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("Speed")) || 0 : 0), 0);
 }
@@ -331,29 +521,65 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ThreeDi
 
 {
 
+gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4.length = 0;
+
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "d");
-if (isConditionTrue_0) {
+{gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4_1final.length = 0;
+let isConditionTrue_1 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = !(gdjs.evtTools.input.isKeyPressed(runtimeScene, "a"));
+{
+{let isConditionTrue_2 = false;
+isConditionTrue_2 = false;
+isConditionTrue_2 = !(gdjs.evtTools.input.isKeyPressed(runtimeScene, "w"));
+if (isConditionTrue_2) {
+isConditionTrue_2 = false;
+isConditionTrue_2 = !(gdjs.evtTools.input.isKeyPressed(runtimeScene, "a"));
+if (isConditionTrue_2) {
+isConditionTrue_2 = false;
+isConditionTrue_2 = !(gdjs.evtTools.input.isKeyPressed(runtimeScene, "s"));
+if (isConditionTrue_2) {
+isConditionTrue_2 = false;
+isConditionTrue_2 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "d");
+if (isConditionTrue_2) {
+isConditionTrue_2 = false;
+{isConditionTrue_2 = !(typeof eventsFunctionContext !== 'undefined' ? !!eventsFunctionContext.getArgument("MobileTrueOrFalse") : false);
+}
+}
+}
+}
+}
+isConditionTrue_1 = isConditionTrue_2;
+}
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects5);
+for (var i = 0, k = 0, l = gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects5.length;i<l;++i) {
+    if ( gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects5[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getKeySimulate() == "d" ) {
+        isConditionTrue_1 = true;
+        gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects5[k] = gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects5[i];
+        ++k;
+    }
+}
+gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects5.length = k;
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+    for (let j = 0, jLen = gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects5.length; j < jLen ; ++j) {
+        if ( gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4_1final.indexOf(gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects5[j]) === -1 )
+            gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4_1final.push(gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects5[j]);
+    }
+}
+}
+{
+gdjs.copyArray(gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4_1final, gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4);
+}
+}
 if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-isConditionTrue_0 = !(gdjs.evtTools.input.isKeyPressed(runtimeScene, "w"));
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-isConditionTrue_0 = !(gdjs.evtTools.input.isKeyPressed(runtimeScene, "s"));
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-{isConditionTrue_0 = !(typeof eventsFunctionContext !== 'undefined' ? !!eventsFunctionContext.getArgument("MobileTrueOrFalse") : false);
-}
-}
-}
-}
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4);
+/* Reuse gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4 */
 {for(var i = 0, len = gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4.length ;i < len;++i) {
     gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4[i].addPolarForce((gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4[i].getAngle()) + 90, (typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("Speed")) || 0 : 0), 0);
 }
@@ -365,24 +591,6 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ThreeDi
 {
 
 
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "w");
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "a");
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-{isConditionTrue_0 = !(typeof eventsFunctionContext !== 'undefined' ? !!eventsFunctionContext.getArgument("MobileTrueOrFalse") : false);
-}
-}
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4);
-{for(var i = 0, len = gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4.length ;i < len;++i) {
-    gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4[i].addPolarForce((gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4[i].getAngle()) - 45, (typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("Speed")) || 0 : 0), 0);
-}
-}}
 
 }
 
@@ -390,24 +598,6 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ThreeDi
 {
 
 
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "w");
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "d");
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-{isConditionTrue_0 = !(typeof eventsFunctionContext !== 'undefined' ? !!eventsFunctionContext.getArgument("MobileTrueOrFalse") : false);
-}
-}
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4);
-{for(var i = 0, len = gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4.length ;i < len;++i) {
-    gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4[i].addPolarForce((gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4[i].getAngle()) + 45, (typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("Speed")) || 0 : 0), 0);
-}
-}}
 
 }
 
@@ -415,24 +605,6 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ThreeDi
 {
 
 
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = !(typeof eventsFunctionContext !== 'undefined' ? !!eventsFunctionContext.getArgument("MobileTrueOrFalse") : false);
-}
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "a");
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "s");
-}
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4);
-{for(var i = 0, len = gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4.length ;i < len;++i) {
-    gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4[i].addPolarForce((gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects4[i].getAngle()) - 135, (typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("Speed")) || 0 : 0), 0);
-}
-}}
 
 }
 
@@ -440,24 +612,6 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ThreeDi
 {
 
 
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = !(typeof eventsFunctionContext !== 'undefined' ? !!eventsFunctionContext.getArgument("MobileTrueOrFalse") : false);
-}
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "d");
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "s");
-}
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects3);
-{for(var i = 0, len = gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects3.length ;i < len;++i) {
-    gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects3[i].addPolarForce((gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.ActAsFPSCharContext.GDObjectObjects3[i].getAngle()) + 135, (typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("Speed")) || 0 : 0), 0);
-}
-}}
 
 }
 
@@ -1384,10 +1538,181 @@ gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.Al
 
 return;
 }
+gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.KeySimulateContext = {};
+gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.KeySimulateContext.GDObjectObjects1= [];
+gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.KeySimulateContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.doStepPreEvents = function() {
-  this._onceTriggers.startNewFrame();
+
+gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.KeySimulateContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+{if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getKeySimulate(); }}}
+
+}
+
+
 };
+
+gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.KeySimulate = function(parentEventsFunctionContext) {
+
+var that = this;
+var runtimeScene = this._runtimeScene;
+var thisObjectList = [this.owner];
+var Object = Hashtable.newFrom({Object: thisObjectList});
+var Behavior = this.name;
+var eventsFunctionContext = {
+  _objectsMap: {
+"Object": Object
+},
+  _objectArraysMap: {
+"Object": thisObjectList
+},
+  _behaviorNamesMap: {
+"Behavior": Behavior
+},
+  getObjects: function(objectName) {
+    return eventsFunctionContext._objectArraysMap[objectName] || [];
+  },
+  getObjectsLists: function(objectName) {
+    return eventsFunctionContext._objectsMap[objectName] || null;
+  },
+  getBehaviorName: function(behaviorName) {
+    return eventsFunctionContext._behaviorNamesMap[behaviorName] || behaviorName;
+  },
+  createObject: function(objectName) {
+    const objectsList = eventsFunctionContext._objectsMap[objectName];
+    if (objectsList) {
+      const object = parentEventsFunctionContext ?
+        parentEventsFunctionContext.createObject(objectsList.firstKey()) :
+        runtimeScene.createObject(objectsList.firstKey());
+      if (object) {
+        objectsList.get(objectsList.firstKey()).push(object);
+        eventsFunctionContext._objectArraysMap[objectName].push(object);
+      }
+      return object;    }
+    return null;
+  },
+  getInstancesCountOnScene: function(objectName) {
+    const objectsList = eventsFunctionContext._objectsMap[objectName];
+    let count = 0;
+    if (objectsList) {
+      for(const objectName in objectsList.items)
+        count += parentEventsFunctionContext ?
+parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
+        runtimeScene.getInstancesCountOnScene(objectName);
+    }
+    return count;
+  },
+  getLayer: function(layerName) {
+    return runtimeScene.getLayer(layerName);
+  },
+  getArgument: function(argName) {
+    return "";
+  },
+  getOnceTriggers: function() { return that._onceTriggers; }
+};
+
+gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.KeySimulateContext.GDObjectObjects1.length = 0;
+gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.KeySimulateContext.GDObjectObjects2.length = 0;
+
+gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.KeySimulateContext.eventsList0(runtimeScene, eventsFunctionContext);
+
+return "" + eventsFunctionContext.returnValue;
+}
+gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.SetKeySimulateContext = {};
+gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.SetKeySimulateContext.GDObjectObjects1= [];
+gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.SetKeySimulateContext.GDObjectObjects2= [];
+
+
+gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.SetKeySimulateContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.SetKeySimulateContext.GDObjectObjects1);
+{for(var i = 0, len = gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.SetKeySimulateContext.GDObjectObjects1.length ;i < len;++i) {
+    gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.SetKeySimulateContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setKeySimulate(eventsFunctionContext.getArgument("Value"));
+}
+}}
+
+}
+
+
+};
+
+gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.SetKeySimulate = function(Value, parentEventsFunctionContext) {
+
+var that = this;
+var runtimeScene = this._runtimeScene;
+var thisObjectList = [this.owner];
+var Object = Hashtable.newFrom({Object: thisObjectList});
+var Behavior = this.name;
+var eventsFunctionContext = {
+  _objectsMap: {
+"Object": Object
+},
+  _objectArraysMap: {
+"Object": thisObjectList
+},
+  _behaviorNamesMap: {
+"Behavior": Behavior
+},
+  getObjects: function(objectName) {
+    return eventsFunctionContext._objectArraysMap[objectName] || [];
+  },
+  getObjectsLists: function(objectName) {
+    return eventsFunctionContext._objectsMap[objectName] || null;
+  },
+  getBehaviorName: function(behaviorName) {
+    return eventsFunctionContext._behaviorNamesMap[behaviorName] || behaviorName;
+  },
+  createObject: function(objectName) {
+    const objectsList = eventsFunctionContext._objectsMap[objectName];
+    if (objectsList) {
+      const object = parentEventsFunctionContext ?
+        parentEventsFunctionContext.createObject(objectsList.firstKey()) :
+        runtimeScene.createObject(objectsList.firstKey());
+      if (object) {
+        objectsList.get(objectsList.firstKey()).push(object);
+        eventsFunctionContext._objectArraysMap[objectName].push(object);
+      }
+      return object;    }
+    return null;
+  },
+  getInstancesCountOnScene: function(objectName) {
+    const objectsList = eventsFunctionContext._objectsMap[objectName];
+    let count = 0;
+    if (objectsList) {
+      for(const objectName in objectsList.items)
+        count += parentEventsFunctionContext ?
+parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
+        runtimeScene.getInstancesCountOnScene(objectName);
+    }
+    return count;
+  },
+  getLayer: function(layerName) {
+    return runtimeScene.getLayer(layerName);
+  },
+  getArgument: function(argName) {
+if (argName === "Value") return Value;
+    return "";
+  },
+  getOnceTriggers: function() { return that._onceTriggers; }
+};
+
+gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.SetKeySimulateContext.GDObjectObjects1.length = 0;
+gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.SetKeySimulateContext.GDObjectObjects2.length = 0;
+
+gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter.prototype.SetKeySimulateContext.eventsList0(runtimeScene, eventsFunctionContext);
+
+return;
+}
 
 
 gdjs.registerBehavior("ThreeDimensionsPlatforming::FPSCharacter", gdjs.evtsExt__ThreeDimensionsPlatforming__FPSCharacter.FPSCharacter);

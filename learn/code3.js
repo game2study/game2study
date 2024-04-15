@@ -59,6 +59,9 @@ gdjs.Property_32EditorCode.GDChairObjects3= [];
 gdjs.Property_32EditorCode.GDChairBttnObjects1= [];
 gdjs.Property_32EditorCode.GDChairBttnObjects2= [];
 gdjs.Property_32EditorCode.GDChairBttnObjects3= [];
+gdjs.Property_32EditorCode.GDMPIndicatorObjects1= [];
+gdjs.Property_32EditorCode.GDMPIndicatorObjects2= [];
+gdjs.Property_32EditorCode.GDMPIndicatorObjects3= [];
 
 
 gdjs.Property_32EditorCode.mapOfGDgdjs_9546Property_959532EditorCode_9546GDGridLinesObjects1Objects = Hashtable.newFrom({"GridLines": gdjs.Property_32EditorCode.GDGridLinesObjects1});
@@ -1084,6 +1087,9 @@ gdjs.Property_32EditorCode.GDChairObjects3.length = 0;
 gdjs.Property_32EditorCode.GDChairBttnObjects1.length = 0;
 gdjs.Property_32EditorCode.GDChairBttnObjects2.length = 0;
 gdjs.Property_32EditorCode.GDChairBttnObjects3.length = 0;
+gdjs.Property_32EditorCode.GDMPIndicatorObjects1.length = 0;
+gdjs.Property_32EditorCode.GDMPIndicatorObjects2.length = 0;
+gdjs.Property_32EditorCode.GDMPIndicatorObjects3.length = 0;
 
 gdjs.Property_32EditorCode.eventsList1(runtimeScene);
 

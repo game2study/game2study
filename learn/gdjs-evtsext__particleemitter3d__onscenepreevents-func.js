@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__ParticleEmitter3D__onScenePreEvents !== "undefined") {
 gdjs.evtsExt__ParticleEmitter3D__onScenePreEvents = {};
 
 
-gdjs.evtsExt__ParticleEmitter3D__onScenePreEvents.userFunc0x10a2a80 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ParticleEmitter3D__onScenePreEvents.userFunc0xf24c00 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 
 // See doStepPostEvents
@@ -20,7 +20,7 @@ gdjs.evtsExt__ParticleEmitter3D__onScenePreEvents.eventsList0 = function(runtime
 {
 
 
-gdjs.evtsExt__ParticleEmitter3D__onScenePreEvents.userFunc0x10a2a80(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ParticleEmitter3D__onScenePreEvents.userFunc0xf24c00(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

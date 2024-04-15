@@ -4,7 +4,7 @@ gdjs.evtsExt__PanelSpriteSlider__PanelSpriteSlider = gdjs.evtsExt__PanelSpriteSl
 /**
  * Object generated from Slider
  */
-gdjs.evtsExt__PanelSpriteSlider__PanelSpriteSlider.PanelSpriteSlider = class PanelSpriteSlider extends gdjs.CustomRuntimeObject {
+gdjs.evtsExt__PanelSpriteSlider__PanelSpriteSlider.PanelSpriteSlider = class PanelSpriteSlider extends gdjs.CustomRuntimeObject2D {
   constructor(parentInstanceContainer, objectData) {
     super(parentInstanceContainer, objectData);
     this._parentInstanceContainer = parentInstanceContainer;
@@ -26,6 +26,7 @@ gdjs.evtsExt__PanelSpriteSlider__PanelSpriteSlider.PanelSpriteSlider = class Pan
     this._objectData.ThumbAnchorOrigin = "Center-center";
     this._objectData.ThumbAnchorTarget = "Center-right";
     this._objectData.ShowLabel = false;
+    
 
     // It calls the onCreated super implementation at the end.
     this.onCreated();
@@ -159,6 +160,10 @@ gdjs.evtsExt__PanelSpriteSlider__PanelSpriteSlider.PanelSpriteSlider = class Pan
   _toggleShowLabel() {
     this._setShowLabel(!this._getShowLabel());
   }
+
+  
+
+  
 }
 
 // Methods:
@@ -1014,7 +1019,7 @@ gdjs.evtsExt__PanelSpriteSlider__PanelSpriteSlider.PanelSpriteSlider.prototype.d
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(19591836);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(24175484);
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PanelSpriteSlider__PanelSpriteSlider.PanelSpriteSlider.prototype.doStepPostEventsContext.GDObjectObjects1);

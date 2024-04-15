@@ -27,8 +27,16 @@ gdjs.HomeCode.GDTesterLabelObjects1= [];
 gdjs.HomeCode.GDTesterLabelObjects2= [];
 gdjs.HomeCode.GDPracticeKitButtonObjects1= [];
 gdjs.HomeCode.GDPracticeKitButtonObjects2= [];
-gdjs.HomeCode.GDNewGameButtonGM2Objects1= [];
-gdjs.HomeCode.GDNewGameButtonGM2Objects2= [];
+gdjs.HomeCode.GDNewGameButtonGM2WIPObjects1= [];
+gdjs.HomeCode.GDNewGameButtonGM2WIPObjects2= [];
+gdjs.HomeCode.GDNewGameButtonGM3WIPObjects1= [];
+gdjs.HomeCode.GDNewGameButtonGM3WIPObjects2= [];
+gdjs.HomeCode.GDImportFlashcardsObjects1= [];
+gdjs.HomeCode.GDImportFlashcardsObjects2= [];
+gdjs.HomeCode.GDMPLabelObjects1= [];
+gdjs.HomeCode.GDMPLabelObjects2= [];
+gdjs.HomeCode.GDMPIndicatorObjects1= [];
+gdjs.HomeCode.GDMPIndicatorObjects2= [];
 
 
 gdjs.HomeCode.eventsList0 = function(runtimeScene) {
@@ -197,6 +205,7 @@ for (var i = 0, k = 0, l = gdjs.HomeCode.GDPracticeKitButtonObjects1.length;i<l;
 gdjs.HomeCode.GDPracticeKitButtonObjects1.length = k;
 if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "AnswerScreen", false);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(6).getChild("active"), false);
 }}
 
 }
@@ -247,20 +256,107 @@ if (isConditionTrue_0) {
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("NewGameButtonGM2"), gdjs.HomeCode.GDNewGameButtonGM2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("NewGameButtonGM2WIP"), gdjs.HomeCode.GDNewGameButtonGM2WIPObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.HomeCode.GDNewGameButtonGM2Objects1.length;i<l;++i) {
-    if ( gdjs.HomeCode.GDNewGameButtonGM2Objects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+for (var i = 0, k = 0, l = gdjs.HomeCode.GDNewGameButtonGM2WIPObjects1.length;i<l;++i) {
+    if ( gdjs.HomeCode.GDNewGameButtonGM2WIPObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
         isConditionTrue_0 = true;
-        gdjs.HomeCode.GDNewGameButtonGM2Objects1[k] = gdjs.HomeCode.GDNewGameButtonGM2Objects1[i];
+        gdjs.HomeCode.GDNewGameButtonGM2WIPObjects1[k] = gdjs.HomeCode.GDNewGameButtonGM2WIPObjects1[i];
         ++k;
     }
 }
-gdjs.HomeCode.GDNewGameButtonGM2Objects1.length = k;
+gdjs.HomeCode.GDNewGameButtonGM2WIPObjects1.length = k;
 if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "gm2sl1", false);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("NewGameButtonGM3WIP"), gdjs.HomeCode.GDNewGameButtonGM3WIPObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.HomeCode.GDNewGameButtonGM3WIPObjects1.length;i<l;++i) {
+    if ( gdjs.HomeCode.GDNewGameButtonGM3WIPObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.HomeCode.GDNewGameButtonGM3WIPObjects1[k] = gdjs.HomeCode.GDNewGameButtonGM3WIPObjects1[i];
+        ++k;
+    }
+}
+gdjs.HomeCode.GDNewGameButtonGM3WIPObjects1.length = k;
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "gm3", false);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("ImportFlashcards"), gdjs.HomeCode.GDImportFlashcardsObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.HomeCode.GDImportFlashcardsObjects1.length;i<l;++i) {
+    if ( gdjs.HomeCode.GDImportFlashcardsObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.HomeCode.GDImportFlashcardsObjects1[k] = gdjs.HomeCode.GDImportFlashcardsObjects1[i];
+        ++k;
+    }
+}
+gdjs.HomeCode.GDImportFlashcardsObjects1.length = k;
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "ImportFlashcards", false);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("MPIndicator"), gdjs.HomeCode.GDMPIndicatorObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.HomeCode.GDMPIndicatorObjects1.length;i<l;++i) {
+    if ( gdjs.HomeCode.GDMPIndicatorObjects1[i].getBehavior("ButtonFSM").IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.HomeCode.GDMPIndicatorObjects1[k] = gdjs.HomeCode.GDMPIndicatorObjects1[i];
+        ++k;
+    }
+}
+gdjs.HomeCode.GDMPIndicatorObjects1.length = k;
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "mpsl1", false);
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("NewGameButtonGM2WIP"), gdjs.HomeCode.GDNewGameButtonGM2WIPObjects1);
+gdjs.copyArray(runtimeScene.getObjects("NewGameButtonGM3WIP"), gdjs.HomeCode.GDNewGameButtonGM3WIPObjects1);
+{for(var i = 0, len = gdjs.HomeCode.GDNewGameButtonGM2WIPObjects1.length ;i < len;++i) {
+    gdjs.HomeCode.GDNewGameButtonGM2WIPObjects1[i].Activate(false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}
+for(var i = 0, len = gdjs.HomeCode.GDNewGameButtonGM3WIPObjects1.length ;i < len;++i) {
+    gdjs.HomeCode.GDNewGameButtonGM3WIPObjects1[i].Activate(false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}
+}{for(var i = 0, len = gdjs.HomeCode.GDNewGameButtonGM2WIPObjects1.length ;i < len;++i) {
+    gdjs.HomeCode.GDNewGameButtonGM2WIPObjects1[i].getBehavior("Opacity").setOpacity(255 * 3 / 4);
+}
+for(var i = 0, len = gdjs.HomeCode.GDNewGameButtonGM3WIPObjects1.length ;i < len;++i) {
+    gdjs.HomeCode.GDNewGameButtonGM3WIPObjects1[i].getBehavior("Opacity").setOpacity(255 * 3 / 4);
+}
 }}
 
 }
@@ -299,8 +395,16 @@ gdjs.HomeCode.GDTesterLabelObjects1.length = 0;
 gdjs.HomeCode.GDTesterLabelObjects2.length = 0;
 gdjs.HomeCode.GDPracticeKitButtonObjects1.length = 0;
 gdjs.HomeCode.GDPracticeKitButtonObjects2.length = 0;
-gdjs.HomeCode.GDNewGameButtonGM2Objects1.length = 0;
-gdjs.HomeCode.GDNewGameButtonGM2Objects2.length = 0;
+gdjs.HomeCode.GDNewGameButtonGM2WIPObjects1.length = 0;
+gdjs.HomeCode.GDNewGameButtonGM2WIPObjects2.length = 0;
+gdjs.HomeCode.GDNewGameButtonGM3WIPObjects1.length = 0;
+gdjs.HomeCode.GDNewGameButtonGM3WIPObjects2.length = 0;
+gdjs.HomeCode.GDImportFlashcardsObjects1.length = 0;
+gdjs.HomeCode.GDImportFlashcardsObjects2.length = 0;
+gdjs.HomeCode.GDMPLabelObjects1.length = 0;
+gdjs.HomeCode.GDMPLabelObjects2.length = 0;
+gdjs.HomeCode.GDMPIndicatorObjects1.length = 0;
+gdjs.HomeCode.GDMPIndicatorObjects2.length = 0;
 
 gdjs.HomeCode.eventsList0(runtimeScene);
 

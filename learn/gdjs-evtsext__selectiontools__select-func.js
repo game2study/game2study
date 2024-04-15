@@ -11,7 +11,7 @@ gdjs.evtsExt__SelectionTools__Select.GDTargetsObjects2= [];
 gdjs.evtsExt__SelectionTools__Select.GDTargetsObjects3= [];
 
 
-gdjs.evtsExt__SelectionTools__Select.userFunc0xfdb808 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__SelectionTools__Select.userFunc0x1aacfc0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 const targets = eventsFunctionContext.getObjectsLists("Targets").items;
 const invertSelection = eventsFunctionContext.getArgument("InvertSelection");
@@ -52,7 +52,7 @@ gdjs.evtsExt__SelectionTools__Select.eventsList0 = function(runtimeScene, events
 {
 
 
-gdjs.evtsExt__SelectionTools__Select.userFunc0xfdb808(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__SelectionTools__Select.userFunc0x1aacfc0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -67,7 +67,7 @@ let isConditionTrue_0 = false;
 }
 
 
-};gdjs.evtsExt__SelectionTools__Select.userFunc0x102d948 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+};gdjs.evtsExt__SelectionTools__Select.userFunc0x1abfa90 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 const targets = eventsFunctionContext.getObjectsLists("Targets").items;
 const invertSelection = eventsFunctionContext.getArgument("InvertSelection");
@@ -158,7 +158,7 @@ if (isConditionTrue_0) {
 {
 
 
-gdjs.evtsExt__SelectionTools__Select.userFunc0x102d948(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__SelectionTools__Select.userFunc0x1abfa90(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

@@ -1,94 +1,79 @@
-gdjs.ViewCreatedQuestionsCode = {};
-gdjs.ViewCreatedQuestionsCode.GDQuestionNameDisplayObjects1= [];
-gdjs.ViewCreatedQuestionsCode.GDQuestionNameDisplayObjects2= [];
-gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1= [];
-gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects2= [];
-gdjs.ViewCreatedQuestionsCode.GDMaxBttnObjects1= [];
-gdjs.ViewCreatedQuestionsCode.GDMaxBttnObjects2= [];
-gdjs.ViewCreatedQuestionsCode.GDDeleteBttnObjects1= [];
-gdjs.ViewCreatedQuestionsCode.GDDeleteBttnObjects2= [];
-gdjs.ViewCreatedQuestionsCode.GDChoiceDisplay1Objects1= [];
-gdjs.ViewCreatedQuestionsCode.GDChoiceDisplay1Objects2= [];
-gdjs.ViewCreatedQuestionsCode.GDChoiceDisplay2Objects1= [];
-gdjs.ViewCreatedQuestionsCode.GDChoiceDisplay2Objects2= [];
-gdjs.ViewCreatedQuestionsCode.GDChoiceDisplay3Objects1= [];
-gdjs.ViewCreatedQuestionsCode.GDChoiceDisplay3Objects2= [];
-gdjs.ViewCreatedQuestionsCode.GDChoiceDisplay4Objects1= [];
-gdjs.ViewCreatedQuestionsCode.GDChoiceDisplay4Objects2= [];
-gdjs.ViewCreatedQuestionsCode.GDCorrectDisplayObjects1= [];
-gdjs.ViewCreatedQuestionsCode.GDCorrectDisplayObjects2= [];
-gdjs.ViewCreatedQuestionsCode.GDBackBttnObjects1= [];
-gdjs.ViewCreatedQuestionsCode.GDBackBttnObjects2= [];
-gdjs.ViewCreatedQuestionsCode.GDSaveKitButtonObjects1= [];
-gdjs.ViewCreatedQuestionsCode.GDSaveKitButtonObjects2= [];
+gdjs.QuestionCreatorCode = {};
+gdjs.QuestionCreatorCode.GDNameCreatorObjects1= [];
+gdjs.QuestionCreatorCode.GDNameCreatorObjects2= [];
+gdjs.QuestionCreatorCode.GDChoiceAmountCreatorObjects1= [];
+gdjs.QuestionCreatorCode.GDChoiceAmountCreatorObjects2= [];
+gdjs.QuestionCreatorCode.GDCorrectAnswerCreatorObjects1= [];
+gdjs.QuestionCreatorCode.GDCorrectAnswerCreatorObjects2= [];
+gdjs.QuestionCreatorCode.GDAns1CreatorObjects1= [];
+gdjs.QuestionCreatorCode.GDAns1CreatorObjects2= [];
+gdjs.QuestionCreatorCode.GDAns2CreatorObjects1= [];
+gdjs.QuestionCreatorCode.GDAns2CreatorObjects2= [];
+gdjs.QuestionCreatorCode.GDAns3CreatorObjects1= [];
+gdjs.QuestionCreatorCode.GDAns3CreatorObjects2= [];
+gdjs.QuestionCreatorCode.GDAns4CreatorObjects1= [];
+gdjs.QuestionCreatorCode.GDAns4CreatorObjects2= [];
+gdjs.QuestionCreatorCode.GDLabel1Objects1= [];
+gdjs.QuestionCreatorCode.GDLabel1Objects2= [];
+gdjs.QuestionCreatorCode.GDLabel2Objects1= [];
+gdjs.QuestionCreatorCode.GDLabel2Objects2= [];
+gdjs.QuestionCreatorCode.GDCreateButtonObjects1= [];
+gdjs.QuestionCreatorCode.GDCreateButtonObjects2= [];
+gdjs.QuestionCreatorCode.GDAnsQsButtonObjects1= [];
+gdjs.QuestionCreatorCode.GDAnsQsButtonObjects2= [];
+gdjs.QuestionCreatorCode.GDViewCreatedQsButtonObjects1= [];
+gdjs.QuestionCreatorCode.GDViewCreatedQsButtonObjects2= [];
+gdjs.QuestionCreatorCode.GDBackBttnObjects1= [];
+gdjs.QuestionCreatorCode.GDBackBttnObjects2= [];
+gdjs.QuestionCreatorCode.GDMPIndicatorObjects1= [];
+gdjs.QuestionCreatorCode.GDMPIndicatorObjects2= [];
 
 
-gdjs.ViewCreatedQuestionsCode.eventsList0 = function(runtimeScene) {
+gdjs.QuestionCreatorCode.eventsList0 = function(runtimeScene) {
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("CurrQSelector"), gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = (gdjs.evtTools.common.toNumber((( gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1.length === 0 ) ? "" :gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1[0].getBehavior("Text").getText())) <= gdjs.evtTools.variable.getVariableChildCount(runtimeScene.getGame().getVariables().getFromIndex(5)) - 1);
-}
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("ChoiceDisplay1"), gdjs.ViewCreatedQuestionsCode.GDChoiceDisplay1Objects1);
-gdjs.copyArray(runtimeScene.getObjects("ChoiceDisplay2"), gdjs.ViewCreatedQuestionsCode.GDChoiceDisplay2Objects1);
-gdjs.copyArray(runtimeScene.getObjects("ChoiceDisplay3"), gdjs.ViewCreatedQuestionsCode.GDChoiceDisplay3Objects1);
-gdjs.copyArray(runtimeScene.getObjects("ChoiceDisplay4"), gdjs.ViewCreatedQuestionsCode.GDChoiceDisplay4Objects1);
-gdjs.copyArray(runtimeScene.getObjects("CorrectDisplay"), gdjs.ViewCreatedQuestionsCode.GDCorrectDisplayObjects1);
-/* Reuse gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1 */
-gdjs.copyArray(runtimeScene.getObjects("QuestionNameDisplay"), gdjs.ViewCreatedQuestionsCode.GDQuestionNameDisplayObjects1);
-{for(var i = 0, len = gdjs.ViewCreatedQuestionsCode.GDQuestionNameDisplayObjects1.length ;i < len;++i) {
-    gdjs.ViewCreatedQuestionsCode.GDQuestionNameDisplayObjects1[i].getBehavior("Text").setText(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(5).getChild(gdjs.evtTools.common.toNumber((( gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1.length === 0 ) ? "" :gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1[0].getBehavior("Text").getText()))).getChild("name")));
 }
-}{for(var i = 0, len = gdjs.ViewCreatedQuestionsCode.GDChoiceDisplay1Objects1.length ;i < len;++i) {
-    gdjs.ViewCreatedQuestionsCode.GDChoiceDisplay1Objects1[i].getBehavior("Text").setText(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(5).getChild(gdjs.evtTools.common.toNumber((( gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1.length === 0 ) ? "" :gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1[0].getBehavior("Text").getText()))).getChild("a1")));
-}
-}{for(var i = 0, len = gdjs.ViewCreatedQuestionsCode.GDChoiceDisplay2Objects1.length ;i < len;++i) {
-    gdjs.ViewCreatedQuestionsCode.GDChoiceDisplay2Objects1[i].getBehavior("Text").setText(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(5).getChild(gdjs.evtTools.common.toNumber((( gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1.length === 0 ) ? "" :gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1[0].getBehavior("Text").getText()))).getChild("a2")));
-}
-}{for(var i = 0, len = gdjs.ViewCreatedQuestionsCode.GDChoiceDisplay3Objects1.length ;i < len;++i) {
-    gdjs.ViewCreatedQuestionsCode.GDChoiceDisplay3Objects1[i].getBehavior("Text").setText(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(5).getChild(gdjs.evtTools.common.toNumber((( gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1.length === 0 ) ? "" :gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1[0].getBehavior("Text").getText()))).getChild("a3")));
-}
-}{for(var i = 0, len = gdjs.ViewCreatedQuestionsCode.GDChoiceDisplay4Objects1.length ;i < len;++i) {
-    gdjs.ViewCreatedQuestionsCode.GDChoiceDisplay4Objects1[i].getBehavior("Text").setText(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(5).getChild(gdjs.evtTools.common.toNumber((( gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1.length === 0 ) ? "" :gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1[0].getBehavior("Text").getText()))).getChild("a4")));
-}
-}{for(var i = 0, len = gdjs.ViewCreatedQuestionsCode.GDCorrectDisplayObjects1.length ;i < len;++i) {
-    gdjs.ViewCreatedQuestionsCode.GDCorrectDisplayObjects1[i].getBehavior("Text").setText("Correct Choice Number: " + gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(5).getChild(gdjs.evtTools.common.toNumber((( gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1.length === 0 ) ? "" :gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1[0].getBehavior("Text").getText()))).getChild("correctans")));
-}
-}}
 
 }
 
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("CurrQSelector"), gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1);
-gdjs.copyArray(runtimeScene.getObjects("MaxBttn"), gdjs.ViewCreatedQuestionsCode.GDMaxBttnObjects1);
+gdjs.copyArray(runtimeScene.getObjects("CreateButton"), gdjs.QuestionCreatorCode.GDCreateButtonObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.ViewCreatedQuestionsCode.GDMaxBttnObjects1.length;i<l;++i) {
-    if ( gdjs.ViewCreatedQuestionsCode.GDMaxBttnObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+for (var i = 0, k = 0, l = gdjs.QuestionCreatorCode.GDCreateButtonObjects1.length;i<l;++i) {
+    if ( gdjs.QuestionCreatorCode.GDCreateButtonObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
         isConditionTrue_0 = true;
-        gdjs.ViewCreatedQuestionsCode.GDMaxBttnObjects1[k] = gdjs.ViewCreatedQuestionsCode.GDMaxBttnObjects1[i];
+        gdjs.QuestionCreatorCode.GDCreateButtonObjects1[k] = gdjs.QuestionCreatorCode.GDCreateButtonObjects1[i];
         ++k;
     }
 }
-gdjs.ViewCreatedQuestionsCode.GDMaxBttnObjects1.length = k;
+gdjs.QuestionCreatorCode.GDCreateButtonObjects1.length = k;
 if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (gdjs.evtTools.common.toNumber((( gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1.length === 0 ) ? "" :gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1[0].getBehavior("Text").getText())) < gdjs.evtTools.variable.getVariableChildCount(runtimeScene.getGame().getVariables().getFromIndex(5)) - 1);
-}
-}
-if (isConditionTrue_0) {
-/* Reuse gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1 */
-{for(var i = 0, len = gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1.length ;i < len;++i) {
-    gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1[i].getBehavior("Text").setText(gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableChildCount(runtimeScene.getGame().getVariables().getFromIndex(5)) - 1));
-}
+gdjs.copyArray(runtimeScene.getObjects("Ans1Creator"), gdjs.QuestionCreatorCode.GDAns1CreatorObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Ans2Creator"), gdjs.QuestionCreatorCode.GDAns2CreatorObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Ans3Creator"), gdjs.QuestionCreatorCode.GDAns3CreatorObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Ans4Creator"), gdjs.QuestionCreatorCode.GDAns4CreatorObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ChoiceAmountCreator"), gdjs.QuestionCreatorCode.GDChoiceAmountCreatorObjects1);
+gdjs.copyArray(runtimeScene.getObjects("CorrectAnswerCreator"), gdjs.QuestionCreatorCode.GDCorrectAnswerCreatorObjects1);
+gdjs.copyArray(runtimeScene.getObjects("NameCreator"), gdjs.QuestionCreatorCode.GDNameCreatorObjects1);
+{runtimeScene.getScene().getVariables().getFromIndex(0).getChild("a1").setString((( gdjs.QuestionCreatorCode.GDAns1CreatorObjects1.length === 0 ) ? "" :gdjs.QuestionCreatorCode.GDAns1CreatorObjects1[0].getBehavior("Text").getText()));
+}{runtimeScene.getScene().getVariables().getFromIndex(0).getChild("a2").setString((( gdjs.QuestionCreatorCode.GDAns2CreatorObjects1.length === 0 ) ? "" :gdjs.QuestionCreatorCode.GDAns2CreatorObjects1[0].getBehavior("Text").getText()));
+}{runtimeScene.getScene().getVariables().getFromIndex(0).getChild("a3").setString((( gdjs.QuestionCreatorCode.GDAns3CreatorObjects1.length === 0 ) ? "" :gdjs.QuestionCreatorCode.GDAns3CreatorObjects1[0].getBehavior("Text").getText()));
+}{runtimeScene.getScene().getVariables().getFromIndex(0).getChild("a4").setString((( gdjs.QuestionCreatorCode.GDAns4CreatorObjects1.length === 0 ) ? "" :gdjs.QuestionCreatorCode.GDAns4CreatorObjects1[0].getBehavior("Text").getText()));
+}{runtimeScene.getScene().getVariables().getFromIndex(0).getChild("name").setString((( gdjs.QuestionCreatorCode.GDNameCreatorObjects1.length === 0 ) ? "" :gdjs.QuestionCreatorCode.GDNameCreatorObjects1[0].getBehavior("Text").getText()));
+}{runtimeScene.getScene().getVariables().getFromIndex(0).getChild("correctans").setNumber((( gdjs.QuestionCreatorCode.GDCorrectAnswerCreatorObjects1.length === 0 ) ? 0 :gdjs.QuestionCreatorCode.GDCorrectAnswerCreatorObjects1[0].Value((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined))));
+}{runtimeScene.getScene().getVariables().getFromIndex(0).getChild("ansamount").setNumber((( gdjs.QuestionCreatorCode.GDChoiceAmountCreatorObjects1.length === 0 ) ? 0 :gdjs.QuestionCreatorCode.GDChoiceAmountCreatorObjects1[0].Value((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined))));
+}{gdjs.evtTools.variable.variablePushCopy(runtimeScene.getGame().getVariables().getFromIndex(5), runtimeScene.getScene().getVariables().getFromIndex(0));
+}{gdjs.evtTools.variable.variableClearChildren(runtimeScene.getScene().getVariables().getFromIndex(0));
 }}
 
 }
@@ -96,42 +81,20 @@ if (isConditionTrue_0) {
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("CurrQSelector"), gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1);
+gdjs.copyArray(runtimeScene.getObjects("AnsQsButton"), gdjs.QuestionCreatorCode.GDAnsQsButtonObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = (gdjs.evtTools.common.toNumber((( gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1.length === 0 ) ? "" :gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1[0].getBehavior("Text").getText())) > gdjs.evtTools.variable.getVariableChildCount(runtimeScene.getGame().getVariables().getFromIndex(5)) - 1);
-}
-if (isConditionTrue_0) {
-/* Reuse gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1 */
-{for(var i = 0, len = gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1.length ;i < len;++i) {
-    gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1[i].getBehavior("Text").setText("0");
-}
-}}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("DeleteBttn"), gdjs.ViewCreatedQuestionsCode.GDDeleteBttnObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.ViewCreatedQuestionsCode.GDDeleteBttnObjects1.length;i<l;++i) {
-    if ( gdjs.ViewCreatedQuestionsCode.GDDeleteBttnObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+for (var i = 0, k = 0, l = gdjs.QuestionCreatorCode.GDAnsQsButtonObjects1.length;i<l;++i) {
+    if ( gdjs.QuestionCreatorCode.GDAnsQsButtonObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
         isConditionTrue_0 = true;
-        gdjs.ViewCreatedQuestionsCode.GDDeleteBttnObjects1[k] = gdjs.ViewCreatedQuestionsCode.GDDeleteBttnObjects1[i];
+        gdjs.QuestionCreatorCode.GDAnsQsButtonObjects1[k] = gdjs.QuestionCreatorCode.GDAnsQsButtonObjects1[i];
         ++k;
     }
 }
-gdjs.ViewCreatedQuestionsCode.GDDeleteBttnObjects1.length = k;
+gdjs.QuestionCreatorCode.GDAnsQsButtonObjects1.length = k;
 if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("CurrQSelector"), gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1);
-{gdjs.evtTools.variable.variableRemoveAt(runtimeScene.getGame().getVariables().getFromIndex(5), gdjs.evtTools.common.toNumber((( gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1.length === 0 ) ? "" :gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1[0].getBehavior("Text").getText())));
-}{for(var i = 0, len = gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1.length ;i < len;++i) {
-    gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1[i].getBehavior("Text").setText(gdjs.evtTools.common.toString(gdjs.evtTools.common.toNumber((gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1[i].getBehavior("Text").getText())) + 1));
-}
+{gdjs.evtTools.runtimeScene.pushScene(runtimeScene, "AnswerScreen");
 }}
 
 }
@@ -139,23 +102,20 @@ gdjs.copyArray(runtimeScene.getObjects("CurrQSelector"), gdjs.ViewCreatedQuestio
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("CurrQSelector"), gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ViewCreatedQsButton"), gdjs.QuestionCreatorCode.GDViewCreatedQsButtonObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1.length;i<l;++i) {
-    if ( gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1[i].getBehavior("Text").getText() == "-1" ) {
+for (var i = 0, k = 0, l = gdjs.QuestionCreatorCode.GDViewCreatedQsButtonObjects1.length;i<l;++i) {
+    if ( gdjs.QuestionCreatorCode.GDViewCreatedQsButtonObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
         isConditionTrue_0 = true;
-        gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1[k] = gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1[i];
+        gdjs.QuestionCreatorCode.GDViewCreatedQsButtonObjects1[k] = gdjs.QuestionCreatorCode.GDViewCreatedQsButtonObjects1[i];
         ++k;
     }
 }
-gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1.length = k;
+gdjs.QuestionCreatorCode.GDViewCreatedQsButtonObjects1.length = k;
 if (isConditionTrue_0) {
-/* Reuse gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1 */
-{for(var i = 0, len = gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1.length ;i < len;++i) {
-    gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1[i].getBehavior("Text").setText("0");
-}
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "ViewCreatedQuestions", false);
 }}
 
 }
@@ -163,41 +123,20 @@ if (isConditionTrue_0) {
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("BackBttn"), gdjs.ViewCreatedQuestionsCode.GDBackBttnObjects1);
+gdjs.copyArray(runtimeScene.getObjects("BackBttn"), gdjs.QuestionCreatorCode.GDBackBttnObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.ViewCreatedQuestionsCode.GDBackBttnObjects1.length;i<l;++i) {
-    if ( gdjs.ViewCreatedQuestionsCode.GDBackBttnObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+for (var i = 0, k = 0, l = gdjs.QuestionCreatorCode.GDBackBttnObjects1.length;i<l;++i) {
+    if ( gdjs.QuestionCreatorCode.GDBackBttnObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
         isConditionTrue_0 = true;
-        gdjs.ViewCreatedQuestionsCode.GDBackBttnObjects1[k] = gdjs.ViewCreatedQuestionsCode.GDBackBttnObjects1[i];
+        gdjs.QuestionCreatorCode.GDBackBttnObjects1[k] = gdjs.QuestionCreatorCode.GDBackBttnObjects1[i];
         ++k;
     }
 }
-gdjs.ViewCreatedQuestionsCode.GDBackBttnObjects1.length = k;
+gdjs.QuestionCreatorCode.GDBackBttnObjects1.length = k;
 if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "QuestionCreator", false);
-}}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("SaveKitButton"), gdjs.ViewCreatedQuestionsCode.GDSaveKitButtonObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.ViewCreatedQuestionsCode.GDSaveKitButtonObjects1.length;i<l;++i) {
-    if ( gdjs.ViewCreatedQuestionsCode.GDSaveKitButtonObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
-        isConditionTrue_0 = true;
-        gdjs.ViewCreatedQuestionsCode.GDSaveKitButtonObjects1[k] = gdjs.ViewCreatedQuestionsCode.GDSaveKitButtonObjects1[i];
-        ++k;
-    }
-}
-gdjs.ViewCreatedQuestionsCode.GDSaveKitButtonObjects1.length = k;
-if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "SaveKitScreen", false);
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Home", false);
 }}
 
 }
@@ -205,36 +144,42 @@ if (isConditionTrue_0) {
 
 };
 
-gdjs.ViewCreatedQuestionsCode.func = function(runtimeScene) {
+gdjs.QuestionCreatorCode.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
 
-gdjs.ViewCreatedQuestionsCode.GDQuestionNameDisplayObjects1.length = 0;
-gdjs.ViewCreatedQuestionsCode.GDQuestionNameDisplayObjects2.length = 0;
-gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1.length = 0;
-gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects2.length = 0;
-gdjs.ViewCreatedQuestionsCode.GDMaxBttnObjects1.length = 0;
-gdjs.ViewCreatedQuestionsCode.GDMaxBttnObjects2.length = 0;
-gdjs.ViewCreatedQuestionsCode.GDDeleteBttnObjects1.length = 0;
-gdjs.ViewCreatedQuestionsCode.GDDeleteBttnObjects2.length = 0;
-gdjs.ViewCreatedQuestionsCode.GDChoiceDisplay1Objects1.length = 0;
-gdjs.ViewCreatedQuestionsCode.GDChoiceDisplay1Objects2.length = 0;
-gdjs.ViewCreatedQuestionsCode.GDChoiceDisplay2Objects1.length = 0;
-gdjs.ViewCreatedQuestionsCode.GDChoiceDisplay2Objects2.length = 0;
-gdjs.ViewCreatedQuestionsCode.GDChoiceDisplay3Objects1.length = 0;
-gdjs.ViewCreatedQuestionsCode.GDChoiceDisplay3Objects2.length = 0;
-gdjs.ViewCreatedQuestionsCode.GDChoiceDisplay4Objects1.length = 0;
-gdjs.ViewCreatedQuestionsCode.GDChoiceDisplay4Objects2.length = 0;
-gdjs.ViewCreatedQuestionsCode.GDCorrectDisplayObjects1.length = 0;
-gdjs.ViewCreatedQuestionsCode.GDCorrectDisplayObjects2.length = 0;
-gdjs.ViewCreatedQuestionsCode.GDBackBttnObjects1.length = 0;
-gdjs.ViewCreatedQuestionsCode.GDBackBttnObjects2.length = 0;
-gdjs.ViewCreatedQuestionsCode.GDSaveKitButtonObjects1.length = 0;
-gdjs.ViewCreatedQuestionsCode.GDSaveKitButtonObjects2.length = 0;
+gdjs.QuestionCreatorCode.GDNameCreatorObjects1.length = 0;
+gdjs.QuestionCreatorCode.GDNameCreatorObjects2.length = 0;
+gdjs.QuestionCreatorCode.GDChoiceAmountCreatorObjects1.length = 0;
+gdjs.QuestionCreatorCode.GDChoiceAmountCreatorObjects2.length = 0;
+gdjs.QuestionCreatorCode.GDCorrectAnswerCreatorObjects1.length = 0;
+gdjs.QuestionCreatorCode.GDCorrectAnswerCreatorObjects2.length = 0;
+gdjs.QuestionCreatorCode.GDAns1CreatorObjects1.length = 0;
+gdjs.QuestionCreatorCode.GDAns1CreatorObjects2.length = 0;
+gdjs.QuestionCreatorCode.GDAns2CreatorObjects1.length = 0;
+gdjs.QuestionCreatorCode.GDAns2CreatorObjects2.length = 0;
+gdjs.QuestionCreatorCode.GDAns3CreatorObjects1.length = 0;
+gdjs.QuestionCreatorCode.GDAns3CreatorObjects2.length = 0;
+gdjs.QuestionCreatorCode.GDAns4CreatorObjects1.length = 0;
+gdjs.QuestionCreatorCode.GDAns4CreatorObjects2.length = 0;
+gdjs.QuestionCreatorCode.GDLabel1Objects1.length = 0;
+gdjs.QuestionCreatorCode.GDLabel1Objects2.length = 0;
+gdjs.QuestionCreatorCode.GDLabel2Objects1.length = 0;
+gdjs.QuestionCreatorCode.GDLabel2Objects2.length = 0;
+gdjs.QuestionCreatorCode.GDCreateButtonObjects1.length = 0;
+gdjs.QuestionCreatorCode.GDCreateButtonObjects2.length = 0;
+gdjs.QuestionCreatorCode.GDAnsQsButtonObjects1.length = 0;
+gdjs.QuestionCreatorCode.GDAnsQsButtonObjects2.length = 0;
+gdjs.QuestionCreatorCode.GDViewCreatedQsButtonObjects1.length = 0;
+gdjs.QuestionCreatorCode.GDViewCreatedQsButtonObjects2.length = 0;
+gdjs.QuestionCreatorCode.GDBackBttnObjects1.length = 0;
+gdjs.QuestionCreatorCode.GDBackBttnObjects2.length = 0;
+gdjs.QuestionCreatorCode.GDMPIndicatorObjects1.length = 0;
+gdjs.QuestionCreatorCode.GDMPIndicatorObjects2.length = 0;
 
-gdjs.ViewCreatedQuestionsCode.eventsList0(runtimeScene);
+gdjs.QuestionCreatorCode.eventsList0(runtimeScene);
 
 return;
 
 }
 
-gdjs['ViewCreatedQuestionsCode'] = gdjs.ViewCreatedQuestionsCode;
+gdjs['QuestionCreatorCode'] = gdjs.QuestionCreatorCode;

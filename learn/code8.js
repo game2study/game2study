@@ -15,6 +15,8 @@ gdjs.gm1pmenu1Code.GDSFXSliderObjects1= [];
 gdjs.gm1pmenu1Code.GDSFXSliderObjects2= [];
 gdjs.gm1pmenu1Code.GDVolumeSliderLabel2Objects1= [];
 gdjs.gm1pmenu1Code.GDVolumeSliderLabel2Objects2= [];
+gdjs.gm1pmenu1Code.GDMPIndicatorObjects1= [];
+gdjs.gm1pmenu1Code.GDMPIndicatorObjects2= [];
 
 
 gdjs.gm1pmenu1Code.eventsList0 = function(runtimeScene) {
@@ -146,6 +148,8 @@ gdjs.gm1pmenu1Code.GDSFXSliderObjects1.length = 0;
 gdjs.gm1pmenu1Code.GDSFXSliderObjects2.length = 0;
 gdjs.gm1pmenu1Code.GDVolumeSliderLabel2Objects1.length = 0;
 gdjs.gm1pmenu1Code.GDVolumeSliderLabel2Objects2.length = 0;
+gdjs.gm1pmenu1Code.GDMPIndicatorObjects1.length = 0;
+gdjs.gm1pmenu1Code.GDMPIndicatorObjects2.length = 0;
 
 gdjs.gm1pmenu1Code.eventsList0(runtimeScene);
 

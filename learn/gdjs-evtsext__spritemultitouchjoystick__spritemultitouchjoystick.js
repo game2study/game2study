@@ -4,7 +4,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick = gdjs.evtsExt_
 /**
  * Object generated from Multitouch Joystick
  */
-gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick = class SpriteMultitouchJoystick extends gdjs.CustomRuntimeObject {
+gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick = class SpriteMultitouchJoystick extends gdjs.CustomRuntimeObject2D {
   constructor(parentInstanceContainer, objectData) {
     super(parentInstanceContainer, objectData);
     this._parentInstanceContainer = parentInstanceContainer;
@@ -19,6 +19,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
     this._objectData.ThumbAnchorTarget = Number("Center-center") || 0;
     this._objectData.ThumbIsScaledProportionally = true;
     this._objectData.ParentOrigin = "Center-center";
+    
 
     // It calls the onCreated super implementation at the end.
     this.onCreated();
@@ -93,6 +94,10 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
   _setParentOrigin(newValue) {
     this._objectData.ParentOrigin = newValue;
   }
+
+  
+
+  
 }
 
 // Methods:

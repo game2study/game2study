@@ -149,6 +149,11 @@ gdjs.gm1Code.GDNewShapePainterObjects2= [];
 gdjs.gm1Code.GDNewShapePainterObjects3= [];
 gdjs.gm1Code.GDNewShapePainterObjects4= [];
 gdjs.gm1Code.GDNewShapePainterObjects5= [];
+gdjs.gm1Code.GDMPIndicatorObjects1= [];
+gdjs.gm1Code.GDMPIndicatorObjects2= [];
+gdjs.gm1Code.GDMPIndicatorObjects3= [];
+gdjs.gm1Code.GDMPIndicatorObjects4= [];
+gdjs.gm1Code.GDMPIndicatorObjects5= [];
 
 
 gdjs.gm1Code.mapOfGDgdjs_9546gm1Code_9546GDJoyStickObjects1Objects = Hashtable.newFrom({"JoyStick": gdjs.gm1Code.GDJoyStickObjects1});
@@ -166,7 +171,7 @@ gdjs.gm1Code.mapOfGDgdjs_9546gm1Code_9546GDPinkBlobObjects1Objects = Hashtable.n
 gdjs.gm1Code.mapOfGDgdjs_9546gm1Code_9546GD_959595953dModelFloorHitboxObjects1Objects = Hashtable.newFrom({"_3dModelFloorHitbox": gdjs.gm1Code.GD_95953dModelFloorHitboxObjects1});
 gdjs.gm1Code.mapOfGDgdjs_9546gm1Code_9546GDPinkBlobObjects1Objects = Hashtable.newFrom({"PinkBlob": gdjs.gm1Code.GDPinkBlobObjects1});
 gdjs.gm1Code.mapOfGDgdjs_9546gm1Code_9546GD_959595953dModelFloorHitboxObjects1Objects = Hashtable.newFrom({"_3dModelFloorHitbox": gdjs.gm1Code.GD_95953dModelFloorHitboxObjects1});
-gdjs.gm1Code.asyncCallback20593060 = function (runtimeScene, asyncObjectsList) {
+gdjs.gm1Code.asyncCallback19242364 = function (runtimeScene, asyncObjectsList) {
 gdjs.copyArray(asyncObjectsList.getObjects("PinkBlob"), gdjs.gm1Code.GDPinkBlobObjects3);
 
 {for(var i = 0, len = gdjs.gm1Code.GDPinkBlobObjects3.length ;i < len;++i) {
@@ -182,7 +187,7 @@ gdjs.gm1Code.eventsList0 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 for (const obj of gdjs.gm1Code.GDPinkBlobObjects2) asyncObjectsList.addObject("PinkBlob", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(10), (runtimeScene) => (gdjs.gm1Code.asyncCallback20593060(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(10), (runtimeScene) => (gdjs.gm1Code.asyncCallback19242364(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -457,7 +462,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.gm1Code.asyncCallback20604548 = function (runtimeScene, asyncObjectsList) {
+};gdjs.gm1Code.asyncCallback25198388 = function (runtimeScene, asyncObjectsList) {
 
 { //Subevents
 gdjs.gm1Code.eventsList5(runtimeScene, asyncObjectsList);} //End of subevents
@@ -471,7 +476,7 @@ gdjs.gm1Code.eventsList6 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 for (const obj of gdjs.gm1Code.GDPinkBlobObjects2) asyncObjectsList.addObject("PinkBlob", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5), (runtimeScene) => (gdjs.gm1Code.asyncCallback20604548(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5), (runtimeScene) => (gdjs.gm1Code.asyncCallback25198388(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -481,7 +486,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5)
 };gdjs.gm1Code.mapOfGDgdjs_9546gm1Code_9546GDCoinGoldObjects2Objects = Hashtable.newFrom({"CoinGold": gdjs.gm1Code.GDCoinGoldObjects2});
 gdjs.gm1Code.mapOfGDgdjs_9546gm1Code_9546GDPinkBlobObjects2Objects = Hashtable.newFrom({"PinkBlob": gdjs.gm1Code.GDPinkBlobObjects2});
 gdjs.gm1Code.mapOfGDgdjs_9546gm1Code_9546GDPinkBlobObjects2Objects = Hashtable.newFrom({"PinkBlob": gdjs.gm1Code.GDPinkBlobObjects2});
-gdjs.gm1Code.asyncCallback20613268 = function (runtimeScene, asyncObjectsList) {
+gdjs.gm1Code.asyncCallback25205028 = function (runtimeScene, asyncObjectsList) {
 gdjs.copyArray(runtimeScene.getObjects("BulletCount"), gdjs.gm1Code.GDBulletCountObjects4);
 {gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "reload", 2, false, runtimeScene.getGame().getVariables().getFromIndex(0).getAsNumber(), 1);
 }{for(var i = 0, len = gdjs.gm1Code.GDBulletCountObjects4.length ;i < len;++i) {
@@ -498,14 +503,14 @@ gdjs.gm1Code.eventsList7 = function(runtimeScene, asyncObjectsList) {
 const parentAsyncObjectsList = asyncObjectsList;
 {
 const asyncObjectsList = gdjs.LongLivedObjectsList.from(parentAsyncObjectsList);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.1), (runtimeScene) => (gdjs.gm1Code.asyncCallback20613268(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.1), (runtimeScene) => (gdjs.gm1Code.asyncCallback25205028(runtimeScene, asyncObjectsList)));
 }
 }
 
 }
 
 
-};gdjs.gm1Code.asyncCallback20613340 = function (runtimeScene, asyncObjectsList) {
+};gdjs.gm1Code.asyncCallback25230380 = function (runtimeScene, asyncObjectsList) {
 gdjs.copyArray(asyncObjectsList.getObjects("Gun"), gdjs.gm1Code.GDGunObjects3);
 
 {for(var i = 0, len = gdjs.gm1Code.GDGunObjects3.length ;i < len;++i) {
@@ -525,7 +530,7 @@ gdjs.gm1Code.eventsList8 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 for (const obj of gdjs.gm1Code.GDGunObjects2) asyncObjectsList.addObject("Gun", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), (runtimeScene) => (gdjs.gm1Code.asyncCallback20613340(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), (runtimeScene) => (gdjs.gm1Code.asyncCallback25230380(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -1241,6 +1246,178 @@ gdjs.copyArray(runtimeScene.getObjects("Student"), gdjs.gm1Code.GDStudentObjects
 
 
 let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{let isConditionTrue_1 = false;
+isConditionTrue_0 = false;
+{
+isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "w");
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+isConditionTrue_1 = gdjs.evtsExt__Gamepads__C_Axis_pushed.func(runtimeScene, 1, "Left", "Up", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+}
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Student"), gdjs.gm1Code.GDStudentObjects1);
+{for(var i = 0, len = gdjs.gm1Code.GDStudentObjects1.length ;i < len;++i) {
+    gdjs.gm1Code.GDStudentObjects1[i].getBehavior("FPSCharacter").SetKeySimulate("w", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{let isConditionTrue_1 = false;
+isConditionTrue_0 = false;
+{
+isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "a");
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+isConditionTrue_1 = gdjs.evtsExt__Gamepads__C_Axis_pushed.func(runtimeScene, 1, "Left", "Left", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+}
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Student"), gdjs.gm1Code.GDStudentObjects1);
+{for(var i = 0, len = gdjs.gm1Code.GDStudentObjects1.length ;i < len;++i) {
+    gdjs.gm1Code.GDStudentObjects1[i].getBehavior("FPSCharacter").SetKeySimulate("a", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{let isConditionTrue_1 = false;
+isConditionTrue_0 = false;
+{
+isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "s");
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+isConditionTrue_1 = gdjs.evtsExt__Gamepads__C_Axis_pushed.func(runtimeScene, 1, "Left", "Down", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+}
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Student"), gdjs.gm1Code.GDStudentObjects1);
+{for(var i = 0, len = gdjs.gm1Code.GDStudentObjects1.length ;i < len;++i) {
+    gdjs.gm1Code.GDStudentObjects1[i].getBehavior("FPSCharacter").SetKeySimulate("s", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{let isConditionTrue_1 = false;
+isConditionTrue_0 = false;
+{
+isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "d");
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+isConditionTrue_1 = gdjs.evtsExt__Gamepads__C_Axis_pushed.func(runtimeScene, 1, "Left", "Right", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+}
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Student"), gdjs.gm1Code.GDStudentObjects1);
+{for(var i = 0, len = gdjs.gm1Code.GDStudentObjects1.length ;i < len;++i) {
+    gdjs.gm1Code.GDStudentObjects1[i].getBehavior("FPSCharacter").SetKeySimulate("d", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = !(gdjs.evtTools.input.isKeyPressed(runtimeScene, "w"));
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = !(gdjs.evtTools.input.isKeyPressed(runtimeScene, "a"));
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = !(gdjs.evtTools.input.isKeyPressed(runtimeScene, "s"));
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = !(gdjs.evtTools.input.isKeyPressed(runtimeScene, "d"));
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = !(gdjs.evtsExt__Gamepads__C_Axis_pushed.func(runtimeScene, 1, "Left", "Up", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = !(gdjs.evtsExt__Gamepads__C_Axis_pushed.func(runtimeScene, 1, "Left", "Left", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = !(gdjs.evtsExt__Gamepads__C_Axis_pushed.func(runtimeScene, 1, "Left", "Down", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = !(gdjs.evtsExt__Gamepads__C_Axis_pushed.func(runtimeScene, 1, "Left", "Right", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
+}
+}
+}
+}
+}
+}
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Student"), gdjs.gm1Code.GDStudentObjects1);
+{for(var i = 0, len = gdjs.gm1Code.GDStudentObjects1.length ;i < len;++i) {
+    gdjs.gm1Code.GDStudentObjects1[i].getBehavior("FPSCharacter").SetKeySimulate("none", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(runtimeScene.getObjects("MountainSingle"), gdjs.gm1Code.GDMountainSingleObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Student"), gdjs.gm1Code.GDStudentObjects1);
@@ -1773,6 +1950,18 @@ if (isConditionTrue_0) {
 }
 
 
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtsExt__Gamepads__C_Controller_X_is_connected.func(runtimeScene, 1, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+if (isConditionTrue_0) {
+}
+
+}
+
+
 };
 
 gdjs.gm1Code.func = function(runtimeScene) {
@@ -1928,6 +2117,11 @@ gdjs.gm1Code.GDNewShapePainterObjects2.length = 0;
 gdjs.gm1Code.GDNewShapePainterObjects3.length = 0;
 gdjs.gm1Code.GDNewShapePainterObjects4.length = 0;
 gdjs.gm1Code.GDNewShapePainterObjects5.length = 0;
+gdjs.gm1Code.GDMPIndicatorObjects1.length = 0;
+gdjs.gm1Code.GDMPIndicatorObjects2.length = 0;
+gdjs.gm1Code.GDMPIndicatorObjects3.length = 0;
+gdjs.gm1Code.GDMPIndicatorObjects4.length = 0;
+gdjs.gm1Code.GDMPIndicatorObjects5.length = 0;
 
 gdjs.gm1Code.eventsList18(runtimeScene);
 

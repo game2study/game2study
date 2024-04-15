@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__ThreeDimensionsPlatforming__isPointerLocked !== "undefi
 gdjs.evtsExt__ThreeDimensionsPlatforming__isPointerLocked = {};
 
 
-gdjs.evtsExt__ThreeDimensionsPlatforming__isPointerLocked.userFunc0x10a2a80 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ThreeDimensionsPlatforming__isPointerLocked.userFunc0xaf1af0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext.returnValue = document.pointerLockElement ? true : false;
 };
@@ -17,7 +17,7 @@ gdjs.evtsExt__ThreeDimensionsPlatforming__isPointerLocked.eventsList0 = function
 {
 
 
-gdjs.evtsExt__ThreeDimensionsPlatforming__isPointerLocked.userFunc0x10a2a80(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ThreeDimensionsPlatforming__isPointerLocked.userFunc0xaf1af0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

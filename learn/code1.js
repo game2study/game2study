@@ -37,6 +37,8 @@ gdjs.Debug_32MenuCode.GDSceneSwitchHomeObjects1= [];
 gdjs.Debug_32MenuCode.GDSceneSwitchHomeObjects2= [];
 gdjs.Debug_32MenuCode.GDUploadKitButtonObjects1= [];
 gdjs.Debug_32MenuCode.GDUploadKitButtonObjects2= [];
+gdjs.Debug_32MenuCode.GDMPIndicatorObjects1= [];
+gdjs.Debug_32MenuCode.GDMPIndicatorObjects2= [];
 
 
 gdjs.Debug_32MenuCode.eventsList0 = function(runtimeScene) {
@@ -421,6 +423,29 @@ if (isConditionTrue_0) {
 
 {
 
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtsExt__BackButton__onBackButtonPressed.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.popScene(runtimeScene);
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+}
+
+}
+
+
+{
+
 gdjs.copyArray(runtimeScene.getObjects("UploadKitButton"), gdjs.Debug_32MenuCode.GDUploadKitButtonObjects1);
 
 let isConditionTrue_0 = false;
@@ -496,6 +521,8 @@ gdjs.Debug_32MenuCode.GDSceneSwitchHomeObjects1.length = 0;
 gdjs.Debug_32MenuCode.GDSceneSwitchHomeObjects2.length = 0;
 gdjs.Debug_32MenuCode.GDUploadKitButtonObjects1.length = 0;
 gdjs.Debug_32MenuCode.GDUploadKitButtonObjects2.length = 0;
+gdjs.Debug_32MenuCode.GDMPIndicatorObjects1.length = 0;
+gdjs.Debug_32MenuCode.GDMPIndicatorObjects2.length = 0;
 
 gdjs.Debug_32MenuCode.eventsList0(runtimeScene);
 

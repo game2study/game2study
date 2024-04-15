@@ -15,7 +15,7 @@ gdjs.evtsExt__RepeatEveryXSeconds__Repeat.eventsList0 = function(runtimeScene, e
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(19631996);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(24215644);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? "" + eventsFunctionContext.getArgument("timerName") : ""));

@@ -13,6 +13,8 @@ gdjs.gm1pmenu2Code.GDCreditLabelObjects1= [];
 gdjs.gm1pmenu2Code.GDCreditLabelObjects2= [];
 gdjs.gm1pmenu2Code.GDCoinLabelObjects1= [];
 gdjs.gm1pmenu2Code.GDCoinLabelObjects2= [];
+gdjs.gm1pmenu2Code.GDMPIndicatorObjects1= [];
+gdjs.gm1pmenu2Code.GDMPIndicatorObjects2= [];
 
 
 gdjs.gm1pmenu2Code.mapOfGDgdjs_9546gm1pmenu2Code_9546GDAK47Objects1Objects = Hashtable.newFrom({"AK47": gdjs.gm1pmenu2Code.GDAK47Objects1});
@@ -195,6 +197,8 @@ gdjs.gm1pmenu2Code.GDCreditLabelObjects1.length = 0;
 gdjs.gm1pmenu2Code.GDCreditLabelObjects2.length = 0;
 gdjs.gm1pmenu2Code.GDCoinLabelObjects1.length = 0;
 gdjs.gm1pmenu2Code.GDCoinLabelObjects2.length = 0;
+gdjs.gm1pmenu2Code.GDMPIndicatorObjects1.length = 0;
+gdjs.gm1pmenu2Code.GDMPIndicatorObjects2.length = 0;
 
 gdjs.gm1pmenu2Code.eventsList0(runtimeScene);
 

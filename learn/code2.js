@@ -9,6 +9,8 @@ gdjs.ManageKitsCode.GDKitNameObjects1= [];
 gdjs.ManageKitsCode.GDKitNameObjects2= [];
 gdjs.ManageKitsCode.GDOnScreenControlsButtonObjects1= [];
 gdjs.ManageKitsCode.GDOnScreenControlsButtonObjects2= [];
+gdjs.ManageKitsCode.GDMPIndicatorObjects1= [];
+gdjs.ManageKitsCode.GDMPIndicatorObjects2= [];
 
 
 gdjs.ManageKitsCode.eventsList0 = function(runtimeScene) {
@@ -161,6 +163,29 @@ if (isConditionTrue_0) {
 }
 
 
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtsExt__BackButton__onBackButtonPressed.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.popScene(runtimeScene);
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+}
+
+}
+
+
 };
 
 gdjs.ManageKitsCode.func = function(runtimeScene) {
@@ -176,6 +201,8 @@ gdjs.ManageKitsCode.GDKitNameObjects1.length = 0;
 gdjs.ManageKitsCode.GDKitNameObjects2.length = 0;
 gdjs.ManageKitsCode.GDOnScreenControlsButtonObjects1.length = 0;
 gdjs.ManageKitsCode.GDOnScreenControlsButtonObjects2.length = 0;
+gdjs.ManageKitsCode.GDMPIndicatorObjects1.length = 0;
+gdjs.ManageKitsCode.GDMPIndicatorObjects2.length = 0;
 
 gdjs.ManageKitsCode.eventsList0(runtimeScene);
 

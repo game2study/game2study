@@ -4,7 +4,7 @@ gdjs.evtsExt__PanelSpriteContinuousBar__PanelSpriteContinuousBar = gdjs.evtsExt_
 /**
  * Object generated from Resource bar (continuous)
  */
-gdjs.evtsExt__PanelSpriteContinuousBar__PanelSpriteContinuousBar.PanelSpriteContinuousBar = class PanelSpriteContinuousBar extends gdjs.CustomRuntimeObject {
+gdjs.evtsExt__PanelSpriteContinuousBar__PanelSpriteContinuousBar.PanelSpriteContinuousBar = class PanelSpriteContinuousBar extends gdjs.CustomRuntimeObject2D {
   constructor(parentInstanceContainer, objectData) {
     super(parentInstanceContainer, objectData);
     this._parentInstanceContainer = parentInstanceContainer;
@@ -25,6 +25,7 @@ gdjs.evtsExt__PanelSpriteContinuousBar__PanelSpriteContinuousBar.PanelSpriteCont
     this._objectData.ShowBuffer = false;
     this._objectData.LabelVerticalAnchorOrigin = "Center";
     this._objectData.LabelVerticalAnchorTarget = "Center";
+    
 
     // It calls the onCreated super implementation at the end.
     this.onCreated();
@@ -150,6 +151,10 @@ gdjs.evtsExt__PanelSpriteContinuousBar__PanelSpriteContinuousBar.PanelSpriteCont
   _setLabelVerticalAnchorTarget(newValue) {
     this._objectData.LabelVerticalAnchorTarget = newValue;
   }
+
+  
+
+  
 }
 
 // Methods:
@@ -742,7 +747,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteContinuousBar__PanelSpriteCo
 gdjs.evtsExt__PanelSpriteContinuousBar__PanelSpriteContinuousBar.PanelSpriteContinuousBar.prototype.doStepPostEventsContext.GDObjectObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(19677404);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(24261052);
 }
 }
 if (isConditionTrue_0) {
