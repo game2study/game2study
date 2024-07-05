@@ -1,7 +1,7 @@
 {
-  "name": "The Learning but Fun Project",
-  "short_name": "The Learning but Fun Project",
-  "id": "com.example.tlbfp",
+  "name": "Game2Study",
+  "short_name": "Game2Study",
+  "id": "com.example.game2study",
   "description": "a project that aspires to make learning fun",
   "orientation": "landscape",
   "start_url": "./index.html",

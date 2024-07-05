@@ -49,6 +49,9 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("SelectionTools"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("SelectionTools"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

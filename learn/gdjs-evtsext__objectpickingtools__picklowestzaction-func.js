@@ -9,7 +9,7 @@ gdjs.evtsExt__ObjectPickingTools__PickLowestZAction = {};
 gdjs.evtsExt__ObjectPickingTools__PickLowestZAction.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__ObjectPickingTools__PickLowestZAction.userFunc0xc15800 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ObjectPickingTools__PickLowestZAction.userFunc0x24932b8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 // Create an empty array to hold the objects with the lowest value
 let lowestValueObjects = [];
@@ -49,7 +49,7 @@ gdjs.evtsExt__ObjectPickingTools__PickLowestZAction.eventsList0 = function(runti
 {
 
 
-gdjs.evtsExt__ObjectPickingTools__PickLowestZAction.userFunc0xc15800(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ObjectPickingTools__PickLowestZAction.userFunc0x24932b8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -66,6 +66,9 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("ObjectPickingTools"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("ObjectPickingTools"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

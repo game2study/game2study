@@ -1,4 +1,5 @@
 gdjs.mpsl2ssCode = {};
+gdjs.mpsl2ssCode.localVariables = [];
 
 
 gdjs.mpsl2ssCode.eventsList0 = function(runtimeScene) {

@@ -70,6 +70,9 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("ThreeDimensionsPlatforming"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("ThreeDimensionsPlatforming"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

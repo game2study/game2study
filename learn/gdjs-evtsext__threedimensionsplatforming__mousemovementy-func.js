@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__ThreeDimensionsPlatforming__MouseMovementY !== "undefin
 gdjs.evtsExt__ThreeDimensionsPlatforming__MouseMovementY = {};
 
 
-gdjs.evtsExt__ThreeDimensionsPlatforming__MouseMovementY.userFunc0x11cf430 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ThreeDimensionsPlatforming__MouseMovementY.userFunc0x258d910 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext.returnValue = gdjs._MousePointerLockExtension.movement.y || 0;
 };
@@ -17,7 +17,7 @@ gdjs.evtsExt__ThreeDimensionsPlatforming__MouseMovementY.eventsList0 = function(
 {
 
 
-gdjs.evtsExt__ThreeDimensionsPlatforming__MouseMovementY.userFunc0x11cf430(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ThreeDimensionsPlatforming__MouseMovementY.userFunc0x258d910(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -32,6 +32,9 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("ThreeDimensionsPlatforming"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("ThreeDimensionsPlatforming"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

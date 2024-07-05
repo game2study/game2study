@@ -1,4 +1,5 @@
 gdjs.ViewCreatedQuestionsCode = {};
+gdjs.ViewCreatedQuestionsCode.localVariables = [];
 gdjs.ViewCreatedQuestionsCode.GDQuestionNameDisplayObjects1= [];
 gdjs.ViewCreatedQuestionsCode.GDQuestionNameDisplayObjects2= [];
 gdjs.ViewCreatedQuestionsCode.GDCurrQSelectorObjects1= [];

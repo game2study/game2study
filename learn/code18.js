@@ -1,4 +1,5 @@
 gdjs.ImportFlashcardsCode = {};
+gdjs.ImportFlashcardsCode.localVariables = [];
 gdjs.ImportFlashcardsCode.GDjsoninputObjects1= [];
 gdjs.ImportFlashcardsCode.GDjsoninputObjects2= [];
 gdjs.ImportFlashcardsCode.GDConfirmButtonObjects1= [];

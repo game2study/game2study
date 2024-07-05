@@ -8,9 +8,9 @@ if (typeof gdjs.evtsExt__UploadDownloadTextFile__UploadTextFile !== "undefined")
 gdjs.evtsExt__UploadDownloadTextFile__UploadTextFile = {};
 
 
-gdjs.evtsExt__UploadDownloadTextFile__UploadTextFile.userFunc0x18f0f40 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__UploadDownloadTextFile__UploadTextFile.userFunc0x2496920 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
-const allowedFileTypes = ["text/plain", "application/json"];
+const allowedFileTypes = [eventsFunctionContext.getArgument("allowedfiletype")];
 
 const InputElement = document.createElement('input');
 InputElement.type = "file";
@@ -44,14 +44,14 @@ gdjs.evtsExt__UploadDownloadTextFile__UploadTextFile.eventsList0 = function(runt
 
 
 var objects = [];
-gdjs.evtsExt__UploadDownloadTextFile__UploadTextFile.userFunc0x18f0f40(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__UploadDownloadTextFile__UploadTextFile.userFunc0x2496920(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
 
 };
 
-gdjs.evtsExt__UploadDownloadTextFile__UploadTextFile.func = function(runtimeScene, SceneVariable, parentEventsFunctionContext) {
+gdjs.evtsExt__UploadDownloadTextFile__UploadTextFile.func = function(runtimeScene, SceneVariable, allowedfiletype, parentEventsFunctionContext) {
 var eventsFunctionContext = {
   _objectsMap: {
 },
@@ -59,6 +59,9 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("UploadDownloadTextFile"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("UploadDownloadTextFile"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -97,6 +100,7 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
   },
   getArgument: function(argName) {
 if (argName === "SceneVariable") return SceneVariable;
+if (argName === "allowedfiletype") return allowedfiletype;
     return "";
   },
   getOnceTriggers: function() { return runtimeScene.getOnceTriggers(); }

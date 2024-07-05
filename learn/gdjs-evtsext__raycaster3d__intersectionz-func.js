@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__Raycaster3D__IntersectionZ !== "undefined") {
 gdjs.evtsExt__Raycaster3D__IntersectionZ = {};
 
 
-gdjs.evtsExt__Raycaster3D__IntersectionZ.userFunc0xaa4080 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Raycaster3D__IntersectionZ.userFunc0x24932b8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext.returnValue = gdjs.__raycaster3DExtension.raycaster.lastPositionZ;
 };
@@ -17,7 +17,7 @@ gdjs.evtsExt__Raycaster3D__IntersectionZ.eventsList0 = function(runtimeScene, ev
 {
 
 
-gdjs.evtsExt__Raycaster3D__IntersectionZ.userFunc0xaa4080(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Raycaster3D__IntersectionZ.userFunc0x24932b8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -32,6 +32,9 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Raycaster3D"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Raycaster3D"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

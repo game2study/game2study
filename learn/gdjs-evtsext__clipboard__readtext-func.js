@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__Clipboard__ReadText !== "undefined") {
 gdjs.evtsExt__Clipboard__ReadText = {};
 
 
-gdjs.evtsExt__Clipboard__ReadText.userFunc0xce2730 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Clipboard__ReadText.userFunc0x24932b8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 const electron = runtimeScene.getGame().getRenderer().getElectron();
 if (electron && electron.clipboard) eventsFunctionContext.returnValue = electron.clipboard.readText();
@@ -26,7 +26,7 @@ gdjs.evtsExt__Clipboard__ReadText.eventsList0 = function(runtimeScene, eventsFun
 {
 
 
-gdjs.evtsExt__Clipboard__ReadText.userFunc0xce2730(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Clipboard__ReadText.userFunc0x24932b8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -41,6 +41,9 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Clipboard"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Clipboard"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

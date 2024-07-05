@@ -10,7 +10,7 @@ gdjs.evtsExt__ObjectPickingTools__UnpickCondition.GDobjectObjects1= [];
 gdjs.evtsExt__ObjectPickingTools__UnpickCondition.GDobjectObjects2= [];
 
 
-gdjs.evtsExt__ObjectPickingTools__UnpickCondition.userFunc0xc15800 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ObjectPickingTools__UnpickCondition.userFunc0x24932b8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 const lists = eventsFunctionContext.getObjectsLists("object").items;
 for (const listName in lists)
@@ -22,7 +22,7 @@ gdjs.evtsExt__ObjectPickingTools__UnpickCondition.eventsList0 = function(runtime
 {
 
 
-gdjs.evtsExt__ObjectPickingTools__UnpickCondition.userFunc0xc15800(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ObjectPickingTools__UnpickCondition.userFunc0x24932b8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -49,6 +49,9 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("ObjectPickingTools"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("ObjectPickingTools"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

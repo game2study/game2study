@@ -34,6 +34,29 @@ gdjs.evtsExt__SpriteToggleSwitch__SwitchFSM.SwitchFSM = class SwitchFSM extends 
     return true;
   }
 
+  // Network sync:
+  getNetworkSyncData() {
+    return {
+      ...super.getNetworkSyncData(),
+      props: {
+        
+    ButtonFSM: this._behaviorData.ButtonFSM,
+    IsChecked: this._behaviorData.IsChecked,
+    WasChecked: this._behaviorData.WasChecked,
+      }
+    };
+  }
+  updateFromNetworkSyncData(networkSyncData) {
+    super.updateFromNetworkSyncData(networkSyncData);
+    
+    if (networkSyncData.props.ButtonFSM !== undefined)
+      this._behaviorData.ButtonFSM = networkSyncData.props.ButtonFSM;
+    if (networkSyncData.props.IsChecked !== undefined)
+      this._behaviorData.IsChecked = networkSyncData.props.IsChecked;
+    if (networkSyncData.props.WasChecked !== undefined)
+      this._behaviorData.WasChecked = networkSyncData.props.WasChecked;
+  }
+
   // Properties:
   
   _getButtonFSM() {
@@ -176,6 +199,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "ButtonFSM": this._getButtonFSM()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("SpriteToggleSwitch"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("SpriteToggleSwitch"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -272,6 +298,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "ButtonFSM": this._getButtonFSM()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("SpriteToggleSwitch"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("SpriteToggleSwitch"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -379,6 +408,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "ButtonFSM": this._getButtonFSM()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("SpriteToggleSwitch"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("SpriteToggleSwitch"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -486,6 +518,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "ButtonFSM": this._getButtonFSM()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("SpriteToggleSwitch"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("SpriteToggleSwitch"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -683,6 +718,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "ButtonFSM": this._getButtonFSM()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("SpriteToggleSwitch"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("SpriteToggleSwitch"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

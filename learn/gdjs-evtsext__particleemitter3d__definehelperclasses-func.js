@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__ParticleEmitter3D__DefineHelperClasses !== "undefined")
 gdjs.evtsExt__ParticleEmitter3D__DefineHelperClasses = {};
 
 
-gdjs.evtsExt__ParticleEmitter3D__DefineHelperClasses.userFunc0xf24c00 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ParticleEmitter3D__DefineHelperClasses.userFunc0x22a0580 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 gdjs.__particleEmmiter3DExtension = gdjs.__particleEmmiter3DExtension || {};
 
@@ -6638,7 +6638,7 @@ gdjs.evtsExt__ParticleEmitter3D__DefineHelperClasses.eventsList0 = function(runt
 {
 
 
-gdjs.evtsExt__ParticleEmitter3D__DefineHelperClasses.userFunc0xf24c00(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ParticleEmitter3D__DefineHelperClasses.userFunc0x22a0580(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -6671,6 +6671,9 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("ParticleEmitter3D"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("ParticleEmitter3D"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

@@ -1,4 +1,5 @@
 gdjs.mpsl2lanCode = {};
+gdjs.mpsl2lanCode.localVariables = [];
 
 
 gdjs.mpsl2lanCode.eventsList0 = function(runtimeScene) {

@@ -1,4 +1,5 @@
 gdjs.mp1Code = {};
+gdjs.mp1Code.localVariables = [];
 gdjs.mp1Code.GDPlayerObjects1= [];
 gdjs.mp1Code.GDPlayerObjects2= [];
 gdjs.mp1Code.GDPlayerObjects3= [];
@@ -154,8 +155,7 @@ gdjs.mp1Code.eventsList1 = function(runtimeScene) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__THNK__ConnectingToServer.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-if (isConditionTrue_0) {
+/* Unknown instruction - skipped. */if (isConditionTrue_0) {
 }
 
 }
@@ -192,12 +192,11 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "w");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(25795964);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(27925268);
 }
 }
 if (isConditionTrue_0) {
-{gdjs.evtsExt__THNK__SendMessage.func(runtimeScene, "w", gdjs.VariablesContainer.badVariable, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}}
+{/* Unknown instruction - skipped. */}}
 
 }
 
@@ -210,12 +209,11 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "a");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(25797388);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(27925892);
 }
 }
 if (isConditionTrue_0) {
-{gdjs.evtsExt__THNK__SendMessage.func(runtimeScene, "a", gdjs.VariablesContainer.badVariable, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}}
+{/* Unknown instruction - skipped. */}}
 
 }
 
@@ -228,12 +226,11 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "s");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(25798164);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(27926668);
 }
 }
 if (isConditionTrue_0) {
-{gdjs.evtsExt__THNK__SendMessage.func(runtimeScene, "s", gdjs.VariablesContainer.badVariable, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}}
+{/* Unknown instruction - skipped. */}}
 
 }
 
@@ -246,12 +243,11 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "d");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(25797892);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(27928052);
 }
 }
 if (isConditionTrue_0) {
-{gdjs.evtsExt__THNK__SendMessage.func(runtimeScene, "d", gdjs.VariablesContainer.badVariable, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}}
+{/* Unknown instruction - skipped. */}}
 
 }
 
@@ -264,12 +260,11 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Space");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(25799644);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(27927852);
 }
 }
 if (isConditionTrue_0) {
-{gdjs.evtsExt__THNK__SendMessage.func(runtimeScene, "space", gdjs.VariablesContainer.badVariable, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}}
+{/* Unknown instruction - skipped. */}}
 
 }
 
@@ -281,8 +276,7 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.wasKeyReleased(runtimeScene, "w");
 if (isConditionTrue_0) {
-{gdjs.evtsExt__THNK__SendMessage.func(runtimeScene, "wRe", gdjs.VariablesContainer.badVariable, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}}
+{/* Unknown instruction - skipped. */}}
 
 }
 
@@ -294,8 +288,7 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.wasKeyReleased(runtimeScene, "a");
 if (isConditionTrue_0) {
-{gdjs.evtsExt__THNK__SendMessage.func(runtimeScene, "aRe", gdjs.VariablesContainer.badVariable, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}}
+{/* Unknown instruction - skipped. */}}
 
 }
 
@@ -307,8 +300,7 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.wasKeyReleased(runtimeScene, "s");
 if (isConditionTrue_0) {
-{gdjs.evtsExt__THNK__SendMessage.func(runtimeScene, "sRe", gdjs.VariablesContainer.badVariable, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}}
+{/* Unknown instruction - skipped. */}}
 
 }
 
@@ -320,8 +312,7 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.wasKeyReleased(runtimeScene, "d");
 if (isConditionTrue_0) {
-{gdjs.evtsExt__THNK__SendMessage.func(runtimeScene, "dRe", gdjs.VariablesContainer.badVariable, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}}
+{/* Unknown instruction - skipped. */}}
 
 }
 
@@ -333,8 +324,7 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.wasKeyReleased(runtimeScene, "Space");
 if (isConditionTrue_0) {
-{gdjs.evtsExt__THNK__SendMessage.func(runtimeScene, "spaceRe", gdjs.VariablesContainer.badVariable, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}}
+{/* Unknown instruction - skipped. */}}
 
 }
 
@@ -372,8 +362,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__THNK__StartClientCode.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-if (isConditionTrue_0) {
+/* Unknown instruction - skipped. */if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.mp1Code.eventsList1(runtimeScene);} //End of subevents
@@ -383,42 +372,29 @@ gdjs.mp1Code.eventsList1(runtimeScene);} //End of subevents
 
 
 };gdjs.mp1Code.mapOfGDgdjs_9546mp1Code_9546GDPlayerObjects2Objects = Hashtable.newFrom({"Player": gdjs.mp1Code.GDPlayerObjects2});
-gdjs.mp1Code.mapOfGDgdjs_9546mp1Code_9546GDPlayerObjects2Objects = Hashtable.newFrom({"Player": gdjs.mp1Code.GDPlayerObjects2});
-gdjs.mp1Code.mapOfGDgdjs_9546mp1Code_9546GDPlayerObjects3Objects = Hashtable.newFrom({"Player": gdjs.mp1Code.GDPlayerObjects3});
 gdjs.mp1Code.eventsList3 = function(runtimeScene) {
 
-};gdjs.mp1Code.mapOfGDgdjs_9546mp1Code_9546GDPlayerObjects3Objects = Hashtable.newFrom({"Player": gdjs.mp1Code.GDPlayerObjects3});
-gdjs.mp1Code.eventsList4 = function(runtimeScene) {
+};gdjs.mp1Code.eventsList4 = function(runtimeScene) {
 
-};gdjs.mp1Code.mapOfGDgdjs_9546mp1Code_9546GDPlayerObjects3Objects = Hashtable.newFrom({"Player": gdjs.mp1Code.GDPlayerObjects3});
-gdjs.mp1Code.eventsList5 = function(runtimeScene) {
+};gdjs.mp1Code.eventsList5 = function(runtimeScene) {
 
-};gdjs.mp1Code.mapOfGDgdjs_9546mp1Code_9546GDPlayerObjects3Objects = Hashtable.newFrom({"Player": gdjs.mp1Code.GDPlayerObjects3});
-gdjs.mp1Code.eventsList6 = function(runtimeScene) {
+};gdjs.mp1Code.eventsList6 = function(runtimeScene) {
 
-};gdjs.mp1Code.mapOfGDgdjs_9546mp1Code_9546GDPlayerObjects3Objects = Hashtable.newFrom({"Player": gdjs.mp1Code.GDPlayerObjects3});
-gdjs.mp1Code.eventsList7 = function(runtimeScene) {
+};gdjs.mp1Code.eventsList7 = function(runtimeScene) {
 
-};gdjs.mp1Code.mapOfGDgdjs_9546mp1Code_9546GDPlayerObjects3Objects = Hashtable.newFrom({"Player": gdjs.mp1Code.GDPlayerObjects3});
-gdjs.mp1Code.eventsList8 = function(runtimeScene) {
+};gdjs.mp1Code.eventsList8 = function(runtimeScene) {
 
-};gdjs.mp1Code.mapOfGDgdjs_9546mp1Code_9546GDPlayerObjects3Objects = Hashtable.newFrom({"Player": gdjs.mp1Code.GDPlayerObjects3});
-gdjs.mp1Code.eventsList9 = function(runtimeScene) {
+};gdjs.mp1Code.eventsList9 = function(runtimeScene) {
 
-};gdjs.mp1Code.mapOfGDgdjs_9546mp1Code_9546GDPlayerObjects3Objects = Hashtable.newFrom({"Player": gdjs.mp1Code.GDPlayerObjects3});
-gdjs.mp1Code.eventsList10 = function(runtimeScene) {
+};gdjs.mp1Code.eventsList10 = function(runtimeScene) {
 
-};gdjs.mp1Code.mapOfGDgdjs_9546mp1Code_9546GDPlayerObjects3Objects = Hashtable.newFrom({"Player": gdjs.mp1Code.GDPlayerObjects3});
-gdjs.mp1Code.eventsList11 = function(runtimeScene) {
+};gdjs.mp1Code.eventsList11 = function(runtimeScene) {
 
-};gdjs.mp1Code.mapOfGDgdjs_9546mp1Code_9546GDPlayerObjects3Objects = Hashtable.newFrom({"Player": gdjs.mp1Code.GDPlayerObjects3});
-gdjs.mp1Code.eventsList12 = function(runtimeScene) {
+};gdjs.mp1Code.eventsList12 = function(runtimeScene) {
 
-};gdjs.mp1Code.mapOfGDgdjs_9546mp1Code_9546GDPlayerObjects3Objects = Hashtable.newFrom({"Player": gdjs.mp1Code.GDPlayerObjects3});
-gdjs.mp1Code.eventsList13 = function(runtimeScene) {
+};gdjs.mp1Code.eventsList13 = function(runtimeScene) {
 
-};gdjs.mp1Code.mapOfGDgdjs_9546mp1Code_9546GDPlayerObjects2Objects = Hashtable.newFrom({"Player": gdjs.mp1Code.GDPlayerObjects2});
-gdjs.mp1Code.eventsList14 = function(runtimeScene) {
+};gdjs.mp1Code.eventsList14 = function(runtimeScene) {
 
 };gdjs.mp1Code.eventsList15 = function(runtimeScene) {
 
@@ -430,12 +406,10 @@ do {
 gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.mp1Code.GDPlayerObjects3);
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__THNK__OnMessage.func(runtimeScene, "w", gdjs.VariablesContainer.badVariable, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-if (isConditionTrue_0) {
+/* Unknown instruction - skipped. */if (isConditionTrue_0) {
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__THNK__UseLinkedObjects.func(runtimeScene, gdjs.mp1Code.mapOfGDgdjs_9546mp1Code_9546GDPlayerObjects3Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-if (isConditionTrue_0) {
+/* Unknown instruction - skipped. */if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.mp1Code.GDPlayerObjects3.length ;i < len;++i) {
     gdjs.mp1Code.GDPlayerObjects3[i].setVariableBoolean(gdjs.mp1Code.GDPlayerObjects3[i].getVariables().getFromIndex(0).getChild("holdingW"), true);
 }
@@ -457,12 +431,10 @@ do {
 gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.mp1Code.GDPlayerObjects3);
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__THNK__OnMessage.func(runtimeScene, "a", gdjs.VariablesContainer.badVariable, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-if (isConditionTrue_0) {
+/* Unknown instruction - skipped. */if (isConditionTrue_0) {
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__THNK__UseLinkedObjects.func(runtimeScene, gdjs.mp1Code.mapOfGDgdjs_9546mp1Code_9546GDPlayerObjects3Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-if (isConditionTrue_0) {
+/* Unknown instruction - skipped. */if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.mp1Code.GDPlayerObjects3.length ;i < len;++i) {
     gdjs.mp1Code.GDPlayerObjects3[i].setVariableBoolean(gdjs.mp1Code.GDPlayerObjects3[i].getVariables().getFromIndex(0).getChild("holdingA"), true);
 }
@@ -484,12 +456,10 @@ do {
 gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.mp1Code.GDPlayerObjects3);
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__THNK__OnMessage.func(runtimeScene, "s", gdjs.VariablesContainer.badVariable, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-if (isConditionTrue_0) {
+/* Unknown instruction - skipped. */if (isConditionTrue_0) {
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__THNK__UseLinkedObjects.func(runtimeScene, gdjs.mp1Code.mapOfGDgdjs_9546mp1Code_9546GDPlayerObjects3Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-if (isConditionTrue_0) {
+/* Unknown instruction - skipped. */if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.mp1Code.GDPlayerObjects3.length ;i < len;++i) {
     gdjs.mp1Code.GDPlayerObjects3[i].setVariableBoolean(gdjs.mp1Code.GDPlayerObjects3[i].getVariables().getFromIndex(0).getChild("holdingS"), true);
 }
@@ -511,12 +481,10 @@ do {
 gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.mp1Code.GDPlayerObjects3);
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__THNK__OnMessage.func(runtimeScene, "d", gdjs.VariablesContainer.badVariable, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-if (isConditionTrue_0) {
+/* Unknown instruction - skipped. */if (isConditionTrue_0) {
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__THNK__UseLinkedObjects.func(runtimeScene, gdjs.mp1Code.mapOfGDgdjs_9546mp1Code_9546GDPlayerObjects3Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-if (isConditionTrue_0) {
+/* Unknown instruction - skipped. */if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.mp1Code.GDPlayerObjects3.length ;i < len;++i) {
     gdjs.mp1Code.GDPlayerObjects3[i].setVariableBoolean(gdjs.mp1Code.GDPlayerObjects3[i].getVariables().getFromIndex(0).getChild("holdingD"), true);
 }
@@ -538,12 +506,10 @@ do {
 gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.mp1Code.GDPlayerObjects3);
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__THNK__OnMessage.func(runtimeScene, "space", gdjs.VariablesContainer.badVariable, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-if (isConditionTrue_0) {
+/* Unknown instruction - skipped. */if (isConditionTrue_0) {
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__THNK__UseLinkedObjects.func(runtimeScene, gdjs.mp1Code.mapOfGDgdjs_9546mp1Code_9546GDPlayerObjects3Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-if (isConditionTrue_0) {
+/* Unknown instruction - skipped. */if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.mp1Code.GDPlayerObjects3.length ;i < len;++i) {
     gdjs.mp1Code.GDPlayerObjects3[i].setVariableBoolean(gdjs.mp1Code.GDPlayerObjects3[i].getVariables().getFromIndex(0).getChild("holdingSpace"), true);
 }
@@ -565,12 +531,10 @@ do {
 gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.mp1Code.GDPlayerObjects3);
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__THNK__OnMessage.func(runtimeScene, "wRe", gdjs.VariablesContainer.badVariable, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-if (isConditionTrue_0) {
+/* Unknown instruction - skipped. */if (isConditionTrue_0) {
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__THNK__UseLinkedObjects.func(runtimeScene, gdjs.mp1Code.mapOfGDgdjs_9546mp1Code_9546GDPlayerObjects3Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-if (isConditionTrue_0) {
+/* Unknown instruction - skipped. */if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.mp1Code.GDPlayerObjects3.length ;i < len;++i) {
     gdjs.mp1Code.GDPlayerObjects3[i].setVariableBoolean(gdjs.mp1Code.GDPlayerObjects3[i].getVariables().getFromIndex(0).getChild("holdingW"), false);
 }
@@ -592,12 +556,10 @@ do {
 gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.mp1Code.GDPlayerObjects3);
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__THNK__OnMessage.func(runtimeScene, "aRe", gdjs.VariablesContainer.badVariable, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-if (isConditionTrue_0) {
+/* Unknown instruction - skipped. */if (isConditionTrue_0) {
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__THNK__UseLinkedObjects.func(runtimeScene, gdjs.mp1Code.mapOfGDgdjs_9546mp1Code_9546GDPlayerObjects3Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-if (isConditionTrue_0) {
+/* Unknown instruction - skipped. */if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.mp1Code.GDPlayerObjects3.length ;i < len;++i) {
     gdjs.mp1Code.GDPlayerObjects3[i].setVariableBoolean(gdjs.mp1Code.GDPlayerObjects3[i].getVariables().getFromIndex(0).getChild("holdingA"), false);
 }
@@ -619,12 +581,10 @@ do {
 gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.mp1Code.GDPlayerObjects3);
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__THNK__OnMessage.func(runtimeScene, "sRe", gdjs.VariablesContainer.badVariable, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-if (isConditionTrue_0) {
+/* Unknown instruction - skipped. */if (isConditionTrue_0) {
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__THNK__UseLinkedObjects.func(runtimeScene, gdjs.mp1Code.mapOfGDgdjs_9546mp1Code_9546GDPlayerObjects3Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-if (isConditionTrue_0) {
+/* Unknown instruction - skipped. */if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.mp1Code.GDPlayerObjects3.length ;i < len;++i) {
     gdjs.mp1Code.GDPlayerObjects3[i].setVariableBoolean(gdjs.mp1Code.GDPlayerObjects3[i].getVariables().getFromIndex(0).getChild("holdingS"), false);
 }
@@ -646,12 +606,10 @@ do {
 gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.mp1Code.GDPlayerObjects3);
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__THNK__OnMessage.func(runtimeScene, "dRe", gdjs.VariablesContainer.badVariable, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-if (isConditionTrue_0) {
+/* Unknown instruction - skipped. */if (isConditionTrue_0) {
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__THNK__UseLinkedObjects.func(runtimeScene, gdjs.mp1Code.mapOfGDgdjs_9546mp1Code_9546GDPlayerObjects3Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-if (isConditionTrue_0) {
+/* Unknown instruction - skipped. */if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.mp1Code.GDPlayerObjects3.length ;i < len;++i) {
     gdjs.mp1Code.GDPlayerObjects3[i].setVariableBoolean(gdjs.mp1Code.GDPlayerObjects3[i].getVariables().getFromIndex(0).getChild("holdingD"), false);
 }
@@ -673,12 +631,10 @@ do {
 gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.mp1Code.GDPlayerObjects3);
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__THNK__OnMessage.func(runtimeScene, "spaceRe", gdjs.VariablesContainer.badVariable, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-if (isConditionTrue_0) {
+/* Unknown instruction - skipped. */if (isConditionTrue_0) {
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__THNK__UseLinkedObjects.func(runtimeScene, gdjs.mp1Code.mapOfGDgdjs_9546mp1Code_9546GDPlayerObjects3Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-if (isConditionTrue_0) {
+/* Unknown instruction - skipped. */if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.mp1Code.GDPlayerObjects3.length ;i < len;++i) {
     gdjs.mp1Code.GDPlayerObjects3[i].setVariableBoolean(gdjs.mp1Code.GDPlayerObjects3[i].getVariables().getFromIndex(0).getChild("holdingSpace"), false);
 }
@@ -705,8 +661,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__THNK__UseLinkedObjects.func(runtimeScene, gdjs.mp1Code.mapOfGDgdjs_9546mp1Code_9546GDPlayerObjects3Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-if (isConditionTrue_0) {
+/* Unknown instruction - skipped. */if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.mp1Code.GDPlayerObjects3.length ;i < len;++i) {
     gdjs.mp1Code.GDPlayerObjects3[i].getBehavior("Object3D").setRotationY(gdjs.mp1Code.GDPlayerObjects3[i].getBehavior("Object3D").getRotationY() + (gdjs.mp1Code.GDPlayerObjects3[i].getVariables().getFromIndex(1).getAsNumber()));
 }
@@ -733,8 +688,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__THNK__UseLinkedObjects.func(runtimeScene, gdjs.mp1Code.mapOfGDgdjs_9546mp1Code_9546GDPlayerObjects2Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-if (isConditionTrue_0) {
+/* Unknown instruction - skipped. */if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.mp1Code.GDPlayerObjects2.length ;i < len;++i) {
     gdjs.mp1Code.GDPlayerObjects2[i].getBehavior("Object3D").setRotationX(gdjs.mp1Code.GDPlayerObjects2[i].getBehavior("Object3D").getRotationX() + (gdjs.mp1Code.GDPlayerObjects2[i].getVariables().getFromIndex(2).getAsNumber()));
 }
@@ -755,13 +709,11 @@ gdjs.mp1Code.eventsList14(runtimeScene);} //Subevents end.
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__THNK__OnClientConnect.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-if (isConditionTrue_0) {
+/* Unknown instruction - skipped. */if (isConditionTrue_0) {
 gdjs.mp1Code.GDPlayerObjects2.length = 0;
 
 {gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.mp1Code.mapOfGDgdjs_9546mp1Code_9546GDPlayerObjects2Objects, 0, 0, "");
-}{gdjs.evtsExt__THNK__LinkObjectToPlayer.func(runtimeScene, gdjs.mp1Code.mapOfGDgdjs_9546mp1Code_9546GDPlayerObjects2Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}}
+}{/* Unknown instruction - skipped. */}}
 
 }
 
@@ -771,10 +723,8 @@ gdjs.mp1Code.GDPlayerObjects2.length = 0;
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = !(gdjs.evtsExt__THNK__ConnectingToServer.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
-if (isConditionTrue_0) {
-{gdjs.evtsExt__THNK_Local__StartServer.func(runtimeScene, "mp1", 1, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}}
+/* Unknown instruction - skipped. */if (isConditionTrue_0) {
+{/* Unknown instruction - skipped. */}}
 
 }
 
@@ -793,8 +743,7 @@ gdjs.mp1Code.eventsList15(runtimeScene);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__THNK__StartServerCode.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-if (isConditionTrue_0) {
+/* Unknown instruction - skipped. */if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.mp1Code.eventsList16(runtimeScene);} //End of subevents

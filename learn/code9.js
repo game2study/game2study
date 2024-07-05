@@ -1,4 +1,5 @@
 gdjs.gm3Code = {};
+gdjs.gm3Code.localVariables = [];
 gdjs.gm3Code.GDMonsterObjects1= [];
 gdjs.gm3Code.GDMonsterObjects2= [];
 gdjs.gm3Code.GDPlayerObjects1= [];
@@ -433,7 +434,7 @@ gdjs.copyArray(runtimeScene.getObjects("GrassShort"), gdjs.gm3Code.GDGrassShortO
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(25486692);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(27611068);
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("GrassShort"), gdjs.gm3Code.GDGrassShortObjects1);

@@ -37,6 +37,32 @@ gdjs.evtsExt__SecretCode__SecretCode.SecretCode = class SecretCode extends gdjs.
     return true;
   }
 
+  // Network sync:
+  getNetworkSyncData() {
+    return {
+      ...super.getNetworkSyncData(),
+      props: {
+        
+    Code: this._behaviorData.Code,
+    Count: this._behaviorData.Count,
+    CodeEntered: this._behaviorData.CodeEntered,
+    AcceptingCode: this._behaviorData.AcceptingCode,
+      }
+    };
+  }
+  updateFromNetworkSyncData(networkSyncData) {
+    super.updateFromNetworkSyncData(networkSyncData);
+    
+    if (networkSyncData.props.Code !== undefined)
+      this._behaviorData.Code = networkSyncData.props.Code;
+    if (networkSyncData.props.Count !== undefined)
+      this._behaviorData.Count = networkSyncData.props.Count;
+    if (networkSyncData.props.CodeEntered !== undefined)
+      this._behaviorData.CodeEntered = networkSyncData.props.CodeEntered;
+    if (networkSyncData.props.AcceptingCode !== undefined)
+      this._behaviorData.AcceptingCode = networkSyncData.props.AcceptingCode;
+  }
+
   // Properties:
   
   _getCode() {
@@ -145,6 +171,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("SecretCode"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("SecretCode"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -249,7 +278,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(23515676);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(25427828);
 }
 }
 if (isConditionTrue_0) {
@@ -319,6 +348,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("SecretCode"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("SecretCode"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -415,6 +447,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("SecretCode"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("SecretCode"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -507,6 +542,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("SecretCode"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("SecretCode"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -602,6 +640,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("SecretCode"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("SecretCode"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -711,6 +752,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("SecretCode"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("SecretCode"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -803,6 +847,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("SecretCode"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("SecretCode"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

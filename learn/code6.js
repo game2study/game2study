@@ -1,4 +1,5 @@
 gdjs.gm1rs1Code = {};
+gdjs.gm1rs1Code.localVariables = [];
 gdjs.gm1rs1Code.GDMPIndicatorObjects1= [];
 gdjs.gm1rs1Code.GDMPIndicatorObjects2= [];
 

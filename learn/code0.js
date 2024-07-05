@@ -1,4 +1,5 @@
 gdjs.HomeCode = {};
+gdjs.HomeCode.localVariables = [];
 gdjs.HomeCode.GDHeaderObjects1= [];
 gdjs.HomeCode.GDHeaderObjects2= [];
 gdjs.HomeCode.GDLoadAKitSubheaderObjects1= [];
@@ -35,6 +36,20 @@ gdjs.HomeCode.GDImportFlashcardsObjects1= [];
 gdjs.HomeCode.GDImportFlashcardsObjects2= [];
 gdjs.HomeCode.GDMPLabelObjects1= [];
 gdjs.HomeCode.GDMPLabelObjects2= [];
+gdjs.HomeCode.GDAssignmentsManagerObjects1= [];
+gdjs.HomeCode.GDAssignmentsManagerObjects2= [];
+gdjs.HomeCode.GDClassManagerObjects1= [];
+gdjs.HomeCode.GDClassManagerObjects2= [];
+gdjs.HomeCode.GDLoginButtonObjects1= [];
+gdjs.HomeCode.GDLoginButtonObjects2= [];
+gdjs.HomeCode.GDSignupButtonObjects1= [];
+gdjs.HomeCode.GDSignupButtonObjects2= [];
+gdjs.HomeCode.GDLogoutButtonObjects1= [];
+gdjs.HomeCode.GDLogoutButtonObjects2= [];
+gdjs.HomeCode.GDPFPDisplayObjects1= [];
+gdjs.HomeCode.GDPFPDisplayObjects2= [];
+gdjs.HomeCode.GDUsernameDisplayObjects1= [];
+gdjs.HomeCode.GDUsernameDisplayObjects2= [];
 gdjs.HomeCode.GDMPIndicatorObjects1= [];
 gdjs.HomeCode.GDMPIndicatorObjects2= [];
 
@@ -124,7 +139,7 @@ for (var i = 0, k = 0, l = gdjs.HomeCode.GDUploadJsonButtonObjects1.length;i<l;+
 }
 gdjs.HomeCode.GDUploadJsonButtonObjects1.length = k;
 if (isConditionTrue_0) {
-{gdjs.evtsExt__UploadDownloadTextFile__UploadTextFile.func(runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(1), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+{gdjs.evtsExt__UploadDownloadTextFile__UploadTextFile.func(runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(1), "application/json", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }}
 
 }
@@ -319,6 +334,94 @@ if (isConditionTrue_0) {
 
 {
 
+gdjs.copyArray(runtimeScene.getObjects("LoginButton"), gdjs.HomeCode.GDLoginButtonObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.HomeCode.GDLoginButtonObjects1.length;i<l;++i) {
+    if ( gdjs.HomeCode.GDLoginButtonObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.HomeCode.GDLoginButtonObjects1[k] = gdjs.HomeCode.GDLoginButtonObjects1[i];
+        ++k;
+    }
+}
+gdjs.HomeCode.GDLoginButtonObjects1.length = k;
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Account Sign-in", false);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("SignupButton"), gdjs.HomeCode.GDSignupButtonObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.HomeCode.GDSignupButtonObjects1.length;i<l;++i) {
+    if ( gdjs.HomeCode.GDSignupButtonObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.HomeCode.GDSignupButtonObjects1[k] = gdjs.HomeCode.GDSignupButtonObjects1[i];
+        ++k;
+    }
+}
+gdjs.HomeCode.GDSignupButtonObjects1.length = k;
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Account Creator", false);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("LogoutButton"), gdjs.HomeCode.GDLogoutButtonObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.HomeCode.GDLogoutButtonObjects1.length;i<l;++i) {
+    if ( gdjs.HomeCode.GDLogoutButtonObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.HomeCode.GDLogoutButtonObjects1[k] = gdjs.HomeCode.GDLogoutButtonObjects1[i];
+        ++k;
+    }
+}
+gdjs.HomeCode.GDLogoutButtonObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.firebaseTools.auth.isAuthenticated();
+}
+if (isConditionTrue_0) {
+{firebase.auth().signOut();
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("ClassManager"), gdjs.HomeCode.GDClassManagerObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.HomeCode.GDClassManagerObjects1.length;i<l;++i) {
+    if ( gdjs.HomeCode.GDClassManagerObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.HomeCode.GDClassManagerObjects1[k] = gdjs.HomeCode.GDClassManagerObjects1[i];
+        ++k;
+    }
+}
+gdjs.HomeCode.GDClassManagerObjects1.length = k;
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Classes Manager", false);
+}}
+
+}
+
+
+{
+
 gdjs.copyArray(runtimeScene.getObjects("MPIndicator"), gdjs.HomeCode.GDMPIndicatorObjects1);
 
 let isConditionTrue_0 = false;
@@ -356,6 +459,87 @@ for(var i = 0, len = gdjs.HomeCode.GDNewGameButtonGM3WIPObjects1.length ;i < len
 }
 for(var i = 0, len = gdjs.HomeCode.GDNewGameButtonGM3WIPObjects1.length ;i < len;++i) {
     gdjs.HomeCode.GDNewGameButtonGM3WIPObjects1[i].getBehavior("Opacity").setOpacity(255 * 3 / 4);
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.firebaseTools.auth.isAuthenticated();
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("LoginButton"), gdjs.HomeCode.GDLoginButtonObjects1);
+gdjs.copyArray(runtimeScene.getObjects("LogoutButton"), gdjs.HomeCode.GDLogoutButtonObjects1);
+gdjs.copyArray(runtimeScene.getObjects("PFPDisplay"), gdjs.HomeCode.GDPFPDisplayObjects1);
+gdjs.copyArray(runtimeScene.getObjects("SignupButton"), gdjs.HomeCode.GDSignupButtonObjects1);
+gdjs.copyArray(runtimeScene.getObjects("UsernameDisplay"), gdjs.HomeCode.GDUsernameDisplayObjects1);
+{for(var i = 0, len = gdjs.HomeCode.GDLoginButtonObjects1.length ;i < len;++i) {
+    gdjs.HomeCode.GDLoginButtonObjects1[i].hide();
+}
+}{for(var i = 0, len = gdjs.HomeCode.GDSignupButtonObjects1.length ;i < len;++i) {
+    gdjs.HomeCode.GDSignupButtonObjects1[i].hide();
+}
+}{for(var i = 0, len = gdjs.HomeCode.GDLogoutButtonObjects1.length ;i < len;++i) {
+    gdjs.HomeCode.GDLogoutButtonObjects1[i].hide(false);
+}
+}{for(var i = 0, len = gdjs.HomeCode.GDPFPDisplayObjects1.length ;i < len;++i) {
+    gdjs.HomeCode.GDPFPDisplayObjects1[i].hide(false);
+}
+}{for(var i = 0, len = gdjs.HomeCode.GDUsernameDisplayObjects1.length ;i < len;++i) {
+    gdjs.HomeCode.GDUsernameDisplayObjects1[i].hide(false);
+}
+}{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoImageResource.func(runtimeScene, gdjs.evtTools.firebaseTools.auth.userManagement.getPhotoURL(), "PFPDisplay", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{gdjs.evtsExt__Clipboard__WriteText.func(runtimeScene, gdjs.evtTools.firebaseTools.auth.userManagement.getPhotoURL(), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{for(var i = 0, len = gdjs.HomeCode.GDLoginButtonObjects1.length ;i < len;++i) {
+    gdjs.HomeCode.GDLoginButtonObjects1[i].Activate(false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}
+}{for(var i = 0, len = gdjs.HomeCode.GDSignupButtonObjects1.length ;i < len;++i) {
+    gdjs.HomeCode.GDSignupButtonObjects1[i].Activate(false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}
+}{for(var i = 0, len = gdjs.HomeCode.GDUsernameDisplayObjects1.length ;i < len;++i) {
+    gdjs.HomeCode.GDUsernameDisplayObjects1[i].getBehavior("Text").setText(gdjs.evtTools.firebaseTools.auth.userManagement.getDisplayName());
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = !(gdjs.evtTools.firebaseTools.auth.isAuthenticated());
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("LoginButton"), gdjs.HomeCode.GDLoginButtonObjects1);
+gdjs.copyArray(runtimeScene.getObjects("LogoutButton"), gdjs.HomeCode.GDLogoutButtonObjects1);
+gdjs.copyArray(runtimeScene.getObjects("PFPDisplay"), gdjs.HomeCode.GDPFPDisplayObjects1);
+gdjs.copyArray(runtimeScene.getObjects("SignupButton"), gdjs.HomeCode.GDSignupButtonObjects1);
+gdjs.copyArray(runtimeScene.getObjects("UsernameDisplay"), gdjs.HomeCode.GDUsernameDisplayObjects1);
+{for(var i = 0, len = gdjs.HomeCode.GDLoginButtonObjects1.length ;i < len;++i) {
+    gdjs.HomeCode.GDLoginButtonObjects1[i].hide(false);
+}
+}{for(var i = 0, len = gdjs.HomeCode.GDSignupButtonObjects1.length ;i < len;++i) {
+    gdjs.HomeCode.GDSignupButtonObjects1[i].hide(false);
+}
+}{for(var i = 0, len = gdjs.HomeCode.GDLogoutButtonObjects1.length ;i < len;++i) {
+    gdjs.HomeCode.GDLogoutButtonObjects1[i].hide();
+}
+}{for(var i = 0, len = gdjs.HomeCode.GDPFPDisplayObjects1.length ;i < len;++i) {
+    gdjs.HomeCode.GDPFPDisplayObjects1[i].hide();
+}
+}{for(var i = 0, len = gdjs.HomeCode.GDUsernameDisplayObjects1.length ;i < len;++i) {
+    gdjs.HomeCode.GDUsernameDisplayObjects1[i].hide();
+}
+}{for(var i = 0, len = gdjs.HomeCode.GDLoginButtonObjects1.length ;i < len;++i) {
+    gdjs.HomeCode.GDLoginButtonObjects1[i].Activate(true, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}
+}{for(var i = 0, len = gdjs.HomeCode.GDSignupButtonObjects1.length ;i < len;++i) {
+    gdjs.HomeCode.GDSignupButtonObjects1[i].Activate(true, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
 }}
 
@@ -403,6 +587,20 @@ gdjs.HomeCode.GDImportFlashcardsObjects1.length = 0;
 gdjs.HomeCode.GDImportFlashcardsObjects2.length = 0;
 gdjs.HomeCode.GDMPLabelObjects1.length = 0;
 gdjs.HomeCode.GDMPLabelObjects2.length = 0;
+gdjs.HomeCode.GDAssignmentsManagerObjects1.length = 0;
+gdjs.HomeCode.GDAssignmentsManagerObjects2.length = 0;
+gdjs.HomeCode.GDClassManagerObjects1.length = 0;
+gdjs.HomeCode.GDClassManagerObjects2.length = 0;
+gdjs.HomeCode.GDLoginButtonObjects1.length = 0;
+gdjs.HomeCode.GDLoginButtonObjects2.length = 0;
+gdjs.HomeCode.GDSignupButtonObjects1.length = 0;
+gdjs.HomeCode.GDSignupButtonObjects2.length = 0;
+gdjs.HomeCode.GDLogoutButtonObjects1.length = 0;
+gdjs.HomeCode.GDLogoutButtonObjects2.length = 0;
+gdjs.HomeCode.GDPFPDisplayObjects1.length = 0;
+gdjs.HomeCode.GDPFPDisplayObjects2.length = 0;
+gdjs.HomeCode.GDUsernameDisplayObjects1.length = 0;
+gdjs.HomeCode.GDUsernameDisplayObjects2.length = 0;
 gdjs.HomeCode.GDMPIndicatorObjects1.length = 0;
 gdjs.HomeCode.GDMPIndicatorObjects2.length = 0;
 

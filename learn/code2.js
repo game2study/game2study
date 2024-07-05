@@ -1,4 +1,5 @@
 gdjs.ManageKitsCode = {};
+gdjs.ManageKitsCode.localVariables = [];
 gdjs.ManageKitsCode.GDTitleObjects1= [];
 gdjs.ManageKitsCode.GDTitleObjects2= [];
 gdjs.ManageKitsCode.GDCurrentKitSelectorObjects1= [];

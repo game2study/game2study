@@ -1,4 +1,5 @@
 gdjs.gm1pmenu1Code = {};
+gdjs.gm1pmenu1Code.localVariables = [];
 gdjs.gm1pmenu1Code.GDResumeButtonObjects1_1final = [];
 
 gdjs.gm1pmenu1Code.GDTitleObjects1= [];

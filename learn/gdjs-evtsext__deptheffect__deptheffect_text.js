@@ -37,6 +37,32 @@ gdjs.evtsExt__DepthEffect__DepthEffect_Text.DepthEffect_Text = class DepthEffect
     return true;
   }
 
+  // Network sync:
+  getNetworkSyncData() {
+    return {
+      ...super.getNetworkSyncData(),
+      props: {
+        
+    MaxScale: this._behaviorData.MaxScale,
+    HorizonY: this._behaviorData.HorizonY,
+    PowerY: this._behaviorData.PowerY,
+    PercentAwayFromHorizon: this._behaviorData.PercentAwayFromHorizon,
+      }
+    };
+  }
+  updateFromNetworkSyncData(networkSyncData) {
+    super.updateFromNetworkSyncData(networkSyncData);
+    
+    if (networkSyncData.props.MaxScale !== undefined)
+      this._behaviorData.MaxScale = networkSyncData.props.MaxScale;
+    if (networkSyncData.props.HorizonY !== undefined)
+      this._behaviorData.HorizonY = networkSyncData.props.HorizonY;
+    if (networkSyncData.props.PowerY !== undefined)
+      this._behaviorData.PowerY = networkSyncData.props.PowerY;
+    if (networkSyncData.props.PercentAwayFromHorizon !== undefined)
+      this._behaviorData.PercentAwayFromHorizon = networkSyncData.props.PercentAwayFromHorizon;
+  }
+
   // Properties:
   
   _getMaxScale() {
@@ -158,6 +184,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("DepthEffect"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("DepthEffect"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -244,6 +273,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("DepthEffect"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("DepthEffect"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -330,6 +362,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("DepthEffect"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("DepthEffect"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -416,6 +451,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("DepthEffect"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("DepthEffect"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -502,6 +540,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("DepthEffect"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("DepthEffect"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -587,6 +628,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("DepthEffect"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("DepthEffect"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -673,6 +717,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("DepthEffect"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("DepthEffect"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -759,6 +806,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("DepthEffect"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("DepthEffect"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

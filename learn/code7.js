@@ -1,4 +1,5 @@
 gdjs.gm1pmenu2Code = {};
+gdjs.gm1pmenu2Code.localVariables = [];
 gdjs.gm1pmenu2Code.GDTitleObjects1= [];
 gdjs.gm1pmenu2Code.GDTitleObjects2= [];
 gdjs.gm1pmenu2Code.GDAK47Objects1= [];

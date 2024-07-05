@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__ThreeDimensionsPlatforming__ExitPointerLock !== "undefi
 gdjs.evtsExt__ThreeDimensionsPlatforming__ExitPointerLock = {};
 
 
-gdjs.evtsExt__ThreeDimensionsPlatforming__ExitPointerLock.userFunc0xaf1af0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ThreeDimensionsPlatforming__ExitPointerLock.userFunc0x258e9f8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 document.exitPointerLock();
 };
@@ -17,7 +17,7 @@ gdjs.evtsExt__ThreeDimensionsPlatforming__ExitPointerLock.eventsList0 = function
 {
 
 
-gdjs.evtsExt__ThreeDimensionsPlatforming__ExitPointerLock.userFunc0xaf1af0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ThreeDimensionsPlatforming__ExitPointerLock.userFunc0x258e9f8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -32,6 +32,9 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("ThreeDimensionsPlatforming"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("ThreeDimensionsPlatforming"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

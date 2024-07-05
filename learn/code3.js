@@ -1,4 +1,5 @@
 gdjs.Property_32EditorCode = {};
+gdjs.Property_32EditorCode.localVariables = [];
 gdjs.Property_32EditorCode.GDPlayBttnObjects1= [];
 gdjs.Property_32EditorCode.GDPlayBttnObjects2= [];
 gdjs.Property_32EditorCode.GDPlayBttnObjects3= [];

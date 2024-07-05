@@ -10,7 +10,7 @@ gdjs.evtsExt__SecretCode__StringToStringListObjectVar.GDobjectParamObjects1= [];
 gdjs.evtsExt__SecretCode__StringToStringListObjectVar.GDobjectParamObjects2= [];
 
 
-gdjs.evtsExt__SecretCode__StringToStringListObjectVar.userFunc0x993dd0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__SecretCode__StringToStringListObjectVar.userFunc0xa32fe8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 const inputString = eventsFunctionContext.getArgument("inputString");
 const delimiter = eventsFunctionContext.getArgument("delimiter");
@@ -43,7 +43,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__SecretCode__StringToStringListObjectVar.userFunc0x993dd0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__SecretCode__StringToStringListObjectVar.userFunc0xa32fe8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -60,6 +60,9 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("SecretCode"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("SecretCode"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

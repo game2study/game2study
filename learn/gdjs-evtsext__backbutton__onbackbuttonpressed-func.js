@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__BackButton__onBackButtonPressed !== "undefined") {
 gdjs.evtsExt__BackButton__onBackButtonPressed = {};
 
 
-gdjs.evtsExt__BackButton__onBackButtonPressed.userFunc0xd665c8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__BackButton__onBackButtonPressed.userFunc0x2496920 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext.returnValue = gdjs.evtTools.back_button.triggered;
 
@@ -18,7 +18,7 @@ gdjs.evtsExt__BackButton__onBackButtonPressed.eventsList0 = function(runtimeScen
 {
 
 
-gdjs.evtsExt__BackButton__onBackButtonPressed.userFunc0xd665c8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__BackButton__onBackButtonPressed.userFunc0x2496920(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -33,6 +33,9 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("BackButton"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("BackButton"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

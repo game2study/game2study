@@ -189,6 +189,9 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("CreateMultipleCopiesOfObject"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("CreateMultipleCopiesOfObject"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

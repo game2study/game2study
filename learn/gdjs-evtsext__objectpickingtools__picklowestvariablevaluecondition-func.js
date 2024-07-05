@@ -10,7 +10,7 @@ gdjs.evtsExt__ObjectPickingTools__PickLowestVariableValueCondition.GDObjectObjec
 gdjs.evtsExt__ObjectPickingTools__PickLowestVariableValueCondition.GDObjectObjects2= [];
 
 
-gdjs.evtsExt__ObjectPickingTools__PickLowestVariableValueCondition.userFunc0x19498f8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ObjectPickingTools__PickLowestVariableValueCondition.userFunc0x241e8f8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 // Create an empty array to hold the objects with the lowest variable value
 let lowestValueObjects = [];
@@ -53,7 +53,7 @@ gdjs.evtsExt__ObjectPickingTools__PickLowestVariableValueCondition.eventsList0 =
 {
 
 
-gdjs.evtsExt__ObjectPickingTools__PickLowestVariableValueCondition.userFunc0x19498f8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ObjectPickingTools__PickLowestVariableValueCondition.userFunc0x241e8f8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -80,6 +80,9 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("ObjectPickingTools"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("ObjectPickingTools"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

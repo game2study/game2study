@@ -1,4 +1,5 @@
 gdjs.Debug_32MenuCode = {};
+gdjs.Debug_32MenuCode.localVariables = [];
 gdjs.Debug_32MenuCode.GDTitleObjects1= [];
 gdjs.Debug_32MenuCode.GDTitleObjects2= [];
 gdjs.Debug_32MenuCode.GDSceneSwitchAnswerScreenObjects1= [];
@@ -459,7 +460,7 @@ for (var i = 0, k = 0, l = gdjs.Debug_32MenuCode.GDUploadKitButtonObjects1.lengt
 }
 gdjs.Debug_32MenuCode.GDUploadKitButtonObjects1.length = k;
 if (isConditionTrue_0) {
-{gdjs.evtsExt__UploadDownloadTextFile__UploadTextFile.func(runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(2), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+{gdjs.evtsExt__UploadDownloadTextFile__UploadTextFile.func(runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(2), "", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }}
 
 }

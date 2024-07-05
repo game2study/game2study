@@ -1,4 +1,5 @@
 gdjs.SaveKitScreenCode = {};
+gdjs.SaveKitScreenCode.localVariables = [];
 gdjs.SaveKitScreenCode.GDNameInputObjects1= [];
 gdjs.SaveKitScreenCode.GDNameInputObjects2= [];
 gdjs.SaveKitScreenCode.GDSaveButtonObjects1= [];
@@ -17,13 +18,15 @@ gdjs.SaveKitScreenCode.GDMPIndicatorObjects1= [];
 gdjs.SaveKitScreenCode.GDMPIndicatorObjects2= [];
 
 
-gdjs.SaveKitScreenCode.asyncCallback25715348 = function (runtimeScene, asyncObjectsList) {
+gdjs.SaveKitScreenCode.asyncCallback27843748 = function (runtimeScene, asyncObjectsList) {
+asyncObjectsList.restoreLocalVariablesContainers(gdjs.SaveKitScreenCode.localVariables);
 gdjs.copyArray(asyncObjectsList.getObjects("FeedbackDisplay"), gdjs.SaveKitScreenCode.GDFeedbackDisplayObjects2);
 
 {for(var i = 0, len = gdjs.SaveKitScreenCode.GDFeedbackDisplayObjects2.length ;i < len;++i) {
     gdjs.SaveKitScreenCode.GDFeedbackDisplayObjects2[i].getBehavior("Text").setText("");
 }
-}}
+}gdjs.SaveKitScreenCode.localVariables.length = 0;
+}
 gdjs.SaveKitScreenCode.eventsList0 = function(runtimeScene) {
 
 {
@@ -32,21 +35,24 @@ gdjs.SaveKitScreenCode.eventsList0 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
+asyncObjectsList.backupLocalVariablesContainers(gdjs.SaveKitScreenCode.localVariables);
 for (const obj of gdjs.SaveKitScreenCode.GDFeedbackDisplayObjects1) asyncObjectsList.addObject("FeedbackDisplay", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.SaveKitScreenCode.asyncCallback25715348(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.SaveKitScreenCode.asyncCallback27843748(runtimeScene, asyncObjectsList)));
 }
 }
 
 }
 
 
-};gdjs.SaveKitScreenCode.asyncCallback25716652 = function (runtimeScene, asyncObjectsList) {
+};gdjs.SaveKitScreenCode.asyncCallback27845052 = function (runtimeScene, asyncObjectsList) {
+asyncObjectsList.restoreLocalVariablesContainers(gdjs.SaveKitScreenCode.localVariables);
 gdjs.copyArray(asyncObjectsList.getObjects("FeedbackDisplay"), gdjs.SaveKitScreenCode.GDFeedbackDisplayObjects2);
 
 {for(var i = 0, len = gdjs.SaveKitScreenCode.GDFeedbackDisplayObjects2.length ;i < len;++i) {
     gdjs.SaveKitScreenCode.GDFeedbackDisplayObjects2[i].getBehavior("Text").setText("");
 }
-}}
+}gdjs.SaveKitScreenCode.localVariables.length = 0;
+}
 gdjs.SaveKitScreenCode.eventsList1 = function(runtimeScene) {
 
 {
@@ -55,8 +61,9 @@ gdjs.SaveKitScreenCode.eventsList1 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
+asyncObjectsList.backupLocalVariablesContainers(gdjs.SaveKitScreenCode.localVariables);
 for (const obj of gdjs.SaveKitScreenCode.GDFeedbackDisplayObjects1) asyncObjectsList.addObject("FeedbackDisplay", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.SaveKitScreenCode.asyncCallback25716652(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.SaveKitScreenCode.asyncCallback27845052(runtimeScene, asyncObjectsList)));
 }
 }
 

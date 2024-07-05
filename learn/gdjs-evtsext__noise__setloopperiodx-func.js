@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__Noise__SetLoopPeriodX !== "undefined") {
 gdjs.evtsExt__Noise__SetLoopPeriodX = {};
 
 
-gdjs.evtsExt__Noise__SetLoopPeriodX.userFunc0x113d470 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Noise__SetLoopPeriodX.userFunc0x2496920 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 const name = eventsFunctionContext.getArgument("Name");
 
@@ -19,7 +19,7 @@ gdjs.evtsExt__Noise__SetLoopPeriodX.eventsList0 = function(runtimeScene, eventsF
 {
 
 
-gdjs.evtsExt__Noise__SetLoopPeriodX.userFunc0x113d470(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Noise__SetLoopPeriodX.userFunc0x2496920(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -34,6 +34,9 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Noise"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Noise"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

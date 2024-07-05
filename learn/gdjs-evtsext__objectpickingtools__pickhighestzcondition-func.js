@@ -10,7 +10,7 @@ gdjs.evtsExt__ObjectPickingTools__PickHighestZCondition.GDObjectObjects1= [];
 gdjs.evtsExt__ObjectPickingTools__PickHighestZCondition.GDObjectObjects2= [];
 
 
-gdjs.evtsExt__ObjectPickingTools__PickHighestZCondition.userFunc0x1a2d990 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ObjectPickingTools__PickHighestZCondition.userFunc0x24932b8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 // Create an empty array to hold the objects with the highest value
 let highestValueObjects = [];
@@ -50,7 +50,7 @@ gdjs.evtsExt__ObjectPickingTools__PickHighestZCondition.eventsList0 = function(r
 {
 
 
-gdjs.evtsExt__ObjectPickingTools__PickHighestZCondition.userFunc0x1a2d990(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ObjectPickingTools__PickHighestZCondition.userFunc0x24932b8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -77,6 +77,9 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("ObjectPickingTools"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("ObjectPickingTools"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

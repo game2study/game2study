@@ -1,4 +1,5 @@
 gdjs.gm2sl1Code = {};
+gdjs.gm2sl1Code.localVariables = [];
 gdjs.gm2sl1Code.GDHeaderObjects1= [];
 gdjs.gm2sl1Code.GDHeaderObjects2= [];
 gdjs.gm2sl1Code.GDLevel1Objects1= [];

@@ -25,6 +25,20 @@ gdjs.evtsExt__SelectionTools__SelectionPainter.SelectionPainter = class Selectio
     return true;
   }
 
+  // Network sync:
+  getNetworkSyncData() {
+    return {
+      ...super.getNetworkSyncData(),
+      props: {
+        
+      }
+    };
+  }
+  updateFromNetworkSyncData(networkSyncData) {
+    super.updateFromNetworkSyncData(networkSyncData);
+    
+  }
+
   // Properties:
   
 }
@@ -472,7 +486,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(24484756);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(26406900);
 }
 }
 }
@@ -937,6 +951,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("SelectionTools"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("SelectionTools"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

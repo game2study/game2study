@@ -1,4 +1,5 @@
 gdjs.gm3sl1Code = {};
+gdjs.gm3sl1Code.localVariables = [];
 
 
 gdjs.gm3sl1Code.eventsList0 = function(runtimeScene) {

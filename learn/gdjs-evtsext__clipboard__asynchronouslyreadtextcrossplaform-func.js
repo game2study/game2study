@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__Clipboard__AsynchronouslyReadTextCrossPlaform !== "unde
 gdjs.evtsExt__Clipboard__AsynchronouslyReadTextCrossPlaform = {};
 
 
-gdjs.evtsExt__Clipboard__AsynchronouslyReadTextCrossPlaform.userFunc0x113d470 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Clipboard__AsynchronouslyReadTextCrossPlaform.userFunc0x24932b8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 const electron = runtimeScene.getGame().getRenderer().getElectron();
 const callback = eventsFunctionContext.getArgument("callback");
@@ -58,7 +58,7 @@ gdjs.evtsExt__Clipboard__AsynchronouslyReadTextCrossPlaform.eventsList0 = functi
 {
 
 
-gdjs.evtsExt__Clipboard__AsynchronouslyReadTextCrossPlaform.userFunc0x113d470(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Clipboard__AsynchronouslyReadTextCrossPlaform.userFunc0x24932b8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -74,6 +74,9 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Clipboard"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Clipboard"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

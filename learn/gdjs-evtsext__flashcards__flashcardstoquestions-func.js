@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__Flashcards__flashcardsToQuestions !== "undefined") {
 gdjs.evtsExt__Flashcards__flashcardsToQuestions = {};
 
 
-gdjs.evtsExt__Flashcards__flashcardsToQuestions.userFunc0x9411e8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Flashcards__flashcardsToQuestions.userFunc0x24da9a8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 gdjs.evtTools.myExtension = {};
 // Get parameters from the events function context
@@ -87,7 +87,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__Flashcards__flashcardsToQuestions.userFunc0x9411e8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Flashcards__flashcardsToQuestions.userFunc0x24da9a8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -102,6 +102,9 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Flashcards"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Flashcards"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

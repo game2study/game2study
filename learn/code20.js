@@ -1,4 +1,5 @@
 gdjs.mpsl1Code = {};
+gdjs.mpsl1Code.localVariables = [];
 gdjs.mpsl1Code.GDSplitscreenButtonObjects1= [];
 gdjs.mpsl1Code.GDSplitscreenButtonObjects2= [];
 gdjs.mpsl1Code.GDLANButtonObjects1= [];

@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__BackButton__doDefault !== "undefined") {
 gdjs.evtsExt__BackButton__doDefault = {};
 
 
-gdjs.evtsExt__BackButton__doDefault.userFunc0xd665c8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__BackButton__doDefault.userFunc0x2496920 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 // Close the app on cordova, as this is the default behavior
 if (navigator.app) {
@@ -29,7 +29,7 @@ gdjs.evtsExt__BackButton__doDefault.eventsList0 = function(runtimeScene, eventsF
 {
 
 
-gdjs.evtsExt__BackButton__doDefault.userFunc0xd665c8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__BackButton__doDefault.userFunc0x2496920(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -44,6 +44,9 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("BackButton"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("BackButton"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

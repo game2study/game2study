@@ -9,7 +9,7 @@ gdjs.evtsExt__ObjectPickingTools__PickFirstAction = {};
 gdjs.evtsExt__ObjectPickingTools__PickFirstAction.GDobjectObjects1= [];
 
 
-gdjs.evtsExt__ObjectPickingTools__PickFirstAction.userFunc0x19498f8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ObjectPickingTools__PickFirstAction.userFunc0x2463228 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 const lists = eventsFunctionContext.getObjectsLists("object").items;
 
@@ -24,7 +24,7 @@ gdjs.evtsExt__ObjectPickingTools__PickFirstAction.eventsList0 = function(runtime
 {
 
 
-gdjs.evtsExt__ObjectPickingTools__PickFirstAction.userFunc0x19498f8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ObjectPickingTools__PickFirstAction.userFunc0x2463228(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -41,6 +41,9 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("ObjectPickingTools"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("ObjectPickingTools"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

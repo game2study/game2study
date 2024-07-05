@@ -1,4 +1,5 @@
 gdjs.QuestionCreatorCode = {};
+gdjs.QuestionCreatorCode.localVariables = [];
 gdjs.QuestionCreatorCode.GDNameCreatorObjects1= [];
 gdjs.QuestionCreatorCode.GDNameCreatorObjects2= [];
 gdjs.QuestionCreatorCode.GDChoiceAmountCreatorObjects1= [];

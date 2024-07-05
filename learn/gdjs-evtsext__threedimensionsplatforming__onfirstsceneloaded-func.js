@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__ThreeDimensionsPlatforming__onFirstSceneLoaded !== "und
 gdjs.evtsExt__ThreeDimensionsPlatforming__onFirstSceneLoaded = {};
 
 
-gdjs.evtsExt__ThreeDimensionsPlatforming__onFirstSceneLoaded.userFunc0x152bf30 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ThreeDimensionsPlatforming__onFirstSceneLoaded.userFunc0x25611a0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 const canvas = runtimeScene.getGame().getRenderer().getCanvas();
 
@@ -25,7 +25,7 @@ gdjs.evtsExt__ThreeDimensionsPlatforming__onFirstSceneLoaded.eventsList0 = funct
 {
 
 
-gdjs.evtsExt__ThreeDimensionsPlatforming__onFirstSceneLoaded.userFunc0x152bf30(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ThreeDimensionsPlatforming__onFirstSceneLoaded.userFunc0x25611a0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -40,6 +40,9 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("ThreeDimensionsPlatforming"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("ThreeDimensionsPlatforming"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

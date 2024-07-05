@@ -70,6 +70,65 @@ gdjs.evtsExt__Jump3D__Jump3D.Jump3D = class Jump3D extends gdjs.RuntimeBehavior 
     return true;
   }
 
+  // Network sync:
+  getNetworkSyncData() {
+    return {
+      ...super.getNetworkSyncData(),
+      props: {
+        
+    Object3D: this._behaviorData.Object3D,
+    JumpHeight: this._behaviorData.JumpHeight,
+    MaxFallingSpeed: this._behaviorData.MaxFallingSpeed,
+    Gravity: this._behaviorData.Gravity,
+    JumpSpeed: this._behaviorData.JumpSpeed,
+    JumpSustainDurationMax: this._behaviorData.JumpSustainDurationMax,
+    State: this._behaviorData.State,
+    CurrentJumpSpeed: this._behaviorData.CurrentJumpSpeed,
+    CurrentFallSpeed: this._behaviorData.CurrentFallSpeed,
+    PreviousJumpSpeed: this._behaviorData.PreviousJumpSpeed,
+    PreviousFallSpeed: this._behaviorData.PreviousFallSpeed,
+    HasPressedJumpKey: this._behaviorData.HasPressedJumpKey,
+    CanJump: this._behaviorData.CanJump,
+    ShouldStopAtZero: this._behaviorData.ShouldStopAtZero,
+    PreviousState: this._behaviorData.PreviousState,
+      }
+    };
+  }
+  updateFromNetworkSyncData(networkSyncData) {
+    super.updateFromNetworkSyncData(networkSyncData);
+    
+    if (networkSyncData.props.Object3D !== undefined)
+      this._behaviorData.Object3D = networkSyncData.props.Object3D;
+    if (networkSyncData.props.JumpHeight !== undefined)
+      this._behaviorData.JumpHeight = networkSyncData.props.JumpHeight;
+    if (networkSyncData.props.MaxFallingSpeed !== undefined)
+      this._behaviorData.MaxFallingSpeed = networkSyncData.props.MaxFallingSpeed;
+    if (networkSyncData.props.Gravity !== undefined)
+      this._behaviorData.Gravity = networkSyncData.props.Gravity;
+    if (networkSyncData.props.JumpSpeed !== undefined)
+      this._behaviorData.JumpSpeed = networkSyncData.props.JumpSpeed;
+    if (networkSyncData.props.JumpSustainDurationMax !== undefined)
+      this._behaviorData.JumpSustainDurationMax = networkSyncData.props.JumpSustainDurationMax;
+    if (networkSyncData.props.State !== undefined)
+      this._behaviorData.State = networkSyncData.props.State;
+    if (networkSyncData.props.CurrentJumpSpeed !== undefined)
+      this._behaviorData.CurrentJumpSpeed = networkSyncData.props.CurrentJumpSpeed;
+    if (networkSyncData.props.CurrentFallSpeed !== undefined)
+      this._behaviorData.CurrentFallSpeed = networkSyncData.props.CurrentFallSpeed;
+    if (networkSyncData.props.PreviousJumpSpeed !== undefined)
+      this._behaviorData.PreviousJumpSpeed = networkSyncData.props.PreviousJumpSpeed;
+    if (networkSyncData.props.PreviousFallSpeed !== undefined)
+      this._behaviorData.PreviousFallSpeed = networkSyncData.props.PreviousFallSpeed;
+    if (networkSyncData.props.HasPressedJumpKey !== undefined)
+      this._behaviorData.HasPressedJumpKey = networkSyncData.props.HasPressedJumpKey;
+    if (networkSyncData.props.CanJump !== undefined)
+      this._behaviorData.CanJump = networkSyncData.props.CanJump;
+    if (networkSyncData.props.ShouldStopAtZero !== undefined)
+      this._behaviorData.ShouldStopAtZero = networkSyncData.props.ShouldStopAtZero;
+    if (networkSyncData.props.PreviousState !== undefined)
+      this._behaviorData.PreviousState = networkSyncData.props.PreviousState;
+  }
+
   // Properties:
   
   _getObject3D() {
@@ -239,6 +298,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "Object3D": this._getObject3D()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Jump3D"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Jump3D"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -332,6 +394,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "Object3D": this._getObject3D()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Jump3D"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Jump3D"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -419,6 +484,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "Object3D": this._getObject3D()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Jump3D"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Jump3D"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -472,7 +540,7 @@ gdjs.evtsExt__Jump3D__Jump3D.Jump3D.prototype.JumpSpeedToReachContext = {};
 gdjs.evtsExt__Jump3D__Jump3D.Jump3D.prototype.JumpSpeedToReachContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__Jump3D__Jump3D.Jump3D.prototype.JumpSpeedToReachContext.userFunc0x1417100 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Jump3D__Jump3D.Jump3D.prototype.JumpSpeedToReachContext.userFunc0x215e778 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 // Formulas used in this extension were generated from a math model.
 // They are probably not understandable on their own.
@@ -536,7 +604,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Jump3D_
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__Jump3D__Jump3D.Jump3D.prototype.JumpSpeedToReachContext.GDObjectObjects1);
-gdjs.evtsExt__Jump3D__Jump3D.Jump3D.prototype.JumpSpeedToReachContext.userFunc0x1417100(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Jump3D__Jump3D.Jump3D.prototype.JumpSpeedToReachContext.userFunc0x215e778(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -561,6 +629,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "Object3D": this._getObject3D()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Jump3D"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Jump3D"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -980,6 +1051,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "Object3D": this._getObject3D()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Jump3D"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Jump3D"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -1072,6 +1146,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "Object3D": this._getObject3D()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Jump3D"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Jump3D"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -1306,6 +1383,9 @@ var eventsFunctionContext = {
 , "Object3D": this._getObject3D()
 , "Object3D": Object3D
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Jump3D"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Jump3D"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -1409,6 +1489,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "Object3D": this._getObject3D()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Jump3D"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Jump3D"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -1533,6 +1616,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "Object3D": this._getObject3D()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Jump3D"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Jump3D"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -1626,6 +1712,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "Object3D": this._getObject3D()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Jump3D"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Jump3D"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -1716,6 +1805,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "Object3D": this._getObject3D()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Jump3D"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Jump3D"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -1812,6 +1904,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "Object3D": this._getObject3D()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Jump3D"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Jump3D"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -1908,6 +2003,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "Object3D": this._getObject3D()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Jump3D"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Jump3D"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -2004,6 +2102,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "Object3D": this._getObject3D()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Jump3D"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Jump3D"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -2107,6 +2208,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "Object3D": this._getObject3D()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Jump3D"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Jump3D"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -2200,6 +2304,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "Object3D": this._getObject3D()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Jump3D"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Jump3D"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -2300,6 +2407,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "Object3D": this._getObject3D()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Jump3D"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Jump3D"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -2394,6 +2504,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "Object3D": this._getObject3D()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Jump3D"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Jump3D"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -2494,6 +2607,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "Object3D": this._getObject3D()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Jump3D"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Jump3D"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -2588,6 +2704,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "Object3D": this._getObject3D()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Jump3D"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Jump3D"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -2674,6 +2793,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "Object3D": this._getObject3D()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Jump3D"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Jump3D"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -2760,6 +2882,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "Object3D": this._getObject3D()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Jump3D"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Jump3D"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -2850,6 +2975,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "Object3D": this._getObject3D()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Jump3D"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Jump3D"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -2937,6 +3065,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "Object3D": this._getObject3D()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Jump3D"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Jump3D"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -3027,6 +3158,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "Object3D": this._getObject3D()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Jump3D"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Jump3D"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -3114,6 +3248,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "Object3D": this._getObject3D()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Jump3D"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Jump3D"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -3204,6 +3341,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "Object3D": this._getObject3D()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Jump3D"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Jump3D"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -3301,6 +3441,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "Object3D": this._getObject3D()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Jump3D"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Jump3D"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -3411,6 +3554,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "Object3D": this._getObject3D()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Jump3D"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Jump3D"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

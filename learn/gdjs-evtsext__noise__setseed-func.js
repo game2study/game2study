@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__Noise__SetSeed !== "undefined") {
 gdjs.evtsExt__Noise__SetSeed = {};
 
 
-gdjs.evtsExt__Noise__SetSeed.userFunc0x113d470 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Noise__SetSeed.userFunc0x2496920 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 gdjs._extensionNoise.noiseManager.setSeed(eventsFunctionContext.getArgument("Seed"));
 };
@@ -17,7 +17,7 @@ gdjs.evtsExt__Noise__SetSeed.eventsList0 = function(runtimeScene, eventsFunction
 {
 
 
-gdjs.evtsExt__Noise__SetSeed.userFunc0x113d470(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Noise__SetSeed.userFunc0x2496920(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -32,6 +32,9 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Noise"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Noise"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
