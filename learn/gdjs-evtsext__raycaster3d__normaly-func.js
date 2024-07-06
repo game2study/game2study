@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__Raycaster3D__NormalY !== "undefined") {
 gdjs.evtsExt__Raycaster3D__NormalY = {};
 
 
-gdjs.evtsExt__Raycaster3D__NormalY.userFunc0x24932b8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Raycaster3D__NormalY.userFunc0xbfaea0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext.returnValue = gdjs.__raycaster3DExtension.raycaster.lastNormalY;
 };
@@ -17,7 +17,7 @@ gdjs.evtsExt__Raycaster3D__NormalY.eventsList0 = function(runtimeScene, eventsFu
 {
 
 
-gdjs.evtsExt__Raycaster3D__NormalY.userFunc0x24932b8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Raycaster3D__NormalY.userFunc0xbfaea0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

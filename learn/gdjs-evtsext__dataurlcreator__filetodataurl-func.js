@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__DataURLCreator__FileToDataURL !== "undefined") {
 gdjs.evtsExt__DataURLCreator__FileToDataURL = {};
 
 
-gdjs.evtsExt__DataURLCreator__FileToDataURL.userFunc0x24db3a0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__DataURLCreator__FileToDataURL.userFunc0xc5a7f0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 // Function to handle file selection
 const handleFileSelection = function(event, resultVariable, progressVariable) {
@@ -59,7 +59,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__DataURLCreator__FileToDataURL.userFunc0x24db3a0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__DataURLCreator__FileToDataURL.userFunc0xc5a7f0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

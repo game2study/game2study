@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__ThreeDimensionsPlatforming__RequestPointerLock !== "und
 gdjs.evtsExt__ThreeDimensionsPlatforming__RequestPointerLock = {};
 
 
-gdjs.evtsExt__ThreeDimensionsPlatforming__RequestPointerLock.userFunc0x258e168 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ThreeDimensionsPlatforming__RequestPointerLock.userFunc0x1063a28 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 const canvas = runtimeScene.getGame().getRenderer().getCanvas();
 canvas.requestPointerLock({ unadjustedMovement: true });
@@ -18,7 +18,7 @@ gdjs.evtsExt__ThreeDimensionsPlatforming__RequestPointerLock.eventsList0 = funct
 {
 
 
-gdjs.evtsExt__ThreeDimensionsPlatforming__RequestPointerLock.userFunc0x258e168(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ThreeDimensionsPlatforming__RequestPointerLock.userFunc0x1063a28(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

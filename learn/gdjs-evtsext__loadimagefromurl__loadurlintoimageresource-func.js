@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__LoadImageFromURL__LoadURLIntoImageResource !== "undefin
 gdjs.evtsExt__LoadImageFromURL__LoadURLIntoImageResource = {};
 
 
-gdjs.evtsExt__LoadImageFromURL__LoadURLIntoImageResource.userFunc0x229a748 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__LoadImageFromURL__LoadURLIntoImageResource.userFunc0xa22230 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 runtimeScene
     .getGame()
@@ -22,7 +22,7 @@ gdjs.evtsExt__LoadImageFromURL__LoadURLIntoImageResource.eventsList0 = function(
 {
 
 
-gdjs.evtsExt__LoadImageFromURL__LoadURLIntoImageResource.userFunc0x229a748(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__LoadImageFromURL__LoadURLIntoImageResource.userFunc0xa22230(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

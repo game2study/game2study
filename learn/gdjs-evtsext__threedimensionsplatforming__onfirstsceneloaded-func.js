@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__ThreeDimensionsPlatforming__onFirstSceneLoaded !== "und
 gdjs.evtsExt__ThreeDimensionsPlatforming__onFirstSceneLoaded = {};
 
 
-gdjs.evtsExt__ThreeDimensionsPlatforming__onFirstSceneLoaded.userFunc0x25611a0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ThreeDimensionsPlatforming__onFirstSceneLoaded.userFunc0x1cf0928 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 const canvas = runtimeScene.getGame().getRenderer().getCanvas();
 
@@ -25,7 +25,7 @@ gdjs.evtsExt__ThreeDimensionsPlatforming__onFirstSceneLoaded.eventsList0 = funct
 {
 
 
-gdjs.evtsExt__ThreeDimensionsPlatforming__onFirstSceneLoaded.userFunc0x25611a0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ThreeDimensionsPlatforming__onFirstSceneLoaded.userFunc0x1cf0928(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

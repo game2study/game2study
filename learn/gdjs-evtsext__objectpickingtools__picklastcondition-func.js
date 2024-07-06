@@ -10,7 +10,7 @@ gdjs.evtsExt__ObjectPickingTools__PickLastCondition.GDobjectObjects1= [];
 gdjs.evtsExt__ObjectPickingTools__PickLastCondition.GDobjectObjects2= [];
 
 
-gdjs.evtsExt__ObjectPickingTools__PickLastCondition.userFunc0x2463228 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ObjectPickingTools__PickLastCondition.userFunc0x87d6b8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 const lists = eventsFunctionContext.getObjectsLists("object").items;
 
@@ -26,7 +26,7 @@ gdjs.evtsExt__ObjectPickingTools__PickLastCondition.eventsList0 = function(runti
 {
 
 
-gdjs.evtsExt__ObjectPickingTools__PickLastCondition.userFunc0x2463228(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ObjectPickingTools__PickLastCondition.userFunc0x87d6b8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

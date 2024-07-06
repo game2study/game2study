@@ -2,51 +2,103 @@ gdjs.Classes_32ManagerCode = {};
 gdjs.Classes_32ManagerCode.localVariables = [];
 gdjs.Classes_32ManagerCode.GDCreateClassButtonObjects1= [];
 gdjs.Classes_32ManagerCode.GDCreateClassButtonObjects2= [];
+gdjs.Classes_32ManagerCode.GDCreateClassButtonObjects3= [];
 gdjs.Classes_32ManagerCode.GDCreateClassNameFieldObjects1= [];
 gdjs.Classes_32ManagerCode.GDCreateClassNameFieldObjects2= [];
+gdjs.Classes_32ManagerCode.GDCreateClassNameFieldObjects3= [];
 gdjs.Classes_32ManagerCode.GDTeachingClassesNameDisplayObjects1= [];
 gdjs.Classes_32ManagerCode.GDTeachingClassesNameDisplayObjects2= [];
+gdjs.Classes_32ManagerCode.GDTeachingClassesNameDisplayObjects3= [];
 gdjs.Classes_32ManagerCode.GDOpenTeachingClassButtonObjects1= [];
 gdjs.Classes_32ManagerCode.GDOpenTeachingClassButtonObjects2= [];
+gdjs.Classes_32ManagerCode.GDOpenTeachingClassButtonObjects3= [];
 gdjs.Classes_32ManagerCode.GDNextTeachingClassButtonObjects1= [];
 gdjs.Classes_32ManagerCode.GDNextTeachingClassButtonObjects2= [];
+gdjs.Classes_32ManagerCode.GDNextTeachingClassButtonObjects3= [];
 gdjs.Classes_32ManagerCode.GDPreviousTeachingClassButtonObjects1= [];
 gdjs.Classes_32ManagerCode.GDPreviousTeachingClassButtonObjects2= [];
+gdjs.Classes_32ManagerCode.GDPreviousTeachingClassButtonObjects3= [];
 gdjs.Classes_32ManagerCode.GDTeachingClassesIdDisplayObjects1= [];
 gdjs.Classes_32ManagerCode.GDTeachingClassesIdDisplayObjects2= [];
+gdjs.Classes_32ManagerCode.GDTeachingClassesIdDisplayObjects3= [];
 gdjs.Classes_32ManagerCode.GDCopyTeachingClassIdButtonObjects1= [];
 gdjs.Classes_32ManagerCode.GDCopyTeachingClassIdButtonObjects2= [];
+gdjs.Classes_32ManagerCode.GDCopyTeachingClassIdButtonObjects3= [];
 gdjs.Classes_32ManagerCode.GDCopyTeachingClassNameButtonObjects1= [];
 gdjs.Classes_32ManagerCode.GDCopyTeachingClassNameButtonObjects2= [];
+gdjs.Classes_32ManagerCode.GDCopyTeachingClassNameButtonObjects3= [];
 gdjs.Classes_32ManagerCode.GDOpenLearningClassButtonObjects1= [];
 gdjs.Classes_32ManagerCode.GDOpenLearningClassButtonObjects2= [];
+gdjs.Classes_32ManagerCode.GDOpenLearningClassButtonObjects3= [];
 gdjs.Classes_32ManagerCode.GDLearningClassesNameDisplayObjects1= [];
 gdjs.Classes_32ManagerCode.GDLearningClassesNameDisplayObjects2= [];
+gdjs.Classes_32ManagerCode.GDLearningClassesNameDisplayObjects3= [];
 gdjs.Classes_32ManagerCode.GDLearningClassesIdDisplayObjects1= [];
 gdjs.Classes_32ManagerCode.GDLearningClassesIdDisplayObjects2= [];
+gdjs.Classes_32ManagerCode.GDLearningClassesIdDisplayObjects3= [];
 gdjs.Classes_32ManagerCode.GDNextLearningClassButtonObjects1= [];
 gdjs.Classes_32ManagerCode.GDNextLearningClassButtonObjects2= [];
+gdjs.Classes_32ManagerCode.GDNextLearningClassButtonObjects3= [];
 gdjs.Classes_32ManagerCode.GDPreviousLearningClassButtonObjects1= [];
 gdjs.Classes_32ManagerCode.GDPreviousLearningClassButtonObjects2= [];
+gdjs.Classes_32ManagerCode.GDPreviousLearningClassButtonObjects3= [];
 gdjs.Classes_32ManagerCode.GDCopyLearningClassIdButtonObjects1= [];
 gdjs.Classes_32ManagerCode.GDCopyLearningClassIdButtonObjects2= [];
+gdjs.Classes_32ManagerCode.GDCopyLearningClassIdButtonObjects3= [];
 gdjs.Classes_32ManagerCode.GDCopyLearningClassNameButtonObjects1= [];
 gdjs.Classes_32ManagerCode.GDCopyLearningClassNameButtonObjects2= [];
+gdjs.Classes_32ManagerCode.GDCopyLearningClassNameButtonObjects3= [];
 gdjs.Classes_32ManagerCode.GDJoinClassIdFieldObjects1= [];
 gdjs.Classes_32ManagerCode.GDJoinClassIdFieldObjects2= [];
+gdjs.Classes_32ManagerCode.GDJoinClassIdFieldObjects3= [];
 gdjs.Classes_32ManagerCode.GDJoinClassButtonObjects1= [];
 gdjs.Classes_32ManagerCode.GDJoinClassButtonObjects2= [];
+gdjs.Classes_32ManagerCode.GDJoinClassButtonObjects3= [];
 gdjs.Classes_32ManagerCode.GDHeaderObjects1= [];
 gdjs.Classes_32ManagerCode.GDHeaderObjects2= [];
+gdjs.Classes_32ManagerCode.GDHeaderObjects3= [];
 gdjs.Classes_32ManagerCode.GDTeachingHeaderObjects1= [];
 gdjs.Classes_32ManagerCode.GDTeachingHeaderObjects2= [];
+gdjs.Classes_32ManagerCode.GDTeachingHeaderObjects3= [];
 gdjs.Classes_32ManagerCode.GDLearningHeaderObjects1= [];
 gdjs.Classes_32ManagerCode.GDLearningHeaderObjects2= [];
+gdjs.Classes_32ManagerCode.GDLearningHeaderObjects3= [];
 gdjs.Classes_32ManagerCode.GDMPIndicatorObjects1= [];
 gdjs.Classes_32ManagerCode.GDMPIndicatorObjects2= [];
+gdjs.Classes_32ManagerCode.GDMPIndicatorObjects3= [];
 
 
 gdjs.Classes_32ManagerCode.eventsList0 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (gdjs.evtsExt__URLTools__URLAttribute.func(runtimeScene, gdjs.evtsExt__URLTools__CurrentURL.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), "hash", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) != gdjs.evtsExt__URLTools__EscapeCharacters.func(runtimeScene, gdjs.evtTools.runtimeScene.getSceneName(runtimeScene), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, gdjs.evtsExt__URLTools__URLAttribute.func(runtimeScene, gdjs.evtsExt__URLTools__CurrentURL.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), "hash", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), false);
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (gdjs.evtsExt__URLTools__URLAttribute.func(runtimeScene, gdjs.evtsExt__URLTools__CurrentURL.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), "hash", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) == gdjs.evtsExt__URLTools__EscapeCharacters.func(runtimeScene, gdjs.evtTools.runtimeScene.getSceneName(runtimeScene), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
+}
+if (isConditionTrue_0) {
+{gdjs.evtsExt__URLTools__Redirect.func(runtimeScene, gdjs.evtsExt__URLTools__ChangeURLAttribute.func(runtimeScene, gdjs.evtsExt__URLTools__CurrentURL.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), "hash", gdjs.evtsExt__URLTools__EscapeCharacters.func(runtimeScene, gdjs.evtTools.runtimeScene.getSceneName(runtimeScene), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}}
+
+}
+
+
+};gdjs.Classes_32ManagerCode.eventsList1 = function(runtimeScene) {
 
 {
 
@@ -466,6 +518,85 @@ if (isConditionTrue_0) {
 }
 
 
+{
+
+gdjs.copyArray(runtimeScene.getObjects("OpenLearningClassButton"), gdjs.Classes_32ManagerCode.GDOpenLearningClassButtonObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Classes_32ManagerCode.GDOpenLearningClassButtonObjects1.length;i<l;++i) {
+    if ( gdjs.Classes_32ManagerCode.GDOpenLearningClassButtonObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.Classes_32ManagerCode.GDOpenLearningClassButtonObjects1[k] = gdjs.Classes_32ManagerCode.GDOpenLearningClassButtonObjects1[i];
+        ++k;
+    }
+}
+gdjs.Classes_32ManagerCode.GDOpenLearningClassButtonObjects1.length = k;
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Class Student View", false);
+}{runtimeScene.getGame().getVariables().getFromIndex(7).getChild("ID").setString(runtimeScene.getScene().getVariables().getFromIndex(2).getChild("docs").getChild(runtimeScene.getScene().getVariables().getFromIndex(4).getAsNumber()).getChild("id").getAsString());
+}}
+
+}
+
+
+{
+
+
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+if (isConditionTrue_0) {
+{gdjs.evtTools.window.setWindowTitle(runtimeScene, "Learn4TheGame: a project that aspires to make learning fun :)");
+}
+{ //Subevents
+gdjs.Classes_32ManagerCode.eventsList0(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtsExt__BackButton__onBackButtonPressed.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.popScene(runtimeScene);
+}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Home", false);
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+}
+
+}
+
+
 };
 
 gdjs.Classes_32ManagerCode.func = function(runtimeScene) {
@@ -473,50 +604,72 @@ runtimeScene.getOnceTriggers().startNewFrame();
 
 gdjs.Classes_32ManagerCode.GDCreateClassButtonObjects1.length = 0;
 gdjs.Classes_32ManagerCode.GDCreateClassButtonObjects2.length = 0;
+gdjs.Classes_32ManagerCode.GDCreateClassButtonObjects3.length = 0;
 gdjs.Classes_32ManagerCode.GDCreateClassNameFieldObjects1.length = 0;
 gdjs.Classes_32ManagerCode.GDCreateClassNameFieldObjects2.length = 0;
+gdjs.Classes_32ManagerCode.GDCreateClassNameFieldObjects3.length = 0;
 gdjs.Classes_32ManagerCode.GDTeachingClassesNameDisplayObjects1.length = 0;
 gdjs.Classes_32ManagerCode.GDTeachingClassesNameDisplayObjects2.length = 0;
+gdjs.Classes_32ManagerCode.GDTeachingClassesNameDisplayObjects3.length = 0;
 gdjs.Classes_32ManagerCode.GDOpenTeachingClassButtonObjects1.length = 0;
 gdjs.Classes_32ManagerCode.GDOpenTeachingClassButtonObjects2.length = 0;
+gdjs.Classes_32ManagerCode.GDOpenTeachingClassButtonObjects3.length = 0;
 gdjs.Classes_32ManagerCode.GDNextTeachingClassButtonObjects1.length = 0;
 gdjs.Classes_32ManagerCode.GDNextTeachingClassButtonObjects2.length = 0;
+gdjs.Classes_32ManagerCode.GDNextTeachingClassButtonObjects3.length = 0;
 gdjs.Classes_32ManagerCode.GDPreviousTeachingClassButtonObjects1.length = 0;
 gdjs.Classes_32ManagerCode.GDPreviousTeachingClassButtonObjects2.length = 0;
+gdjs.Classes_32ManagerCode.GDPreviousTeachingClassButtonObjects3.length = 0;
 gdjs.Classes_32ManagerCode.GDTeachingClassesIdDisplayObjects1.length = 0;
 gdjs.Classes_32ManagerCode.GDTeachingClassesIdDisplayObjects2.length = 0;
+gdjs.Classes_32ManagerCode.GDTeachingClassesIdDisplayObjects3.length = 0;
 gdjs.Classes_32ManagerCode.GDCopyTeachingClassIdButtonObjects1.length = 0;
 gdjs.Classes_32ManagerCode.GDCopyTeachingClassIdButtonObjects2.length = 0;
+gdjs.Classes_32ManagerCode.GDCopyTeachingClassIdButtonObjects3.length = 0;
 gdjs.Classes_32ManagerCode.GDCopyTeachingClassNameButtonObjects1.length = 0;
 gdjs.Classes_32ManagerCode.GDCopyTeachingClassNameButtonObjects2.length = 0;
+gdjs.Classes_32ManagerCode.GDCopyTeachingClassNameButtonObjects3.length = 0;
 gdjs.Classes_32ManagerCode.GDOpenLearningClassButtonObjects1.length = 0;
 gdjs.Classes_32ManagerCode.GDOpenLearningClassButtonObjects2.length = 0;
+gdjs.Classes_32ManagerCode.GDOpenLearningClassButtonObjects3.length = 0;
 gdjs.Classes_32ManagerCode.GDLearningClassesNameDisplayObjects1.length = 0;
 gdjs.Classes_32ManagerCode.GDLearningClassesNameDisplayObjects2.length = 0;
+gdjs.Classes_32ManagerCode.GDLearningClassesNameDisplayObjects3.length = 0;
 gdjs.Classes_32ManagerCode.GDLearningClassesIdDisplayObjects1.length = 0;
 gdjs.Classes_32ManagerCode.GDLearningClassesIdDisplayObjects2.length = 0;
+gdjs.Classes_32ManagerCode.GDLearningClassesIdDisplayObjects3.length = 0;
 gdjs.Classes_32ManagerCode.GDNextLearningClassButtonObjects1.length = 0;
 gdjs.Classes_32ManagerCode.GDNextLearningClassButtonObjects2.length = 0;
+gdjs.Classes_32ManagerCode.GDNextLearningClassButtonObjects3.length = 0;
 gdjs.Classes_32ManagerCode.GDPreviousLearningClassButtonObjects1.length = 0;
 gdjs.Classes_32ManagerCode.GDPreviousLearningClassButtonObjects2.length = 0;
+gdjs.Classes_32ManagerCode.GDPreviousLearningClassButtonObjects3.length = 0;
 gdjs.Classes_32ManagerCode.GDCopyLearningClassIdButtonObjects1.length = 0;
 gdjs.Classes_32ManagerCode.GDCopyLearningClassIdButtonObjects2.length = 0;
+gdjs.Classes_32ManagerCode.GDCopyLearningClassIdButtonObjects3.length = 0;
 gdjs.Classes_32ManagerCode.GDCopyLearningClassNameButtonObjects1.length = 0;
 gdjs.Classes_32ManagerCode.GDCopyLearningClassNameButtonObjects2.length = 0;
+gdjs.Classes_32ManagerCode.GDCopyLearningClassNameButtonObjects3.length = 0;
 gdjs.Classes_32ManagerCode.GDJoinClassIdFieldObjects1.length = 0;
 gdjs.Classes_32ManagerCode.GDJoinClassIdFieldObjects2.length = 0;
+gdjs.Classes_32ManagerCode.GDJoinClassIdFieldObjects3.length = 0;
 gdjs.Classes_32ManagerCode.GDJoinClassButtonObjects1.length = 0;
 gdjs.Classes_32ManagerCode.GDJoinClassButtonObjects2.length = 0;
+gdjs.Classes_32ManagerCode.GDJoinClassButtonObjects3.length = 0;
 gdjs.Classes_32ManagerCode.GDHeaderObjects1.length = 0;
 gdjs.Classes_32ManagerCode.GDHeaderObjects2.length = 0;
+gdjs.Classes_32ManagerCode.GDHeaderObjects3.length = 0;
 gdjs.Classes_32ManagerCode.GDTeachingHeaderObjects1.length = 0;
 gdjs.Classes_32ManagerCode.GDTeachingHeaderObjects2.length = 0;
+gdjs.Classes_32ManagerCode.GDTeachingHeaderObjects3.length = 0;
 gdjs.Classes_32ManagerCode.GDLearningHeaderObjects1.length = 0;
 gdjs.Classes_32ManagerCode.GDLearningHeaderObjects2.length = 0;
+gdjs.Classes_32ManagerCode.GDLearningHeaderObjects3.length = 0;
 gdjs.Classes_32ManagerCode.GDMPIndicatorObjects1.length = 0;
 gdjs.Classes_32ManagerCode.GDMPIndicatorObjects2.length = 0;
+gdjs.Classes_32ManagerCode.GDMPIndicatorObjects3.length = 0;
 
-gdjs.Classes_32ManagerCode.eventsList0(runtimeScene);
+gdjs.Classes_32ManagerCode.eventsList1(runtimeScene);
 
 return;
 

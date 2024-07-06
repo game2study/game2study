@@ -2,47 +2,97 @@ gdjs.Debug_32MenuCode = {};
 gdjs.Debug_32MenuCode.localVariables = [];
 gdjs.Debug_32MenuCode.GDTitleObjects1= [];
 gdjs.Debug_32MenuCode.GDTitleObjects2= [];
+gdjs.Debug_32MenuCode.GDTitleObjects3= [];
 gdjs.Debug_32MenuCode.GDSceneSwitchAnswerScreenObjects1= [];
 gdjs.Debug_32MenuCode.GDSceneSwitchAnswerScreenObjects2= [];
+gdjs.Debug_32MenuCode.GDSceneSwitchAnswerScreenObjects3= [];
 gdjs.Debug_32MenuCode.GDSceneSwitchPropertyEditorObjects1= [];
 gdjs.Debug_32MenuCode.GDSceneSwitchPropertyEditorObjects2= [];
+gdjs.Debug_32MenuCode.GDSceneSwitchPropertyEditorObjects3= [];
 gdjs.Debug_32MenuCode.GDSceneSwitchGM1Objects1= [];
 gdjs.Debug_32MenuCode.GDSceneSwitchGM1Objects2= [];
+gdjs.Debug_32MenuCode.GDSceneSwitchGM1Objects3= [];
 gdjs.Debug_32MenuCode.GDCreditAmtObjects1= [];
 gdjs.Debug_32MenuCode.GDCreditAmtObjects2= [];
+gdjs.Debug_32MenuCode.GDCreditAmtObjects3= [];
 gdjs.Debug_32MenuCode.GDAddCreditsButtonObjects1= [];
 gdjs.Debug_32MenuCode.GDAddCreditsButtonObjects2= [];
+gdjs.Debug_32MenuCode.GDAddCreditsButtonObjects3= [];
 gdjs.Debug_32MenuCode.GDSubtractCreditsButtonObjects1= [];
 gdjs.Debug_32MenuCode.GDSubtractCreditsButtonObjects2= [];
+gdjs.Debug_32MenuCode.GDSubtractCreditsButtonObjects3= [];
 gdjs.Debug_32MenuCode.GDHeading1Objects1= [];
 gdjs.Debug_32MenuCode.GDHeading1Objects2= [];
+gdjs.Debug_32MenuCode.GDHeading1Objects3= [];
 gdjs.Debug_32MenuCode.GDSceneSwitchGM1shopObjects1= [];
 gdjs.Debug_32MenuCode.GDSceneSwitchGM1shopObjects2= [];
+gdjs.Debug_32MenuCode.GDSceneSwitchGM1shopObjects3= [];
 gdjs.Debug_32MenuCode.GDSceneSwitchGM1pauseObjects1= [];
 gdjs.Debug_32MenuCode.GDSceneSwitchGM1pauseObjects2= [];
+gdjs.Debug_32MenuCode.GDSceneSwitchGM1pauseObjects3= [];
 gdjs.Debug_32MenuCode.GDClearQuestionKitButtonObjects1= [];
 gdjs.Debug_32MenuCode.GDClearQuestionKitButtonObjects2= [];
+gdjs.Debug_32MenuCode.GDClearQuestionKitButtonObjects3= [];
 gdjs.Debug_32MenuCode.GDImportQuestionKitButtonObjects1= [];
 gdjs.Debug_32MenuCode.GDImportQuestionKitButtonObjects2= [];
+gdjs.Debug_32MenuCode.GDImportQuestionKitButtonObjects3= [];
 gdjs.Debug_32MenuCode.GDImportKitInputObjects1= [];
 gdjs.Debug_32MenuCode.GDImportKitInputObjects2= [];
+gdjs.Debug_32MenuCode.GDImportKitInputObjects3= [];
 gdjs.Debug_32MenuCode.GDExportKitButtonObjects1= [];
 gdjs.Debug_32MenuCode.GDExportKitButtonObjects2= [];
+gdjs.Debug_32MenuCode.GDExportKitButtonObjects3= [];
 gdjs.Debug_32MenuCode.GDSceneSwitchQuestionsEditorObjects1= [];
 gdjs.Debug_32MenuCode.GDSceneSwitchQuestionsEditorObjects2= [];
+gdjs.Debug_32MenuCode.GDSceneSwitchQuestionsEditorObjects3= [];
 gdjs.Debug_32MenuCode.GDSceneSwitchManageKitsObjects1= [];
 gdjs.Debug_32MenuCode.GDSceneSwitchManageKitsObjects2= [];
+gdjs.Debug_32MenuCode.GDSceneSwitchManageKitsObjects3= [];
 gdjs.Debug_32MenuCode.GDSceneSwitchViewQuestionsObjects1= [];
 gdjs.Debug_32MenuCode.GDSceneSwitchViewQuestionsObjects2= [];
+gdjs.Debug_32MenuCode.GDSceneSwitchViewQuestionsObjects3= [];
 gdjs.Debug_32MenuCode.GDSceneSwitchHomeObjects1= [];
 gdjs.Debug_32MenuCode.GDSceneSwitchHomeObjects2= [];
+gdjs.Debug_32MenuCode.GDSceneSwitchHomeObjects3= [];
 gdjs.Debug_32MenuCode.GDUploadKitButtonObjects1= [];
 gdjs.Debug_32MenuCode.GDUploadKitButtonObjects2= [];
+gdjs.Debug_32MenuCode.GDUploadKitButtonObjects3= [];
 gdjs.Debug_32MenuCode.GDMPIndicatorObjects1= [];
 gdjs.Debug_32MenuCode.GDMPIndicatorObjects2= [];
+gdjs.Debug_32MenuCode.GDMPIndicatorObjects3= [];
 
 
 gdjs.Debug_32MenuCode.eventsList0 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (gdjs.evtsExt__URLTools__URLAttribute.func(runtimeScene, gdjs.evtsExt__URLTools__CurrentURL.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), "hash", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) != gdjs.evtsExt__URLTools__EscapeCharacters.func(runtimeScene, gdjs.evtTools.runtimeScene.getSceneName(runtimeScene), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, gdjs.evtsExt__URLTools__URLAttribute.func(runtimeScene, gdjs.evtsExt__URLTools__CurrentURL.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), "hash", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), false);
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (gdjs.evtsExt__URLTools__URLAttribute.func(runtimeScene, gdjs.evtsExt__URLTools__CurrentURL.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), "hash", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) == gdjs.evtsExt__URLTools__EscapeCharacters.func(runtimeScene, gdjs.evtTools.runtimeScene.getSceneName(runtimeScene), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
+}
+if (isConditionTrue_0) {
+{gdjs.evtsExt__URLTools__Redirect.func(runtimeScene, gdjs.evtsExt__URLTools__ChangeURLAttribute.func(runtimeScene, gdjs.evtsExt__URLTools__CurrentURL.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), "hash", gdjs.evtsExt__URLTools__EscapeCharacters.func(runtimeScene, gdjs.evtTools.runtimeScene.getSceneName(runtimeScene), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}}
+
+}
+
+
+};gdjs.Debug_32MenuCode.eventsList1 = function(runtimeScene) {
 
 {
 
@@ -417,7 +467,10 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
 {gdjs.evtTools.window.setWindowTitle(runtimeScene, "Learn4TheGame: a project that aspires to make learning fun :)");
-}}
+}
+{ //Subevents
+gdjs.Debug_32MenuCode.eventsList0(runtimeScene);} //End of subevents
+}
 
 }
 
@@ -430,6 +483,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__BackButton__onBackButtonPressed.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.popScene(runtimeScene);
+}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Home", false);
 }}
 
 }
@@ -486,46 +540,66 @@ runtimeScene.getOnceTriggers().startNewFrame();
 
 gdjs.Debug_32MenuCode.GDTitleObjects1.length = 0;
 gdjs.Debug_32MenuCode.GDTitleObjects2.length = 0;
+gdjs.Debug_32MenuCode.GDTitleObjects3.length = 0;
 gdjs.Debug_32MenuCode.GDSceneSwitchAnswerScreenObjects1.length = 0;
 gdjs.Debug_32MenuCode.GDSceneSwitchAnswerScreenObjects2.length = 0;
+gdjs.Debug_32MenuCode.GDSceneSwitchAnswerScreenObjects3.length = 0;
 gdjs.Debug_32MenuCode.GDSceneSwitchPropertyEditorObjects1.length = 0;
 gdjs.Debug_32MenuCode.GDSceneSwitchPropertyEditorObjects2.length = 0;
+gdjs.Debug_32MenuCode.GDSceneSwitchPropertyEditorObjects3.length = 0;
 gdjs.Debug_32MenuCode.GDSceneSwitchGM1Objects1.length = 0;
 gdjs.Debug_32MenuCode.GDSceneSwitchGM1Objects2.length = 0;
+gdjs.Debug_32MenuCode.GDSceneSwitchGM1Objects3.length = 0;
 gdjs.Debug_32MenuCode.GDCreditAmtObjects1.length = 0;
 gdjs.Debug_32MenuCode.GDCreditAmtObjects2.length = 0;
+gdjs.Debug_32MenuCode.GDCreditAmtObjects3.length = 0;
 gdjs.Debug_32MenuCode.GDAddCreditsButtonObjects1.length = 0;
 gdjs.Debug_32MenuCode.GDAddCreditsButtonObjects2.length = 0;
+gdjs.Debug_32MenuCode.GDAddCreditsButtonObjects3.length = 0;
 gdjs.Debug_32MenuCode.GDSubtractCreditsButtonObjects1.length = 0;
 gdjs.Debug_32MenuCode.GDSubtractCreditsButtonObjects2.length = 0;
+gdjs.Debug_32MenuCode.GDSubtractCreditsButtonObjects3.length = 0;
 gdjs.Debug_32MenuCode.GDHeading1Objects1.length = 0;
 gdjs.Debug_32MenuCode.GDHeading1Objects2.length = 0;
+gdjs.Debug_32MenuCode.GDHeading1Objects3.length = 0;
 gdjs.Debug_32MenuCode.GDSceneSwitchGM1shopObjects1.length = 0;
 gdjs.Debug_32MenuCode.GDSceneSwitchGM1shopObjects2.length = 0;
+gdjs.Debug_32MenuCode.GDSceneSwitchGM1shopObjects3.length = 0;
 gdjs.Debug_32MenuCode.GDSceneSwitchGM1pauseObjects1.length = 0;
 gdjs.Debug_32MenuCode.GDSceneSwitchGM1pauseObjects2.length = 0;
+gdjs.Debug_32MenuCode.GDSceneSwitchGM1pauseObjects3.length = 0;
 gdjs.Debug_32MenuCode.GDClearQuestionKitButtonObjects1.length = 0;
 gdjs.Debug_32MenuCode.GDClearQuestionKitButtonObjects2.length = 0;
+gdjs.Debug_32MenuCode.GDClearQuestionKitButtonObjects3.length = 0;
 gdjs.Debug_32MenuCode.GDImportQuestionKitButtonObjects1.length = 0;
 gdjs.Debug_32MenuCode.GDImportQuestionKitButtonObjects2.length = 0;
+gdjs.Debug_32MenuCode.GDImportQuestionKitButtonObjects3.length = 0;
 gdjs.Debug_32MenuCode.GDImportKitInputObjects1.length = 0;
 gdjs.Debug_32MenuCode.GDImportKitInputObjects2.length = 0;
+gdjs.Debug_32MenuCode.GDImportKitInputObjects3.length = 0;
 gdjs.Debug_32MenuCode.GDExportKitButtonObjects1.length = 0;
 gdjs.Debug_32MenuCode.GDExportKitButtonObjects2.length = 0;
+gdjs.Debug_32MenuCode.GDExportKitButtonObjects3.length = 0;
 gdjs.Debug_32MenuCode.GDSceneSwitchQuestionsEditorObjects1.length = 0;
 gdjs.Debug_32MenuCode.GDSceneSwitchQuestionsEditorObjects2.length = 0;
+gdjs.Debug_32MenuCode.GDSceneSwitchQuestionsEditorObjects3.length = 0;
 gdjs.Debug_32MenuCode.GDSceneSwitchManageKitsObjects1.length = 0;
 gdjs.Debug_32MenuCode.GDSceneSwitchManageKitsObjects2.length = 0;
+gdjs.Debug_32MenuCode.GDSceneSwitchManageKitsObjects3.length = 0;
 gdjs.Debug_32MenuCode.GDSceneSwitchViewQuestionsObjects1.length = 0;
 gdjs.Debug_32MenuCode.GDSceneSwitchViewQuestionsObjects2.length = 0;
+gdjs.Debug_32MenuCode.GDSceneSwitchViewQuestionsObjects3.length = 0;
 gdjs.Debug_32MenuCode.GDSceneSwitchHomeObjects1.length = 0;
 gdjs.Debug_32MenuCode.GDSceneSwitchHomeObjects2.length = 0;
+gdjs.Debug_32MenuCode.GDSceneSwitchHomeObjects3.length = 0;
 gdjs.Debug_32MenuCode.GDUploadKitButtonObjects1.length = 0;
 gdjs.Debug_32MenuCode.GDUploadKitButtonObjects2.length = 0;
+gdjs.Debug_32MenuCode.GDUploadKitButtonObjects3.length = 0;
 gdjs.Debug_32MenuCode.GDMPIndicatorObjects1.length = 0;
 gdjs.Debug_32MenuCode.GDMPIndicatorObjects2.length = 0;
+gdjs.Debug_32MenuCode.GDMPIndicatorObjects3.length = 0;
 
-gdjs.Debug_32MenuCode.eventsList0(runtimeScene);
+gdjs.Debug_32MenuCode.eventsList1(runtimeScene);
 
 return;
 

@@ -2,59 +2,115 @@ gdjs.HomeCode = {};
 gdjs.HomeCode.localVariables = [];
 gdjs.HomeCode.GDHeaderObjects1= [];
 gdjs.HomeCode.GDHeaderObjects2= [];
+gdjs.HomeCode.GDHeaderObjects3= [];
 gdjs.HomeCode.GDLoadAKitSubheaderObjects1= [];
 gdjs.HomeCode.GDLoadAKitSubheaderObjects2= [];
+gdjs.HomeCode.GDLoadAKitSubheaderObjects3= [];
 gdjs.HomeCode.GDStartAGameSubheaderObjects1= [];
 gdjs.HomeCode.GDStartAGameSubheaderObjects2= [];
+gdjs.HomeCode.GDStartAGameSubheaderObjects3= [];
 gdjs.HomeCode.GDManageKitsButtonObjects1= [];
 gdjs.HomeCode.GDManageKitsButtonObjects2= [];
+gdjs.HomeCode.GDManageKitsButtonObjects3= [];
 gdjs.HomeCode.GDGenericLabel1Objects1= [];
 gdjs.HomeCode.GDGenericLabel1Objects2= [];
+gdjs.HomeCode.GDGenericLabel1Objects3= [];
 gdjs.HomeCode.GDKitJsonInputObjects1= [];
 gdjs.HomeCode.GDKitJsonInputObjects2= [];
+gdjs.HomeCode.GDKitJsonInputObjects3= [];
 gdjs.HomeCode.GDLoadInputtedJsonButtonObjects1= [];
 gdjs.HomeCode.GDLoadInputtedJsonButtonObjects2= [];
+gdjs.HomeCode.GDLoadInputtedJsonButtonObjects3= [];
 gdjs.HomeCode.GDUploadJsonButtonObjects1= [];
 gdjs.HomeCode.GDUploadJsonButtonObjects2= [];
+gdjs.HomeCode.GDUploadJsonButtonObjects3= [];
 gdjs.HomeCode.GDCreateNewKitButtonObjects1= [];
 gdjs.HomeCode.GDCreateNewKitButtonObjects2= [];
+gdjs.HomeCode.GDCreateNewKitButtonObjects3= [];
 gdjs.HomeCode.GDNewGameButtonGM1Objects1= [];
 gdjs.HomeCode.GDNewGameButtonGM1Objects2= [];
+gdjs.HomeCode.GDNewGameButtonGM1Objects3= [];
 gdjs.HomeCode.GDClearKitButtonObjects1= [];
 gdjs.HomeCode.GDClearKitButtonObjects2= [];
+gdjs.HomeCode.GDClearKitButtonObjects3= [];
 gdjs.HomeCode.GDCreditsLabelObjects1= [];
 gdjs.HomeCode.GDCreditsLabelObjects2= [];
+gdjs.HomeCode.GDCreditsLabelObjects3= [];
 gdjs.HomeCode.GDTesterLabelObjects1= [];
 gdjs.HomeCode.GDTesterLabelObjects2= [];
+gdjs.HomeCode.GDTesterLabelObjects3= [];
 gdjs.HomeCode.GDPracticeKitButtonObjects1= [];
 gdjs.HomeCode.GDPracticeKitButtonObjects2= [];
+gdjs.HomeCode.GDPracticeKitButtonObjects3= [];
 gdjs.HomeCode.GDNewGameButtonGM2WIPObjects1= [];
 gdjs.HomeCode.GDNewGameButtonGM2WIPObjects2= [];
+gdjs.HomeCode.GDNewGameButtonGM2WIPObjects3= [];
 gdjs.HomeCode.GDNewGameButtonGM3WIPObjects1= [];
 gdjs.HomeCode.GDNewGameButtonGM3WIPObjects2= [];
+gdjs.HomeCode.GDNewGameButtonGM3WIPObjects3= [];
 gdjs.HomeCode.GDImportFlashcardsObjects1= [];
 gdjs.HomeCode.GDImportFlashcardsObjects2= [];
+gdjs.HomeCode.GDImportFlashcardsObjects3= [];
 gdjs.HomeCode.GDMPLabelObjects1= [];
 gdjs.HomeCode.GDMPLabelObjects2= [];
+gdjs.HomeCode.GDMPLabelObjects3= [];
 gdjs.HomeCode.GDAssignmentsManagerObjects1= [];
 gdjs.HomeCode.GDAssignmentsManagerObjects2= [];
+gdjs.HomeCode.GDAssignmentsManagerObjects3= [];
 gdjs.HomeCode.GDClassManagerObjects1= [];
 gdjs.HomeCode.GDClassManagerObjects2= [];
+gdjs.HomeCode.GDClassManagerObjects3= [];
 gdjs.HomeCode.GDLoginButtonObjects1= [];
 gdjs.HomeCode.GDLoginButtonObjects2= [];
+gdjs.HomeCode.GDLoginButtonObjects3= [];
 gdjs.HomeCode.GDSignupButtonObjects1= [];
 gdjs.HomeCode.GDSignupButtonObjects2= [];
+gdjs.HomeCode.GDSignupButtonObjects3= [];
 gdjs.HomeCode.GDLogoutButtonObjects1= [];
 gdjs.HomeCode.GDLogoutButtonObjects2= [];
+gdjs.HomeCode.GDLogoutButtonObjects3= [];
 gdjs.HomeCode.GDPFPDisplayObjects1= [];
 gdjs.HomeCode.GDPFPDisplayObjects2= [];
+gdjs.HomeCode.GDPFPDisplayObjects3= [];
 gdjs.HomeCode.GDUsernameDisplayObjects1= [];
 gdjs.HomeCode.GDUsernameDisplayObjects2= [];
+gdjs.HomeCode.GDUsernameDisplayObjects3= [];
 gdjs.HomeCode.GDMPIndicatorObjects1= [];
 gdjs.HomeCode.GDMPIndicatorObjects2= [];
+gdjs.HomeCode.GDMPIndicatorObjects3= [];
 
 
 gdjs.HomeCode.eventsList0 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (gdjs.evtsExt__URLTools__URLAttribute.func(runtimeScene, gdjs.evtsExt__URLTools__CurrentURL.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), "hash", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) != gdjs.evtsExt__URLTools__EscapeCharacters.func(runtimeScene, gdjs.evtTools.runtimeScene.getSceneName(runtimeScene), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, gdjs.evtsExt__URLTools__URLAttribute.func(runtimeScene, gdjs.evtsExt__URLTools__CurrentURL.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), "hash", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), false);
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (gdjs.evtsExt__URLTools__URLAttribute.func(runtimeScene, gdjs.evtsExt__URLTools__CurrentURL.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), "hash", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) == gdjs.evtsExt__URLTools__EscapeCharacters.func(runtimeScene, gdjs.evtTools.runtimeScene.getSceneName(runtimeScene), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
+}
+if (isConditionTrue_0) {
+{gdjs.evtsExt__URLTools__Redirect.func(runtimeScene, gdjs.evtsExt__URLTools__ChangeURLAttribute.func(runtimeScene, gdjs.evtsExt__URLTools__CurrentURL.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), "hash", gdjs.evtsExt__URLTools__EscapeCharacters.func(runtimeScene, gdjs.evtTools.runtimeScene.getSceneName(runtimeScene), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}}
+
+}
+
+
+};gdjs.HomeCode.eventsList1 = function(runtimeScene) {
 
 {
 
@@ -493,7 +549,6 @@ gdjs.copyArray(runtimeScene.getObjects("UsernameDisplay"), gdjs.HomeCode.GDUsern
     gdjs.HomeCode.GDUsernameDisplayObjects1[i].hide(false);
 }
 }{gdjs.evtsExt__LoadImageFromURL__LoadURLIntoImageResource.func(runtimeScene, gdjs.evtTools.firebaseTools.auth.userManagement.getPhotoURL(), "PFPDisplay", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}{gdjs.evtsExt__Clipboard__WriteText.func(runtimeScene, gdjs.evtTools.firebaseTools.auth.userManagement.getPhotoURL(), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }{for(var i = 0, len = gdjs.HomeCode.GDLoginButtonObjects1.length ;i < len;++i) {
     gdjs.HomeCode.GDLoginButtonObjects1[i].Activate(false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
@@ -546,6 +601,63 @@ gdjs.copyArray(runtimeScene.getObjects("UsernameDisplay"), gdjs.HomeCode.GDUsern
 }
 
 
+{
+
+
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+if (isConditionTrue_0) {
+{gdjs.evtTools.window.setWindowTitle(runtimeScene, "Learn4TheGame: a project that aspires to make learning fun :)");
+}
+{ //Subevents
+gdjs.HomeCode.eventsList0(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtsExt__BackButton__onBackButtonPressed.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.popScene(runtimeScene);
+}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Home", false);
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+}
+
+}
+
+
 };
 
 gdjs.HomeCode.func = function(runtimeScene) {
@@ -553,58 +665,84 @@ runtimeScene.getOnceTriggers().startNewFrame();
 
 gdjs.HomeCode.GDHeaderObjects1.length = 0;
 gdjs.HomeCode.GDHeaderObjects2.length = 0;
+gdjs.HomeCode.GDHeaderObjects3.length = 0;
 gdjs.HomeCode.GDLoadAKitSubheaderObjects1.length = 0;
 gdjs.HomeCode.GDLoadAKitSubheaderObjects2.length = 0;
+gdjs.HomeCode.GDLoadAKitSubheaderObjects3.length = 0;
 gdjs.HomeCode.GDStartAGameSubheaderObjects1.length = 0;
 gdjs.HomeCode.GDStartAGameSubheaderObjects2.length = 0;
+gdjs.HomeCode.GDStartAGameSubheaderObjects3.length = 0;
 gdjs.HomeCode.GDManageKitsButtonObjects1.length = 0;
 gdjs.HomeCode.GDManageKitsButtonObjects2.length = 0;
+gdjs.HomeCode.GDManageKitsButtonObjects3.length = 0;
 gdjs.HomeCode.GDGenericLabel1Objects1.length = 0;
 gdjs.HomeCode.GDGenericLabel1Objects2.length = 0;
+gdjs.HomeCode.GDGenericLabel1Objects3.length = 0;
 gdjs.HomeCode.GDKitJsonInputObjects1.length = 0;
 gdjs.HomeCode.GDKitJsonInputObjects2.length = 0;
+gdjs.HomeCode.GDKitJsonInputObjects3.length = 0;
 gdjs.HomeCode.GDLoadInputtedJsonButtonObjects1.length = 0;
 gdjs.HomeCode.GDLoadInputtedJsonButtonObjects2.length = 0;
+gdjs.HomeCode.GDLoadInputtedJsonButtonObjects3.length = 0;
 gdjs.HomeCode.GDUploadJsonButtonObjects1.length = 0;
 gdjs.HomeCode.GDUploadJsonButtonObjects2.length = 0;
+gdjs.HomeCode.GDUploadJsonButtonObjects3.length = 0;
 gdjs.HomeCode.GDCreateNewKitButtonObjects1.length = 0;
 gdjs.HomeCode.GDCreateNewKitButtonObjects2.length = 0;
+gdjs.HomeCode.GDCreateNewKitButtonObjects3.length = 0;
 gdjs.HomeCode.GDNewGameButtonGM1Objects1.length = 0;
 gdjs.HomeCode.GDNewGameButtonGM1Objects2.length = 0;
+gdjs.HomeCode.GDNewGameButtonGM1Objects3.length = 0;
 gdjs.HomeCode.GDClearKitButtonObjects1.length = 0;
 gdjs.HomeCode.GDClearKitButtonObjects2.length = 0;
+gdjs.HomeCode.GDClearKitButtonObjects3.length = 0;
 gdjs.HomeCode.GDCreditsLabelObjects1.length = 0;
 gdjs.HomeCode.GDCreditsLabelObjects2.length = 0;
+gdjs.HomeCode.GDCreditsLabelObjects3.length = 0;
 gdjs.HomeCode.GDTesterLabelObjects1.length = 0;
 gdjs.HomeCode.GDTesterLabelObjects2.length = 0;
+gdjs.HomeCode.GDTesterLabelObjects3.length = 0;
 gdjs.HomeCode.GDPracticeKitButtonObjects1.length = 0;
 gdjs.HomeCode.GDPracticeKitButtonObjects2.length = 0;
+gdjs.HomeCode.GDPracticeKitButtonObjects3.length = 0;
 gdjs.HomeCode.GDNewGameButtonGM2WIPObjects1.length = 0;
 gdjs.HomeCode.GDNewGameButtonGM2WIPObjects2.length = 0;
+gdjs.HomeCode.GDNewGameButtonGM2WIPObjects3.length = 0;
 gdjs.HomeCode.GDNewGameButtonGM3WIPObjects1.length = 0;
 gdjs.HomeCode.GDNewGameButtonGM3WIPObjects2.length = 0;
+gdjs.HomeCode.GDNewGameButtonGM3WIPObjects3.length = 0;
 gdjs.HomeCode.GDImportFlashcardsObjects1.length = 0;
 gdjs.HomeCode.GDImportFlashcardsObjects2.length = 0;
+gdjs.HomeCode.GDImportFlashcardsObjects3.length = 0;
 gdjs.HomeCode.GDMPLabelObjects1.length = 0;
 gdjs.HomeCode.GDMPLabelObjects2.length = 0;
+gdjs.HomeCode.GDMPLabelObjects3.length = 0;
 gdjs.HomeCode.GDAssignmentsManagerObjects1.length = 0;
 gdjs.HomeCode.GDAssignmentsManagerObjects2.length = 0;
+gdjs.HomeCode.GDAssignmentsManagerObjects3.length = 0;
 gdjs.HomeCode.GDClassManagerObjects1.length = 0;
 gdjs.HomeCode.GDClassManagerObjects2.length = 0;
+gdjs.HomeCode.GDClassManagerObjects3.length = 0;
 gdjs.HomeCode.GDLoginButtonObjects1.length = 0;
 gdjs.HomeCode.GDLoginButtonObjects2.length = 0;
+gdjs.HomeCode.GDLoginButtonObjects3.length = 0;
 gdjs.HomeCode.GDSignupButtonObjects1.length = 0;
 gdjs.HomeCode.GDSignupButtonObjects2.length = 0;
+gdjs.HomeCode.GDSignupButtonObjects3.length = 0;
 gdjs.HomeCode.GDLogoutButtonObjects1.length = 0;
 gdjs.HomeCode.GDLogoutButtonObjects2.length = 0;
+gdjs.HomeCode.GDLogoutButtonObjects3.length = 0;
 gdjs.HomeCode.GDPFPDisplayObjects1.length = 0;
 gdjs.HomeCode.GDPFPDisplayObjects2.length = 0;
+gdjs.HomeCode.GDPFPDisplayObjects3.length = 0;
 gdjs.HomeCode.GDUsernameDisplayObjects1.length = 0;
 gdjs.HomeCode.GDUsernameDisplayObjects2.length = 0;
+gdjs.HomeCode.GDUsernameDisplayObjects3.length = 0;
 gdjs.HomeCode.GDMPIndicatorObjects1.length = 0;
 gdjs.HomeCode.GDMPIndicatorObjects2.length = 0;
+gdjs.HomeCode.GDMPIndicatorObjects3.length = 0;
 
-gdjs.HomeCode.eventsList0(runtimeScene);
+gdjs.HomeCode.eventsList1(runtimeScene);
 
 return;
 

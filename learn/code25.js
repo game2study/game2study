@@ -98,7 +98,7 @@ gdjs.copyArray(asyncObjectsList.getObjects("PasswordInput"), gdjs.Account_32Crea
 }
 
 
-};gdjs.Account_32CreatorCode.asyncCallback28024092 = function (runtimeScene, asyncObjectsList) {
+};gdjs.Account_32CreatorCode.asyncCallback28320628 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.Account_32CreatorCode.localVariables);
 gdjs.copyArray(asyncObjectsList.getObjects("Message_Print"), gdjs.Account_32CreatorCode.GDMessage_9595PrintObjects2);
 
@@ -122,7 +122,7 @@ asyncObjectsList.backupLocalVariablesContainers(gdjs.Account_32CreatorCode.local
 for (const obj of gdjs.Account_32CreatorCode.GDEmailInputObjects1) asyncObjectsList.addObject("EmailInput", obj);
 for (const obj of gdjs.Account_32CreatorCode.GDMessage_9595PrintObjects1) asyncObjectsList.addObject("Message_Print", obj);
 for (const obj of gdjs.Account_32CreatorCode.GDPasswordInputObjects1) asyncObjectsList.addObject("PasswordInput", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), (runtimeScene) => (gdjs.Account_32CreatorCode.asyncCallback28024092(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), (runtimeScene) => (gdjs.Account_32CreatorCode.asyncCallback28320628(runtimeScene, asyncObjectsList)));
 }
 }
 
