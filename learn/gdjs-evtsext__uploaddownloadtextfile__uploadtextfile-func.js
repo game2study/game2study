@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__UploadDownloadTextFile__UploadTextFile !== "undefined")
 gdjs.evtsExt__UploadDownloadTextFile__UploadTextFile = {};
 
 
-gdjs.evtsExt__UploadDownloadTextFile__UploadTextFile.userFunc0x829d80 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__UploadDownloadTextFile__UploadTextFile.userFunc0x160b208 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const allowedFileTypes = [eventsFunctionContext.getArgument("allowedfiletype")];
 
@@ -44,7 +44,7 @@ gdjs.evtsExt__UploadDownloadTextFile__UploadTextFile.eventsList0 = function(runt
 
 
 var objects = [];
-gdjs.evtsExt__UploadDownloadTextFile__UploadTextFile.userFunc0x829d80(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__UploadDownloadTextFile__UploadTextFile.userFunc0x160b208(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

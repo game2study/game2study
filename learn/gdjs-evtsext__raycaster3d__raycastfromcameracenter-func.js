@@ -9,7 +9,7 @@ gdjs.evtsExt__Raycaster3D__RaycastFromCameraCenter = {};
 gdjs.evtsExt__Raycaster3D__RaycastFromCameraCenter.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__Raycaster3D__RaycastFromCameraCenter.userFunc0xd7f6d0 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Raycaster3D__RaycastFromCameraCenter.userFunc0x1623b50 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext.returnValue =
     gdjs.__raycaster3DExtension.raycaster.recastFromCamera(
@@ -29,7 +29,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Raycast
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__Raycaster3D__RaycastFromCameraCenter.GDObjectObjects1);
-gdjs.evtsExt__Raycaster3D__RaycastFromCameraCenter.userFunc0xd7f6d0(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Raycaster3D__RaycastFromCameraCenter.userFunc0x1623b50(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

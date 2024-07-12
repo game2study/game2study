@@ -192,7 +192,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "w");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28221804);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(33246020);
 }
 }
 if (isConditionTrue_0) {
@@ -209,7 +209,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "a");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28222428);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(33246644);
 }
 }
 if (isConditionTrue_0) {
@@ -226,7 +226,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "s");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28223204);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(33247420);
 }
 }
 if (isConditionTrue_0) {
@@ -243,7 +243,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "d");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28224588);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(33248804);
 }
 }
 if (isConditionTrue_0) {
@@ -260,7 +260,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Space");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28224388);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(33248604);
 }
 }
 if (isConditionTrue_0) {

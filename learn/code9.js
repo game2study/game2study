@@ -434,7 +434,7 @@ gdjs.copyArray(runtimeScene.getObjects("GrassShort"), gdjs.gm3Code.GDGrassShortO
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(27907460);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(32931820);
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("GrassShort"), gdjs.gm3Code.GDGrassShortObjects1);

@@ -26,7 +26,7 @@ gdjs.SaveKitScreenCode.GDMPIndicatorObjects2= [];
 gdjs.SaveKitScreenCode.GDMPIndicatorObjects3= [];
 
 
-gdjs.SaveKitScreenCode.asyncCallback28140284 = function (runtimeScene, asyncObjectsList) {
+gdjs.SaveKitScreenCode.asyncCallback33164500 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.SaveKitScreenCode.localVariables);
 gdjs.copyArray(asyncObjectsList.getObjects("FeedbackDisplay"), gdjs.SaveKitScreenCode.GDFeedbackDisplayObjects2);
 
@@ -45,14 +45,14 @@ gdjs.SaveKitScreenCode.eventsList0 = function(runtimeScene) {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.SaveKitScreenCode.localVariables);
 for (const obj of gdjs.SaveKitScreenCode.GDFeedbackDisplayObjects1) asyncObjectsList.addObject("FeedbackDisplay", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.SaveKitScreenCode.asyncCallback28140284(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.SaveKitScreenCode.asyncCallback33164500(runtimeScene, asyncObjectsList)));
 }
 }
 
 }
 
 
-};gdjs.SaveKitScreenCode.asyncCallback28141588 = function (runtimeScene, asyncObjectsList) {
+};gdjs.SaveKitScreenCode.asyncCallback33165804 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.SaveKitScreenCode.localVariables);
 gdjs.copyArray(asyncObjectsList.getObjects("FeedbackDisplay"), gdjs.SaveKitScreenCode.GDFeedbackDisplayObjects2);
 
@@ -71,7 +71,7 @@ gdjs.SaveKitScreenCode.eventsList1 = function(runtimeScene) {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.SaveKitScreenCode.localVariables);
 for (const obj of gdjs.SaveKitScreenCode.GDFeedbackDisplayObjects1) asyncObjectsList.addObject("FeedbackDisplay", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.SaveKitScreenCode.asyncCallback28141588(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.SaveKitScreenCode.asyncCallback33165804(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -335,7 +335,8 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 {
-}
+{gdjs.evtTools.network.sendAsyncRequest("", "", "GET", "", gdjs.VariablesContainer.badVariable, gdjs.VariablesContainer.badVariable);
+}}
 
 }
 

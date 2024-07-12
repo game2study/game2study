@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__Noise__DeleteAll !== "undefined") {
 gdjs.evtsExt__Noise__DeleteAll = {};
 
 
-gdjs.evtsExt__Noise__DeleteAll.userFunc0x1dc2448 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Noise__DeleteAll.userFunc0x160b208 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 gdjs._extensionNoise.noiseManager.deleteAllGenerators();
 };
@@ -17,7 +17,7 @@ gdjs.evtsExt__Noise__DeleteAll.eventsList0 = function(runtimeScene, eventsFuncti
 {
 
 
-gdjs.evtsExt__Noise__DeleteAll.userFunc0x1dc2448(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Noise__DeleteAll.userFunc0x160b208(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

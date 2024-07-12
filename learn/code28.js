@@ -67,7 +67,7 @@ gdjs.Class_32Teacher_32ViewCode.GDMPIndicatorObjects3= [];
 
 gdjs.Class_32Teacher_32ViewCode.mapOfGDgdjs_9546Class_959532Teacher_959532ViewCode_9546GDEditPagesButtonObjects1ObjectsGDgdjs_9546Class_959532Teacher_959532ViewCode_9546GDCopyIdButtonObjects1ObjectsGDgdjs_9546Class_959532Teacher_959532ViewCode_9546GDConfirmChangesButtonObjects1ObjectsGDgdjs_9546Class_959532Teacher_959532ViewCode_9546GDUploadBannerButtonObjects1ObjectsGDgdjs_9546Class_959532Teacher_959532ViewCode_9546GDSendAnnouncementButtonObjects1ObjectsGDgdjs_9546Class_959532Teacher_959532ViewCode_9546GDChangeTextColorButtonObjects1Objects = Hashtable.newFrom({"EditPagesButton": gdjs.Class_32Teacher_32ViewCode.GDEditPagesButtonObjects1, "CopyIdButton": gdjs.Class_32Teacher_32ViewCode.GDCopyIdButtonObjects1, "ConfirmChangesButton": gdjs.Class_32Teacher_32ViewCode.GDConfirmChangesButtonObjects1, "UploadBannerButton": gdjs.Class_32Teacher_32ViewCode.GDUploadBannerButtonObjects1, "SendAnnouncementButton": gdjs.Class_32Teacher_32ViewCode.GDSendAnnouncementButtonObjects1, "ChangeTextColorButton": gdjs.Class_32Teacher_32ViewCode.GDChangeTextColorButtonObjects1});
 gdjs.Class_32Teacher_32ViewCode.mapOfGDgdjs_9546Class_959532Teacher_959532ViewCode_9546GDEditPagesButtonObjects1ObjectsGDgdjs_9546Class_959532Teacher_959532ViewCode_9546GDCopyIdButtonObjects1ObjectsGDgdjs_9546Class_959532Teacher_959532ViewCode_9546GDConfirmChangesButtonObjects1ObjectsGDgdjs_9546Class_959532Teacher_959532ViewCode_9546GDUploadBannerButtonObjects1ObjectsGDgdjs_9546Class_959532Teacher_959532ViewCode_9546GDSendAnnouncementButtonObjects1ObjectsGDgdjs_9546Class_959532Teacher_959532ViewCode_9546GDChangeTextColorButtonObjects1Objects = Hashtable.newFrom({"EditPagesButton": gdjs.Class_32Teacher_32ViewCode.GDEditPagesButtonObjects1, "CopyIdButton": gdjs.Class_32Teacher_32ViewCode.GDCopyIdButtonObjects1, "ConfirmChangesButton": gdjs.Class_32Teacher_32ViewCode.GDConfirmChangesButtonObjects1, "UploadBannerButton": gdjs.Class_32Teacher_32ViewCode.GDUploadBannerButtonObjects1, "SendAnnouncementButton": gdjs.Class_32Teacher_32ViewCode.GDSendAnnouncementButtonObjects1, "ChangeTextColorButton": gdjs.Class_32Teacher_32ViewCode.GDChangeTextColorButtonObjects1});
-gdjs.Class_32Teacher_32ViewCode.asyncCallback19271036 = function (runtimeScene, asyncObjectsList) {
+gdjs.Class_32Teacher_32ViewCode.asyncCallback33499772 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.Class_32Teacher_32ViewCode.localVariables);
 gdjs.copyArray(runtimeScene.getObjects("AnnouncementInput"), gdjs.Class_32Teacher_32ViewCode.GDAnnouncementInputObjects2);
 {runtimeScene.getScene().getVariables().getFromIndex(6).getChild("author").setString(gdjs.evtTools.firebaseTools.auth.userManagement.getUID());
@@ -88,7 +88,7 @@ gdjs.Class_32Teacher_32ViewCode.eventsList0 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.Class_32Teacher_32ViewCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(5), (runtimeScene) => (gdjs.Class_32Teacher_32ViewCode.asyncCallback19271036(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(5), (runtimeScene) => (gdjs.Class_32Teacher_32ViewCode.asyncCallback33499772(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -125,7 +125,7 @@ if (true)
 }
 
 
-};gdjs.Class_32Teacher_32ViewCode.asyncCallback34493300 = function (runtimeScene, asyncObjectsList) {
+};gdjs.Class_32Teacher_32ViewCode.asyncCallback33501956 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.Class_32Teacher_32ViewCode.localVariables);
 gdjs.copyArray(runtimeScene.getObjects("AnnouncementDisplay"), gdjs.Class_32Teacher_32ViewCode.GDAnnouncementDisplayObjects2);
 {for(var i = 0, len = gdjs.Class_32Teacher_32ViewCode.GDAnnouncementDisplayObjects2.length ;i < len;++i) {
@@ -145,7 +145,7 @@ gdjs.Class_32Teacher_32ViewCode.eventsList3 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.Class_32Teacher_32ViewCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.Class_32Teacher_32ViewCode.asyncCallback34493300(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.Class_32Teacher_32ViewCode.asyncCallback33501956(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -182,7 +182,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.Class_32Teacher_32ViewCode.asyncCallback27487188 = function (runtimeScene, asyncObjectsList) {
+};gdjs.Class_32Teacher_32ViewCode.asyncCallback33506340 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.Class_32Teacher_32ViewCode.localVariables);
 gdjs.copyArray(runtimeScene.getObjects("AssignmentDescriptionInput"), gdjs.Class_32Teacher_32ViewCode.GDAssignmentDescriptionInputObjects2);
 gdjs.copyArray(runtimeScene.getObjects("AssignmentNameInput"), gdjs.Class_32Teacher_32ViewCode.GDAssignmentNameInputObjects2);
@@ -207,7 +207,7 @@ gdjs.Class_32Teacher_32ViewCode.eventsList5 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.Class_32Teacher_32ViewCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(5), (runtimeScene) => (gdjs.Class_32Teacher_32ViewCode.asyncCallback27487188(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(5), (runtimeScene) => (gdjs.Class_32Teacher_32ViewCode.asyncCallback33506340(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -242,6 +242,7 @@ for(var i = 0, len = gdjs.Class_32Teacher_32ViewCode.GDClassNameInputObjects1.le
 for(var i = 0, len = gdjs.Class_32Teacher_32ViewCode.GDChangeTextColorButtonObjects1.length ;i < len;++i) {
     gdjs.Class_32Teacher_32ViewCode.GDChangeTextColorButtonObjects1[i].hide();
 }
+}{gdjs.evtTools.firebaseTools.database.hasVariable("classes/" + runtimeScene.getGame().getVariables().getFromIndex(7).getChild("ID").getAsString(), runtimeScene.getScene().getVariables().getFromIndex(8), gdjs.VariablesContainer.badVariable);
 }}
 
 }
@@ -365,7 +366,7 @@ for (var i = 0, k = 0, l = gdjs.Class_32Teacher_32ViewCode.GDCopyIdButtonObjects
 gdjs.Class_32Teacher_32ViewCode.GDCopyIdButtonObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(34381332);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(33488236);
 }
 }
 if (isConditionTrue_0) {
@@ -487,7 +488,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().getFromIndex(1)) != "0";
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(17469732);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(33498932);
 }
 }
 }
@@ -613,7 +614,8 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 {
-}
+{gdjs.evtTools.network.sendAsyncRequest("", "", "GET", "", gdjs.VariablesContainer.badVariable, gdjs.VariablesContainer.badVariable);
+}}
 
 }
 
@@ -650,6 +652,48 @@ if (isConditionTrue_0) {
 { //Subevents
 gdjs.Class_32Teacher_32ViewCode.eventsList5(runtimeScene);} //End of subevents
 }
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Join3DViewButton"), gdjs.Class_32Teacher_32ViewCode.GDJoin3DViewButtonObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Class_32Teacher_32ViewCode.GDJoin3DViewButtonObjects1.length;i<l;++i) {
+    if ( gdjs.Class_32Teacher_32ViewCode.GDJoin3DViewButtonObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.Class_32Teacher_32ViewCode.GDJoin3DViewButtonObjects1[k] = gdjs.Class_32Teacher_32ViewCode.GDJoin3DViewButtonObjects1[i];
+        ++k;
+    }
+}
+gdjs.Class_32Teacher_32ViewCode.GDJoin3DViewButtonObjects1.length = k;
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Class 3D View", false);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("ChangeKitButton"), gdjs.Class_32Teacher_32ViewCode.GDChangeKitButtonObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Class_32Teacher_32ViewCode.GDChangeKitButtonObjects1.length;i<l;++i) {
+    if ( gdjs.Class_32Teacher_32ViewCode.GDChangeKitButtonObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.Class_32Teacher_32ViewCode.GDChangeKitButtonObjects1[k] = gdjs.Class_32Teacher_32ViewCode.GDChangeKitButtonObjects1[i];
+        ++k;
+    }
+}
+gdjs.Class_32Teacher_32ViewCode.GDChangeKitButtonObjects1.length = k;
+if (isConditionTrue_0) {
+{gdjs.evtTools.firebaseTools.database.writeField("/classes/" + runtimeScene.getGame().getVariables().getFromIndex(7).getChild("ID").getAsString() + "/", "exists", "1", gdjs.VariablesContainer.badVariable);
+}}
 
 }
 

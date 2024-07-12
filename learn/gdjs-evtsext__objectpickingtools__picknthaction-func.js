@@ -9,7 +9,7 @@ gdjs.evtsExt__ObjectPickingTools__PickNthAction = {};
 gdjs.evtsExt__ObjectPickingTools__PickNthAction.GDobjectObjects1= [];
 
 
-gdjs.evtsExt__ObjectPickingTools__PickNthAction.userFunc0xe13090 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ObjectPickingTools__PickNthAction.userFunc0x1640c10 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 const lists = eventsFunctionContext.getObjectsLists("object").items;
 const n = eventsFunctionContext.getObjectsLists("n");
@@ -27,7 +27,7 @@ gdjs.evtsExt__ObjectPickingTools__PickNthAction.eventsList0 = function(runtimeSc
 {
 
 
-gdjs.evtsExt__ObjectPickingTools__PickNthAction.userFunc0xe13090(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ObjectPickingTools__PickNthAction.userFunc0x1640c10(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

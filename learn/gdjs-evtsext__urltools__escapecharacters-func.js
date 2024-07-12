@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__URLTools__EscapeCharacters !== "undefined") {
 gdjs.evtsExt__URLTools__EscapeCharacters = {};
 
 
-gdjs.evtsExt__URLTools__EscapeCharacters.userFunc0x1dc2db8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__URLTools__EscapeCharacters.userFunc0x15ff448 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext.returnValue = encodeURIComponent(eventsFunctionContext.getArgument("String"));
 };
@@ -27,7 +27,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__URLTools__EscapeCharacters.userFunc0x1dc2db8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__URLTools__EscapeCharacters.userFunc0x15ff448(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

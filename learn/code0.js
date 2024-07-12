@@ -1,8 +1,5 @@
 gdjs.HomeCode = {};
 gdjs.HomeCode.localVariables = [];
-gdjs.HomeCode.GDHeaderObjects1= [];
-gdjs.HomeCode.GDHeaderObjects2= [];
-gdjs.HomeCode.GDHeaderObjects3= [];
 gdjs.HomeCode.GDLoadAKitSubheaderObjects1= [];
 gdjs.HomeCode.GDLoadAKitSubheaderObjects2= [];
 gdjs.HomeCode.GDLoadAKitSubheaderObjects3= [];
@@ -75,6 +72,9 @@ gdjs.HomeCode.GDPFPDisplayObjects3= [];
 gdjs.HomeCode.GDUsernameDisplayObjects1= [];
 gdjs.HomeCode.GDUsernameDisplayObjects2= [];
 gdjs.HomeCode.GDUsernameDisplayObjects3= [];
+gdjs.HomeCode.GDIconObjects1= [];
+gdjs.HomeCode.GDIconObjects2= [];
+gdjs.HomeCode.GDIconObjects3= [];
 gdjs.HomeCode.GDMPIndicatorObjects1= [];
 gdjs.HomeCode.GDMPIndicatorObjects2= [];
 gdjs.HomeCode.GDMPIndicatorObjects3= [];
@@ -175,7 +175,7 @@ gdjs.copyArray(runtimeScene.getObjects("CreditsLabel"), gdjs.HomeCode.GDCreditsL
     gdjs.HomeCode.GDCreditsLabelObjects1[i].getBehavior("Text").setText("Credits: " + gdjs.evtTools.common.toString(runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber()));
 }
 }{runtimeScene.getGame().getVariables().getFromIndex(2).setNumber(runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber());
-}}
+}{/* Unknown instruction - skipped. */}}
 
 }
 
@@ -643,7 +643,8 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 {
-}
+{gdjs.evtTools.network.sendAsyncRequest("", "", "GET", "", gdjs.VariablesContainer.badVariable, gdjs.VariablesContainer.badVariable);
+}}
 
 }
 
@@ -663,9 +664,6 @@ let isConditionTrue_0 = false;
 gdjs.HomeCode.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
 
-gdjs.HomeCode.GDHeaderObjects1.length = 0;
-gdjs.HomeCode.GDHeaderObjects2.length = 0;
-gdjs.HomeCode.GDHeaderObjects3.length = 0;
 gdjs.HomeCode.GDLoadAKitSubheaderObjects1.length = 0;
 gdjs.HomeCode.GDLoadAKitSubheaderObjects2.length = 0;
 gdjs.HomeCode.GDLoadAKitSubheaderObjects3.length = 0;
@@ -738,6 +736,9 @@ gdjs.HomeCode.GDPFPDisplayObjects3.length = 0;
 gdjs.HomeCode.GDUsernameDisplayObjects1.length = 0;
 gdjs.HomeCode.GDUsernameDisplayObjects2.length = 0;
 gdjs.HomeCode.GDUsernameDisplayObjects3.length = 0;
+gdjs.HomeCode.GDIconObjects1.length = 0;
+gdjs.HomeCode.GDIconObjects2.length = 0;
+gdjs.HomeCode.GDIconObjects3.length = 0;
 gdjs.HomeCode.GDMPIndicatorObjects1.length = 0;
 gdjs.HomeCode.GDMPIndicatorObjects2.length = 0;
 gdjs.HomeCode.GDMPIndicatorObjects3.length = 0;

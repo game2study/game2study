@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__Noise__SetFrequency !== "undefined") {
 gdjs.evtsExt__Noise__SetFrequency = {};
 
 
-gdjs.evtsExt__Noise__SetFrequency.userFunc0x1c9ac80 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Noise__SetFrequency.userFunc0x160b208 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 const name = eventsFunctionContext.getArgument("Name");
 
@@ -19,7 +19,7 @@ gdjs.evtsExt__Noise__SetFrequency.eventsList0 = function(runtimeScene, eventsFun
 {
 
 
-gdjs.evtsExt__Noise__SetFrequency.userFunc0x1c9ac80(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Noise__SetFrequency.userFunc0x160b208(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
