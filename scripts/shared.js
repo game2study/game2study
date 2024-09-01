@@ -1,8 +1,8 @@
 const links = [
-    { name:"Home", link:"./", accountNeeded: false },
-    { name:"About", link:"./about", accountNeeded: false },
-    { name:"Sign Up", link:"./signup", accountNeeded: false },
-    { name:"Log In", link:"./login", accountNeeded: false },
+    { name:"Home", link:"/", accountNeeded: false },
+    { name:"About", link:"/page/about", accountNeeded: false },
+    { name:"Sign Up", link:"/page/signup", accountNeeded: false },
+    { name:"Log In", link:"/page/login", accountNeeded: false },
 ]
 if (document.getElementById("navbar")) {
     const navbar = document.getElementById("navbar")
