@@ -17,6 +17,19 @@ span {
     font-family: "Tiny5";
     font-size:20px;
 }
+button {
+    font-family: "Tiny5";
+    font-size:20px;
+    border: none;
+    height: 50px;
+    /*border-radius: 5px;*/
+    background-color: #ffde59;
+    cursor:pointer;
+    padding: 5px 20px 5px 20px;
+}
+button:hover {
+    background-color: #ffeb9b;
+}
 #g2sbanner {
     top: 60px;
     position:absolute;
