@@ -1,4 +1,4 @@
-<h1>Learn for The Game</h1>
+<h1>Game 2 Study</h1>
 
 <h2>Description</h2>
 
@@ -6,7 +6,7 @@ This project aspires to make learning fun by integrating question kits into vide
 
 <h2>Link</h2>
 
-Linked is the [website](https://learn4thegame.github.io) for our project.
+Linked is the [website](https://game2study.com) for our project.
 
 <h2>Feedback</h2>
 
