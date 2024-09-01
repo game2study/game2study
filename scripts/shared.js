@@ -1,3 +1,16 @@
-const navbar = document.createElement("div")
-document.body.append(navbar)
-navbar.id = "navbar"
+const links = [
+    { name:"Home", link:"./", accountNeeded: false },
+    { name:"About", link:"./about", accountNeeded: false },
+    { name:"Sign Up", link:"./signup", accountNeeded: false },
+    { name:"Log In", link:"./login", accountNeeded: false },
+]
+if (document.getElementById("navbar")) {
+    const navbar = document.getElementById("navbar")
+    for (let i = 0; i <= links.length; i++){
+        let link = document.createElement("a");
+        link.className = "navlink"
+        link.setAttribute("href", links[i].link);
+        link.innerText = links[i].name;
+        navbar.appendChild(link)
+    }
+}
