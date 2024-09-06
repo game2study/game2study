@@ -65,3 +65,13 @@ button:hover {
 .centertext {
     text-align: center;
 }
+
+div.webwindow {
+    width:90%;
+    height:90%;
+    box-shadow: 0px 0px 30px black;
+    border-radius:50px;
+    position:absolute;
+    left:5%;
+    top:5%;
+}
